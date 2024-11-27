@@ -25,37 +25,47 @@ const ImportantDates = ({ withHeader = true }: { withHeader?: boolean }) => {
             <TableCell className="whitespace-nowrap">
               Paper submission deadline
             </TableCell>
-            <TableCell className="text-right">1st March 2025</TableCell>
+            <TableCell className="text-right whitespace-nowrap">
+              1st March 2025
+            </TableCell>
           </TableRow>
           <TableRow className="hover:bg-inherit border-[#2e2e2e]">
             <TableCell className="whitespace-nowrap">
               Acceptance Notification
             </TableCell>
-            <TableCell className="text-right">1st April, 2025</TableCell>
+            <TableCell className="text-right whitespace-nowrap">
+              1st April, 2025
+            </TableCell>
           </TableRow>
           <TableRow className="hover:bg-inherit border-[#2e2e2e]">
             <TableCell className="whitespace-nowrap">
               Camera ready Version submission
             </TableCell>
-            <TableCell className="text-right">5th April 2025</TableCell>
+            <TableCell className="text-right whitespace-nowrap">
+              5th April 2025
+            </TableCell>
           </TableRow>
           <TableRow className="hover:bg-inherit border-[#2e2e2e]">
             <TableCell className="whitespace-nowrap">
               Early-Bird Registration
             </TableCell>
-            <TableCell className="text-right">10th April 2025</TableCell>
+            <TableCell className="text-right whitespace-nowrap">
+              10th April 2025
+            </TableCell>
           </TableRow>
           <TableRow className="hover:bg-inherit border-[#2e2e2e]">
             <TableCell className="whitespace-nowrap">
               Regular Registration
             </TableCell>
-            <TableCell className="text-right">25th April 2025</TableCell>
+            <TableCell className="text-right whitespace-nowrap">
+              25th April 2025
+            </TableCell>
           </TableRow>
           <TableRow className="hover:bg-inherit border-[#2e2e2e]">
             <TableCell className="whitespace-nowrap">
               Dates of Conference
             </TableCell>
-            <TableCell className="text-right">
+            <TableCell className="text-right whitespace-nowrap">
               28th – 30th August 2025
             </TableCell>
           </TableRow>

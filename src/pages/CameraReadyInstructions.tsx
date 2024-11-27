@@ -16,7 +16,7 @@ export default function CameraReadyInstructions() {
             At least one author must complete the registration before deadline.
             See the:
             <a
-              href="../../Registrations/Registrations.html"
+              href="/registration"
               className="text-blue-400 hover:underline ml-1"
             >
               Registrations Page
@@ -34,14 +34,14 @@ export default function CameraReadyInstructions() {
               <span>
                 Authors must use the IEEE Template:
                 <a
-                  href="../Submission-Guidelines/conference-latex-template_10-17-19.zip"
+                  href="/conference-latex-template_10-17-19.zip"
                   className="text-blue-400 hover:underline mx-1"
                 >
                   LaTex Template
                 </a>
                 or
                 <a
-                  href="../Submission-Guidelines/conference-template-a4.docx"
+                  href="/conference-template-a4.docx"
                   className="text-blue-400 hover:underline mx-1"
                 >
                   Microsoft Word
@@ -74,83 +74,67 @@ export default function CameraReadyInstructions() {
             </li>
             <li className="flex items-start">
               <span className="text-blue-400 mr-2">■</span>
-              <span>
+              <div>
                 <strong>Copyright Notice</strong>: You will also need to include
                 a copyright notice at the bottom of the first page of your
                 paper. The exact notice depends on the outcome of the copyright
                 transfer process:
-                <ul className="list-none space-y-2 mt-2 ml-6">
-                  <li className="flex items-start">
-                    <span className="text-blue-400 mr-2">○</span>
-                    <span>
-                      For papers in which all authors are employed by the US
-                      government, the copyright notice is:{" "}
-                      <strong>
-                        U.S. Government work not protected by U.S. copyright.
-                      </strong>
-                    </span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-blue-400 mr-2">○</span>
-                    <span>
-                      For papers in which all authors are employed by a Crown
-                      government (UK, Canada, and Australia), the copyright
-                      notice is:{" "}
-                      <strong>979-8-3315-2261-2/24/$31.00 ©2024 Crown</strong>
-                    </span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-blue-400 mr-2">○</span>
-                    <span>
-                      For papers in which all authors are employed by the
-                      European Union, the copyright notice is:{" "}
-                      <strong>
-                        979-8-3315-2261-2/24/$31.00 ©2024 European Union
-                      </strong>
-                    </span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-blue-400 mr-2">○</span>
-                    <span>
-                      For all other papers the copyright notice is:{" "}
-                      <strong>979-8-3315-2261-2/24/$31.00 ©2024 IEEE</strong>
-                    </span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-blue-400 mr-2">○</span>
-                    <span>
-                      MSWord users can use: 'Insert' -'Text box', insert the
-                      appropriate copyright notice in the texbox, and place the
-                      box (without border) at the bottom left on the first page.
-                      Again, we suggest preparing your camera-ready version
-                      using LaTeX.
-                    </span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-blue-400 mr-2">○</span>
-                    <span>
-                      LaTeX users can add the following lines just before \begin
-                      {"{document}"} for the copyright notice to show up. What
-                      is shown below is an example for the fourth copyright case
-                      above,{" "}
-                      <strong>
-                        in the other cases the copyright text should be adapted
-                        accordingly.
-                      </strong>
-                      <ul className="list-none space-y-1 mt-2 ml-6">
-                        <li>\IEEEoverridecommandlockouts</li>
-                        <li>
-                          \IEEEpubid{"{"}\\makebox[\\columnwidth]{"{"}
-                          979-8-3315-2261-2/24/$31.00~\\copyright{}2024 IEEE
-                          \\hfill{"}"}\\hspace{"{"}\\columnsep{"}"}
-                          \\makebox[\\columnwidth]{"{ }"}
-                          {"}"}
-                        </li>
-                      </ul>
-                    </span>
-                  </li>
-                </ul>
-              </span>
+                <br />
+                <br />
+                <p>
+                  For papers in which all authors are employed by the US
+                  government, the copyright notice is:{" "}
+                  <strong>
+                    U.S. Government work not protected by U.S. copyright.
+                  </strong>
+                </p>
+                <br />
+                <p>
+                  For papers in which all authors are employed by a Crown
+                  government (UK, Canada, and Australia), the copyright notice
+                  is: <strong>979-8-3315-2261-2/24/$31.00 ©2024 Crown</strong>
+                </p>
+                <br />
+                <p>
+                  For papers in which all authors are employed by the European
+                  Union, the copyright notice is:{" "}
+                  <strong>
+                    979-8-3315-2261-2/24/$31.00 ©2024 European Union
+                  </strong>
+                </p>
+                <br />
+                <p>
+                  For all other papers the copyright notice is:{" "}
+                  <strong>979-8-3315-2261-2/24/$31.00 ©2024 IEEE</strong>
+                </p>
+                <br />
+                <p>
+                  MSWord users can use: 'Insert' -'Text box', insert the
+                  appropriate copyright notice in the texbox, and place the box
+                  (without border) at the bottom left on the first page. Again,
+                  we suggest preparing your camera-ready version using LaTeX.
+                </p>
+                <br />
+                <span>
+                  LaTeX users can add the following lines just before \begin
+                  {"{document}"} for the copyright notice to show up. What is
+                  shown below is an example for the fourth copyright case above,{" "}
+                  <strong>
+                    in the other cases the copyright text should be adapted
+                    accordingly.
+                  </strong>
+                  <div className="space-y-1 mt-2 overflow-x-hidden">
+                    <pre>\IEEEoverridecommandlockouts</pre>
+                    <pre className="overflow-x-auto max-w-[calc(100vw-50px)]">
+                      \IEEEpubid{"{"}\\makebox[\\columnwidth]{"{"}
+                      979-8-3315-2261-2/24/$31.00~\\copyright{}2024 IEEE \\hfill
+                      {"}"}\\hspace{"{"}\\columnsep{"}"}
+                      \\makebox[\\columnwidth]{"{ }"}
+                      {"}"}
+                    </pre>
+                  </div>
+                </span>
+              </div>
             </li>
           </ol>
 
