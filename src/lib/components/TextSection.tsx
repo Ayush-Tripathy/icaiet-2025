@@ -8,7 +8,7 @@ const TextSection = ({
   text: string;
 }) => {
   return (
-    <div className="bg-inherit grid grid-cols-3">
+    <div className="bg-inherit grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-0">
       <div className="col-span-1">
         <h2 className="font-bold text-white font-[SatoshiBold] text-5xl uppercase">
           <span className="text-outline">{titlel1}</span>

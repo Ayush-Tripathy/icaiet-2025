@@ -11,28 +11,33 @@ const Home = () => {
       <Navbar />
       <div className="relative">
         {/* <div className="absolute inset-0 bg-[rgb(0,0,0/50)] h-screen"></div> */}
-        <div className="bg-[url(/XIM-BG1.jpg)] relative h-screen bg-no-repeat bg-cover bg-fixed text-white px-20 py-32">
+        <div className="bg-[url(/XIM-BG2.jpg)] relative h-screen bg-no-repeat bg-cover bg-fixed text-white px-3 sm:px-10 lg:px-20 py-32">
           <div className="flex flex-col gap-5">
-            <div>
-              <span className="font-[SatoshiBold] text-[4rem] uppercase leading-[0.9] text-outline">
+            <div className="text-[2.5rem] sm:text-[3rem] lg:text-[3.5rem] xl:text-[4rem]">
+              <span className="hidden xl:inline-block font-[SatoshiBold] text-[1rem] sm:text-[1.5rem] lg:text-[2rem] xl:text-[2.5rem] uppercase leading-[0.9] text-outline">
                 International Conference on
               </span>
+
+              <span className="inline-block xl:hidden font-[SatoshiRegular] text-[1rem] sm:text-[1.5rem] lg:text-[2rem] xl:text-[2.5rem] uppercase leading-[0.9]">
+                International Conference on
+              </span>
+
               <br />
-              <span className="font-[SatoshiBold] text-[4rem] uppercase leading-tight text-white">
+              <span className="font-[SatoshiBold]  uppercase leading-tight text-white">
                 Artificial Intelligence And
               </span>
               <br />
-              <span className="font-[SatoshiBold] text-[4rem] uppercase leading-tight text-white">
+              <span className="font-[SatoshiBold]  uppercase leading-tight text-white">
                 Emerging Technologies
               </span>
               <br />
-              <div className="flex flex-row items-center space-x-10">
-                <span className="font-[SatoshiBold] text-[4rem] uppercase leading-tight text-white">
+              <div className="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-10">
+                <span className="font-[SatoshiBold]  uppercase leading-tight text-white">
                   (ICAIET) - 2025
                 </span>
                 <a
                   href="test"
-                  className="flex flex-row items-center gap-3 px-16 py-4 bg-[#ffffff3d] transition-all duration-300 hover:backdrop-blur-0 hover:gap-5 backdrop-blur-[1.25rem] text-lg uppercase rounded-full border border-[#fff]"
+                  className="w-fit flex flex-row items-center gap-3 px-4 sm:px-8 md:px-16 py-1 sm:py-2 md:py-4 bg-[#ffffff3d] transition-all duration-300 hover:backdrop-blur-0 hover:gap-5 backdrop-blur-[1.25rem] text-sm sm:text-base md:text-lg uppercase rounded-full border border-[#fff]"
                 >
                   Register Now <ArrowRight size={24} />
                 </a>
@@ -40,7 +45,7 @@ const Home = () => {
             </div>
 
             <div className="flex flex-col items-start gap-3">
-              <p className="font-[SatoshiBold] text-xl uppercase">
+              <p className="font-[SatoshiRegular] text-xl uppercase">
                 School of Computer Science and Engineering, XIM University
                 Bhubaneswar (New Campus), Harirajpur
               </p>
@@ -58,7 +63,7 @@ const Home = () => {
       </section>
 
       {/* Organized By */}
-      <section className="bg-black text-white flex flex-col items-center gap-20 py-10">
+      <section className="bg-black text-white flex flex-row justify-center gap-32 py-10">
         <div className="flex flex-col gap-10 items-center">
           <h3 className="text-center text-4xl font-[SatoshiBold] uppercase">
             Organized By
@@ -105,14 +110,14 @@ const Home = () => {
       </section>
 
       {/* About XIM University */}
-      <section className="px-20 py-36 bg-black border-t border-[#2e2e2e] flex flex-row">
+      <section className="px-3 sm:px-10 lg:px-20 py-36 bg-black border-t border-[#2e2e2e] flex flex-row">
         {/* <TextSection
           titlel1="About"
           titlel2="XIM University"
           text="XIM University sees itself as a global university delivering quality education to deserving meritorious students. The XIM University affirms its mission of excellent quality higher education. It aspires to lead the country in management education by focusing on research and innovation. Our intellectual capital rankings have been in the top five in the country consistently. The excellence we have lived through the years has become an example, a legend for all to imitate and follow. This aligns with our motto – Semper Excelsius – Ever Higher."
         /> */}
 
-        <div className="flex flex-row gap-10">
+        <div className="flex flex-col xl:flex-row gap-10">
           <div className="bg-inherit flex flex-col flex-1 gap-5">
             <div className="">
               <h2 className="font-bold text-white font-[SatoshiBold] text-5xl uppercase">
@@ -143,7 +148,7 @@ const Home = () => {
       </section>
 
       {/* About ICAIET */}
-      <section className="px-20 py-36 bg-black border-t border-[#2e2e2e] text-white flex flex-col items-center gap-20">
+      <section className="px-3 sm:px-10 lg:px-20 py-36 bg-black border-t border-[#2e2e2e] text-white flex flex-col items-center gap-20">
         <TextSection
           titlel1="About"
           titlel2="ICAIET 2025"

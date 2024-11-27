@@ -44,9 +44,10 @@ export default function Navbar() {
   ];
 
   return (
-    <header className="fixed px-20 top-0 z-50 w-full border-b border-[#2e2e2e] backdrop-blur text-white">
+    <header className="fixed px-3 sm:px-10 lg:px-20 top-0 z-50 w-full border-b border-[#2e2e2e] backdrop-blur text-white">
       <div className="container mx-auto flex h-16 items-center justify-between px-4 md:px-8 lg:px-2">
         <div className="flex items-center gap-4 lg:gap-6">
+          {/* <div className="h-16 w-0 border-r border-[#2e2e2e]"></div> */}
           <a href="/" className="flex items-center">
             <span className="text-2xl tracking-widest font-semibold">
               ICAIET 2025
