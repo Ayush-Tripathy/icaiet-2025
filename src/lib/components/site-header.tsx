@@ -1,23 +1,25 @@
-"use client"
+"use client";
 
-import * as React from "react"
-import { CalendarDays, ChevronDown, MapPin, Menu } from 'lucide-react'
+import * as React from "react";
+import { CalendarDays, ChevronDown, MapPin, Menu } from "lucide-react";
 
 export default function Navbar() {
-  const [activeDropdown, setActiveDropdown] = React.useState<string | null>(null)
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false)
+  const [activeDropdown, setActiveDropdown] = React.useState<string | null>(
+    null
+  );
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
 
   const handleMouseEnter = (menuItem: string) => {
-    setActiveDropdown(menuItem)
-  }
+    setActiveDropdown(menuItem);
+  };
 
   const handleMouseLeave = () => {
-    setActiveDropdown(null)
-  }
+    setActiveDropdown(null);
+  };
 
   const toggleMobileMenu = () => {
-    setIsMobileMenuOpen(!isMobileMenuOpen)
-  }
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
 
   const menuItems = [
     {
@@ -29,11 +31,11 @@ export default function Navbar() {
     { name: "WaysConf", items: ["About", "Previous Editions"] },
     { name: "Awards", items: ["Categories", "Previous Winners"] },
     { name: "Startup", items: ["Program", "Apply"] },
-  ]
+  ];
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b-2 border-[#2e2e2e] bg-[#0a0b1a] text-white">
-      <div className="container mx-auto flex h-16 items-center justify-start px-4 md:px-8 lg:px-20">
+    <header className="sticky top-0 z-50 w-full border-b border-[#2e2e2e] bg-[#0a0b1a] text-white">
+      <div className="container mx-auto flex h-16 items-center justify-between px-4 md:px-8 lg:px-20">
         <div className="flex items-center gap-4 lg:gap-6">
           <a href="/" className="flex items-center">
             <span className="text-xl font-bold">WaysConf</span>
@@ -44,12 +46,13 @@ export default function Navbar() {
           <div className="hidden lg:flex items-center gap-2 text-sm">
             <CalendarDays className="h-4 w-4" />
             <span>19-20 SEP</span>
-            <div className="h-16 w-px bg-[#2e2e2e] mx-2"></div>
+            <div className="h-16 w-0 border-r border-[#2e2e2e] mx-2"></div>
             <MapPin className="h-4 w-4" />
             <span>EXPO KRAKÓW</span>
+            <div className="h-16 w-0 border-r border-[#2e2e2e] mx-2"></div>
           </div>
         </div>
-        
+
         <nav className="hidden lg:flex items-center relative ml-8">
           <ul className="flex space-x-4">
             {menuItems.map((menu) => (
@@ -111,7 +114,11 @@ export default function Navbar() {
             {menuItems.map((menu) => (
               <li key={menu.name} className="px-4">
                 <button
-                  onClick={() => setActiveDropdown(activeDropdown === menu.name ? null : menu.name)}
+                  onClick={() =>
+                    setActiveDropdown(
+                      activeDropdown === menu.name ? null : menu.name
+                    )
+                  }
                   className="flex items-center justify-between w-full py-2 text-left"
                 >
                   {menu.name}
@@ -125,7 +132,10 @@ export default function Navbar() {
                   <ul className="mt-2 ml-4 space-y-2">
                     {menu.items.map((item) => (
                       <li key={item}>
-                        <a href="#" className="block py-1 text-sm text-white/80 hover:text-white">
+                        <a
+                          href="#"
+                          className="block py-1 text-sm text-white/80 hover:text-white"
+                        >
                           {item}
                         </a>
                       </li>
@@ -138,6 +148,5 @@ export default function Navbar() {
         </div>
       )}
     </header>
-  )
+  );
 }
-

@@ -11,6 +11,19 @@ export default {
   			md: 'calc(var(--radius) - 2px)',
   			sm: 'calc(var(--radius) - 4px)'
   		},
+      keyframes: {
+        "moveRightToLeft": {
+          "0%": {
+            transform: "translateX(100%)"
+          },
+          "100%": {
+            transform: "translateX(-100%)"
+          }
+        },
+      },
+      animation: {
+        "moveRightToLeft": "moveRightToLeft 20s linear infinite"
+      },
   		colors: {
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
