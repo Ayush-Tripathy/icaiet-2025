@@ -32,7 +32,7 @@ export default function Navbar() {
       name: "For Authors",
       href: "#",
       items: [
-        { name: "Important Dates", href: "#" },
+        { name: "Important Dates", href: "/important-dates" },
         { name: "Submission Guidelines", href: "#" },
         { name: "Camera-Ready Instructions", href: "#" },
       ],
