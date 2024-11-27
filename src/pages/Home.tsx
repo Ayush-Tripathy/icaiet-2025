@@ -1,14 +1,11 @@
 import TextSection from "@/lib/components/TextSection";
-import Navbar from "@/lib/components/site-header";
 import { ArrowRight } from "lucide-react";
 import CountdownTimer from "@/lib/components/CountdownTimer";
 import ImportantDates from "@/lib/components/ImportantDates";
-import Footer from "@/lib/components/Footer";
 
 const Home = () => {
   return (
     <div className="bg-black text-white">
-      <Navbar />
       <div className="relative">
         {/* <div className="absolute inset-0 bg-[rgb(0,0,0/50)] h-screen"></div> */}
         <div className="bg-[url(/XIM-BG2.jpg)] relative h-screen bg-no-repeat bg-cover bg-fixed text-white px-3 sm:px-10 lg:px-20 py-32">
@@ -163,8 +160,6 @@ const Home = () => {
           Call For Paper <ArrowRight size={24} />
         </a>
       </section>
-
-      <Footer />
     </div>
   );
 };

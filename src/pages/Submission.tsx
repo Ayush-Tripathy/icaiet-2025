@@ -2,7 +2,7 @@ import { ArrowRight } from "lucide-react";
 
 export default function SubmissionGuidelines() {
   return (
-    <div className="min-h-screen bg-black text-gray-100 py-8">
+    <div className="min-h-screen bg-black text-gray-100 py-8 pt-32 px-3 sm:px-10 lg:px-20 font-[SatoshiRegular]">
       <div className="container mx-auto px-4">
         <div className="mb-8">
           <h1 className="text-3xl font-bold">Submission Guidelines</h1>
@@ -119,23 +119,22 @@ export default function SubmissionGuidelines() {
           <div className="space-y-4 mt-4">
             <a
               href="./src/assets/conference-latex-template_10-17-19.zip"
-                className="w-fit flex flex-row items-center gap-3 px-4 sm:px-8 md:px-16 py-1 sm:py-2 md:py-4 bg-[#ffffff3d] transition-all duration-300 hover:backdrop-blur-0 hover:gap-5 backdrop-blur-[1.25rem] text-sm sm:text-base md:text-lg uppercase rounded-full border border-[#fff]"
+              className="w-fit flex flex-row items-center gap-3 px-4 sm:px-8 md:px-8 py-1 sm:py-2 md:py-4 bg-[#ffffff3d] transition-all duration-300 hover:backdrop-blur-0 hover:gap-5 backdrop-blur-[1.25rem] text-sm sm:text-base uppercase rounded-full border border-[#fff]"
             >
               Click here to download Word Template
             </a>
 
             <a
               href="/src/assets/conference-latex-template_10-17-19.zip"
-              className="w-fit flex flex-row items-center gap-3 px-4 sm:px-8 md:px-16 py-1 sm:py-2 md:py-4 bg-[#ffffff3d] transition-all duration-300 hover:backdrop-blur-0 hover:gap-5 backdrop-blur-[1.25rem] text-sm sm:text-base md:text-lg uppercase rounded-full border border-[#fff]"
+              className="w-fit flex flex-row items-center gap-3 px-4 sm:px-8 md:px-8 py-1 sm:py-2 md:py-4 bg-[#ffffff3d] transition-all duration-300 hover:backdrop-blur-0 hover:gap-5 backdrop-blur-[1.25rem] text-sm sm:text-base uppercase rounded-full border border-[#fff]"
             >
               Click here to download LaTex Package
             </a>
             <a
               href="https://www.ieee.org/conferences/publishing/templates.html"
-              className="w-fit flex flex-row items-center gap-3 px-4 sm:px-8 md:px-16 py-1 sm:py-2 md:py-4 bg-[#ffffff3d] transition-all duration-300 hover:backdrop-blur-0 hover:gap-5 backdrop-blur-[1.25rem] text-sm sm:text-base md:text-lg uppercase rounded-full border border-[#fff]"
+              className="w-fit flex flex-row items-center gap-3 px-4 sm:px-8 md:px-8 py-1 sm:py-2 md:py-4 bg-[#ffffff3d] transition-all duration-300 hover:backdrop-blur-0 hover:gap-5 backdrop-blur-[1.25rem] text-sm sm:text-base uppercase rounded-full border border-[#fff]"
             >
               For more on Templates :<ArrowRight size={24} />
-              Click here
             </a>
           </div>
 
@@ -148,9 +147,10 @@ export default function SubmissionGuidelines() {
             single PDF or Word file using the following link:
           </p>
 
-          
-
-          <a href="#"  className="w-fit flex flex-row items-center gap-3 px-4 sm:px-8 md:px-16 py-1 sm:py-2 md:py-4 bg-[#ffffff3d] transition-all duration-300 hover:backdrop-blur-0 hover:gap-5 backdrop-blur-[1.25rem] text-sm sm:text-base md:text-lg uppercase rounded-full border border-[#fff]">
+          <a
+            href="#"
+            className="w-fit flex flex-row items-center gap-3 px-4 sm:px-8 md:px-8 py-1 sm:py-2 md:py-4 bg-[#ffffff3d] transition-all duration-300 hover:backdrop-blur-0 hover:gap-5 backdrop-blur-[1.25rem] text-sm sm:text-base uppercase rounded-full border border-[#fff]"
+          >
             Click here to submit
           </a>
         </div>

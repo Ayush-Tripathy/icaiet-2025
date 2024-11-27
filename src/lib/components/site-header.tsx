@@ -33,14 +33,17 @@ export default function Navbar() {
       href: "#",
       items: [
         { name: "Important Dates", href: "/important-dates" },
-        { name: "Submission Guidelines", href: "#" },
-        { name: "Camera-Ready Instructions", href: "#" },
+        { name: "Submission Guidelines", href: "/submission-guidelines" },
+        {
+          name: "Camera-Ready Instructions",
+          href: "/camera-ready-instructions",
+        },
       ],
     },
-    { name: "Registration", href: "#" },
-    { name: "Call for Papers", href: "#" },
-    { name: "Speakers", href: "#" },
-    { name: "Contact", href: "#" },
+    { name: "Registration", href: "/registration" },
+    { name: "Call for Papers", href: "/call-for-papers" },
+    { name: "Speakers", href: "/speakers" },
+    { name: "Contact", href: "/contact" },
   ];
 
   return (
