@@ -3,14 +3,15 @@ import Navbar from "@/lib/components/site-header";
 import { ArrowRight } from "lucide-react";
 import CountdownTimer from "@/lib/components/CountdownTimer";
 import ImportantDates from "@/lib/components/ImportantDates";
+import Footer from "@/lib/components/Footer";
 
 const Home = () => {
   return (
-    <>
+    <div className="bg-black text-white">
       <Navbar />
       <div className="relative">
         {/* <div className="absolute inset-0 bg-[rgb(0,0,0/50)] h-screen"></div> */}
-        <div className="bg-[url(/bg2.webp)] relative h-screen bg-no-repeat bg-cover bg-fixed text-white px-20 py-32">
+        <div className="bg-[url(/XIM-BG1.jpg)] relative h-screen bg-no-repeat bg-cover bg-fixed text-white px-20 py-32">
           <div className="flex flex-col gap-5">
             <div>
               <span className="font-[SatoshiBold] text-[4rem] uppercase leading-[0.9] text-outline">
@@ -72,9 +73,9 @@ const Home = () => {
 
           <div className="flex flex-col gap-5">
             <div className="flex flex-row gap-5">
-              <img src="/IEEE official.png" alt="IEEE" className="w-40" />
+              <img src="/IEEE-official.png" alt="IEEE" className="w-40" />
               <img
-                src="/IEEE kolkata.png"
+                src="/IEEE-kolkata.png"
                 alt="IEEE Kolkata"
                 className="w-40"
               />
@@ -85,7 +86,7 @@ const Home = () => {
                 alt="IEEE Kolkata Bhubaneswar Joint Chapter"
                 className="w-40"
               />
-              <img src="/IEEE xim.png" alt="IEEE XIM" className="w-40" />
+              <img src="/IEEE-xim.png" alt="IEEE XIM" className="w-40" />
             </div>
           </div>
         </div>
@@ -157,7 +158,9 @@ const Home = () => {
           Call For Paper <ArrowRight size={24} />
         </a>
       </section>
-    </>
+
+      <Footer />
+    </div>
   );
 };
 

@@ -21,13 +21,13 @@ const ImportantDates = () => {
             <TableCell className="whitespace-nowrap">
               Paper submission deadline
             </TableCell>
-            <TableCell className="text-right">15th February 2025</TableCell>
+            <TableCell className="text-right">1st March 2025</TableCell>
           </TableRow>
           <TableRow className="hover:bg-inherit border-[#2e2e2e]">
             <TableCell className="whitespace-nowrap">
               Acceptance Notification
             </TableCell>
-            <TableCell className="text-right">15th March, 2025</TableCell>
+            <TableCell className="text-right">1st April, 2025</TableCell>
           </TableRow>
           <TableRow className="hover:bg-inherit border-[#2e2e2e]">
             <TableCell className="whitespace-nowrap">

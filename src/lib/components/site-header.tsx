@@ -1,47 +1,60 @@
-"use client"
+"use client";
 
-import * as React from "react"
-import { CalendarDays, ChevronDown, MapPin, Menu } from 'lucide-react'
+import * as React from "react";
+import {
+  CalendarDays,
+  ChevronDown,
+  // MapPin,
+  Menu,
+} from "lucide-react";
 
 export default function Navbar() {
-  const [activeDropdown, setActiveDropdown] = React.useState<string | null>(null)
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false)
+  const [activeDropdown, setActiveDropdown] = React.useState<string | null>(
+    null
+  );
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
 
   const handleMouseEnter = (menuItem: string) => {
-    setActiveDropdown(menuItem)
-  }
+    setActiveDropdown(menuItem);
+  };
 
   const handleMouseLeave = () => {
-    setActiveDropdown(null)
-  }
+    setActiveDropdown(null);
+  };
 
   const toggleMobileMenu = () => {
-    setIsMobileMenuOpen(!isMobileMenuOpen)
-  }
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
 
   const menuItems = [
     { name: "Committee", href: "#" },
-    { name: "For Authors", href: "#", items: [
-      { name: "Important Dates", href: "#" },
-      { name: "Submission Guidelines", href: "#" },
-      { name: "Camera-Ready Instructions", href: "#" }
-    ]},
+    {
+      name: "For Authors",
+      href: "#",
+      items: [
+        { name: "Important Dates", href: "#" },
+        { name: "Submission Guidelines", href: "#" },
+        { name: "Camera-Ready Instructions", href: "#" },
+      ],
+    },
     { name: "Registration", href: "#" },
     { name: "Call for Papers", href: "#" },
     { name: "Speakers", href: "#" },
     { name: "Contact", href: "#" },
-  ]
+  ];
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b-2 border-[#2e2e2e] bg-[#0a0b1a] text-white">
-      <div className="container mx-auto flex h-16 items-center justify-start px-4 md:px-8 lg:px-2">
+    <header className="fixed px-20 top-0 z-50 w-full border-b border-[#2e2e2e] backdrop-blur text-white">
+      <div className="container mx-auto flex h-16 items-center justify-between px-4 md:px-8 lg:px-2">
         <div className="flex items-center gap-4 lg:gap-6">
           <a href="/" className="flex items-center">
-            <span className="text-4xl text-blue-800 tracking-widest font-semibold">ICAIET 2025</span>
+            <span className="text-2xl tracking-widest font-semibold">
+              ICAIET 2025
+            </span>
             {/* <span className="text-4xl  font-extrabold"></span> */}
           </a>
           <div className="hidden lg:flex items-center">
-            <div className="h-16 w-px bg-[#2e2e2e]"></div>
+            <div className="h-16 w-0 border-r border-[#2e2e2e]"></div>
           </div>
           <div className="hidden lg:flex items-center gap-2 text-sm">
             <CalendarDays className="h-4 w-4" />
@@ -51,7 +64,7 @@ export default function Navbar() {
             <span>Bhubaneswar</span> */}
           </div>
         </div>
-        
+
         <nav className="hidden lg:flex items-center relative ml-8">
           <ul className="flex space-x-4">
             {menuItems.map((menu) => (
@@ -75,7 +88,7 @@ export default function Navbar() {
                   )}
                 </a>
                 {menu.items && activeDropdown === menu.name && (
-                  <div className="absolute left-0 top-full mt-0 w-48 rounded-md shadow-lg bg-[#0a0b1a]/80 backdrop-blur-sm ring-1 ring-black ring-opacity-5">
+                  <div className="absolute left-0 top-full mt-0 w-48 rounded-md shadow-lg border border-[#2e2e2e] bg-[#0a0b1a]/80 backdrop-blur-sm ring-1 ring-black ring-opacity-5">
                     <div
                       className="py-1"
                       role="menu"
@@ -110,14 +123,18 @@ export default function Navbar() {
       </div>
 
       {isMobileMenuOpen && (
-        <div className="lg:hidden bg-[#0a0b1a] py-4">
+        <div className="lg:hidden bg-transparent py-4">
           <ul className="space-y-2 whitespace-nowrap">
             {menuItems.map((menu) => (
               <li key={menu.name} className="px-4">
                 {menu.items ? (
                   <>
                     <button
-                      onClick={() => setActiveDropdown(activeDropdown === menu.name ? null : menu.name)}
+                      onClick={() =>
+                        setActiveDropdown(
+                          activeDropdown === menu.name ? null : menu.name
+                        )
+                      }
                       className="flex items-center justify-between w-full py-2 text-left"
                     >
                       {menu.name}
@@ -131,7 +148,10 @@ export default function Navbar() {
                       <ul className="mt-2 ml-4 space-y-2">
                         {menu.items.map((item) => (
                           <li key={item.name}>
-                            <a href={item.href} className="block py-1 text-sm text-white/80 hover:text-white">
+                            <a
+                              href={item.href}
+                              className="block py-1 text-sm text-white/80 hover:text-white"
+                            >
                               {item.name}
                             </a>
                           </li>
@@ -150,6 +170,5 @@ export default function Navbar() {
         </div>
       )}
     </header>
-  )
+  );
 }
-
