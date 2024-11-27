@@ -27,7 +27,7 @@ export default function Navbar() {
   };
 
   const menuItems = [
-    { name: "Committee", href: "#" },
+    { name: "Committee", href: "/committee" },
     {
       name: "For Authors",
       href: "#",
