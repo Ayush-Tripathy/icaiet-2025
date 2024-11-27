@@ -33,7 +33,7 @@ const Home = () => {
                   (ICAIET) - 2025
                 </span>
                 <a
-                  href="test"
+                  href="/registration"
                   className="w-fit flex flex-row items-center gap-3 px-4 sm:px-8 md:px-16 py-1 sm:py-2 md:py-4 bg-[#ffffff3d] transition-all duration-300 hover:backdrop-blur-0 hover:gap-5 backdrop-blur-[1.25rem] text-sm sm:text-base md:text-lg uppercase rounded-full border border-[#fff]"
                 >
                   Register Now <ArrowRight size={24} />
