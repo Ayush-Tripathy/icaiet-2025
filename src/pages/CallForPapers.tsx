@@ -63,10 +63,10 @@ const CallForPapers = () => {
       </ul>
 
       <p className="text-white text-opacity-[0.6] text-lg">
-        The Microsoft CMT service was used for managing the peer-reviewing
-        process for this conference. This service was provided for free by
-        Microsoft and they bore all expenses, including costs for Azure cloud
-        services as well as for software development and support.
+        The Microsoft CMT service will be used for managing the peer-reviewing
+        process for this conference. This service will be provided for free by
+        Microsoft and they will bear all expenses, including costs for Azure
+        cloud services as well as for software development and support.
       </p>
 
       <div className="space-y-2">

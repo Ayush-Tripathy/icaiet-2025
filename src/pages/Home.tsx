@@ -42,7 +42,7 @@ const Home = () => {
             </div>
 
             <div className="flex flex-col items-start gap-3">
-              <p className="font-[SatoshiRegular] text-xl uppercase">
+              <p className="font-[SatoshiRegular] text-base sm:text-lg lg:text-xl uppercase">
                 School of Computer Science and Engineering, XIM University
                 Bhubaneswar (New Campus), Harirajpur
               </p>
@@ -60,7 +60,7 @@ const Home = () => {
       </section>
 
       {/* Organized By */}
-      <section className="bg-black text-white flex flex-row justify-center gap-32 py-10">
+      <section className="bg-black text-white flex flex-col lg:flex-row justify-center gap-32 py-10">
         <div className="flex flex-col gap-10 items-center">
           <h3 className="text-center text-4xl font-[SatoshiBold] uppercase">
             Organized By
@@ -140,7 +140,9 @@ const Home = () => {
             </div>
           </div>
 
-          <ImportantDates />
+          <div className="overflow-x-auto max-sm:max-w-[calc(100vw-50px)]">
+            <ImportantDates />
+          </div>
         </div>
       </section>
 
