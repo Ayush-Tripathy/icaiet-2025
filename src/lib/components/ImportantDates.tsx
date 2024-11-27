@@ -7,15 +7,19 @@ import {
   TableRow,
 } from "@/lib/components/ui/table";
 
-const ImportantDates = () => {
+const ImportantDates = ({ withHeader = true }: { withHeader?: boolean }) => {
   return (
     <div className="border border-[#2e2e2e] rounded-lg">
       <Table className="text-white font-[SatoshiRegular] text-lg">
-        <TableHeader>
-          <TableRow className="hover:bg-inherit border-[#2e2e2e]">
-            <TableHead className="whitespace-nowrap">Important Dates</TableHead>
-          </TableRow>
-        </TableHeader>
+        {withHeader && (
+          <TableHeader>
+            <TableRow className="hover:bg-inherit border-[#2e2e2e]">
+              <TableHead className="whitespace-nowrap">
+                Important Dates
+              </TableHead>
+            </TableRow>
+          </TableHeader>
+        )}
         <TableBody>
           <TableRow className="hover:bg-inherit border-[#2e2e2e]">
             <TableCell className="whitespace-nowrap">
