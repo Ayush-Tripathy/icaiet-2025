@@ -77,3 +77,37 @@
     @apply bg-background text-foreground;
     }
 }
+
+@font-face {
+  src: url('/fonts/Satoshi/Regular.otf') format('opentype');
+  font-family: 'SatoshiRegular';
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  src: url('/fonts/Satoshi/Medium.otf') format('opentype');
+  font-family: 'SatoshiMedium';
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  src: url('/fonts/Satoshi/SemiBold.otf') format('opentype');
+  font-family: 'SatoshiSemiBold';
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  src: url('/fonts/Satoshi/Bold.otf') format('opentype');
+  font-family: 'SatoshiBold';
+  font-weight: 700;
+  font-style: normal;
+}
+
+.text-outline { 
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #fff;
+  color: #fff0;
+}
