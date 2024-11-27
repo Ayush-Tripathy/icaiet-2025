@@ -77,7 +77,7 @@ const CallForPapers = () => {
       </div>
 
       <a
-        href="test"
+        href="https://cmt3.research.microsoft.com/User/Login?ReturnUrl=%2FAESPC202%25204"
         className="w-fit flex flex-row items-center gap-3 px-4 sm:px-8 md:px-10 py-1 sm:py-2 md:py-3 bg-[#ffffff3d] transition-all duration-300 hover:backdrop-blur-0 hover:gap-5 backdrop-blur-[1.25rem] text-sm sm:text-base md:text-lg uppercase rounded-full border border-[#fff]"
       >
         Paper Submission Link <ArrowRight size={24} />

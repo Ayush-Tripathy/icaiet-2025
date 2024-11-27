@@ -17,37 +17,37 @@ const Footer = () => {
         </h3>
         <ul>
           <li>
-            <a href="" className="hover:underline">
+            <a href="/" className="hover:underline">
               Home
             </a>
           </li>
           <li>
-            <a href="" className="hover:underline">
+            <a href="/committee" className="hover:underline">
               Committee
             </a>
           </li>
-          <li>
+          {/* <li>
             <a href="" className="hover:underline">
               For Authors
             </a>
-          </li>
+          </li> */}
           <li>
-            <a href="" className="hover:underline">
+            <a href="/registration" className="hover:underline">
               Registration
             </a>
           </li>
           <li>
-            <a href="" className="hover:underline">
+            <a href="/call-for-papers" className="hover:underline">
               Call For Papers
             </a>
           </li>
           <li>
-            <a href="" className="hover:underline">
+            <a href="/speakers" className="hover:underline">
               Speakers
             </a>
           </li>
           <li>
-            <a href="" className="hover:underline">
+            <a href="/contact" className="hover:underline">
               Contact
             </a>
           </li>

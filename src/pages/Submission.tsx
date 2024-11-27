@@ -118,7 +118,7 @@ export default function SubmissionGuidelines() {
 
           <div className="space-y-4 mt-4">
             <a
-              href="/conference-latex-template_10-17-19.zip"
+              href="/conference-template-a4.docx"
               className="w-fit flex flex-row items-center gap-3 px-4 sm:px-8 md:px-8 py-1 sm:py-2 md:py-4 bg-[#ffffff3d] transition-all duration-300 hover:backdrop-blur-0 hover:gap-5 backdrop-blur-[1.25rem] text-sm sm:text-base uppercase rounded-full border border-[#fff]"
             >
               Click here to download Word Template
