@@ -1,3 +1,43 @@
+import Antony from "../assets/p1.jpg";
+
+import ImageCard from "@/lib/components/committee/ImageCard";
+import ChiefPatron from "../assets/committee/ChiefPatron/Fr.-Antony-R.-Uvari-SJ.jpg";
+import AntonyRaj from "../assets/committee/Patron/Prof. Fr.S.Antony Raj.jpg";
+import GopalKrishnaNayak from "../assets/committee/Patron/Dr. Gopal Krishna Nayak.png";
+import RudraMohanTripathy from "../assets/committee/GeneralChair/Dr. Rudra mohan tripathy.png";
+import AshutoshDutta from "../assets/committee/GeneralChair/Ashutosh-Dutta.jpg";
+
+// Advisory Committee photos
+import Arokiyadass from "../assets/committee/AdvisoryCommittee/Fr.-V.-Arokiyadass-S.J..jpg";
+import Turuk from "../assets/committee/AdvisoryCommittee/A.K. Turuk.jpg";
+import Majhi from "../assets/committee/AdvisoryCommittee/Prof.B.Majhi.jpg";
+import Schuller from "../assets/committee/AdvisoryCommittee/Bjoern Schuller.jpg";
+import Baral from "../assets/committee/AdvisoryCommittee/chitta baral.png";
+import Dogra from "../assets/committee/AdvisoryCommittee/D.P Dogra.png";
+import Panda from "../assets/committee/AdvisoryCommittee/Ganapati panda.jpg";
+import Hari from "../assets/committee/AdvisoryCommittee/kvs hari.jpg";
+import Gaur from "../assets/committee/AdvisoryCommittee/Prerna Gaur.jpeg";
+import Srivastava from "../assets/committee/AdvisoryCommittee/Rajeev Srivastava.jpg";
+import Misra from "../assets/committee/AdvisoryCommittee/Sudip Misra.jpg";
+
+// Steering Committee photos
+import CKumar from "../assets/committee/SteeringCommittee/C.Kumar.jpg";
+import Dharmendra from "../assets/committee/SteeringCommittee/Dharmendra Kumar Yadav.jpg";
+import Dilip from "../assets/committee/SteeringCommittee/Dilip K.prasad.jpg";
+import Subramanian from "../assets/committee/SteeringCommittee/SUbramanian.png";
+import RKSharma from "../assets/committee/SteeringCommittee/R.K. Sharma.jpg";
+import Vidy from "../assets/committee/SteeringCommittee/vidy potdar.png";
+
+// Organizing Chair photos
+import AshishKumar from "../assets/committee/OrganizingChair/Ashish Kumar.png";
+import DevendraKumarYadav from "../assets/committee/OrganizingChair/Devendra Kumar Yadav.png";
+
+// Technical Program Chair photos
+import BSPanda from "../assets/committee/TechnicalProgramChair/B S Panda.jpg";
+import Pabitra from "../assets/committee/TechnicalProgramChair/Pabitra MOhan Khilar.jpg";
+import Susanta from "../assets/committee/TechnicalProgramChair/Susanta Ray.jpg";
+import SouravMondal from "../assets/committee/TechnicalProgramChair/Sourav mandal.png";
+
 export default function CommitteesPage() {
   return (
     <div className="pt-32 font-[SatoshiRegular]">
@@ -8,160 +48,247 @@ export default function CommitteesPage() {
           <div className="h-1 w-20 bg-blue-500" />
         </div>
 
-        <div className="mt-12 space-y-12">
+        <div className="flex flex-row items-start flex-wrap mt-10 gap-28">
           {/* Chief Patron Section */}
-          <section className="space-y-4">
+          <section className="space-y-4 max-sm:w-full">
             <h2 className="text-2xl font-bold text-blue-400">Chief Patron</h2>
-            <p className="relative pl-5 before:content-['•'] before:absolute before:left-0 text-gray-400">
-              Fr. Antony R. Uvari, S.J., Vice Chancellor, XIM University, India
-            </p>
+            <div className="grid grid-cols-2 gap-3 sm:flex sm:flex-row sm:gap-5 sm:flex-wrap w-full">
+              <ImageCard
+                src={ChiefPatron}
+                name="Fr. Antony R. Uvari, S.J."
+                occupation="Vice Chancellor, XIM University, India"
+              />
+            </div>
           </section>
 
           {/* Patron Section */}
-          <section className="space-y-4">
+          <section className="space-y-4 max-sm:w-full">
             <h2 className="text-2xl font-bold text-blue-400">Patron</h2>
-            <div className="space-y-2">
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0 text-gray-400">
-                Fr. S. Antony Raj, S.J., Registrar, XIM University
-              </p>
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0 text-gray-400">
-                Dr. Gopal Krishna Nayak, Professor, XIM University, India
-              </p>
+            <div className="grid grid-cols-2 gap-3 sm:flex sm:flex-row sm:gap-5 sm:flex-wrap w-full">
+              <ImageCard
+                src={AntonyRaj}
+                name="Fr. S. Antony Raj, S.J."
+                occupation="Registrar, XIM University"
+              />
+
+              <ImageCard
+                src={GopalKrishnaNayak}
+                name="Dr. Gopal Krishna Nayak"
+                occupation="Professor, XIM University, India"
+              />
             </div>
           </section>
 
           {/* General Chair Section */}
-          <section className="space-y-4">
+          <section className="space-y-4 max-sm:w-full">
             <h2 className="text-2xl font-bold text-blue-400">General Chair</h2>
-            <div className="space-y-2">
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0 text-gray-400">
-                Dr. Ashutosh Dutta, Professor and Director, Johns Hopkins
-                University, USA
-              </p>
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0 text-gray-400">
-                Dr. Rudra Mohan Tripathy, Dean, School of Computer Science and
-                Engineering, XIM University, India
-              </p>
+            <div className="grid grid-cols-2 gap-3 sm:flex sm:flex-row sm:gap-5 sm:flex-wrap w-full">
+              <ImageCard
+                src={AshutoshDutta}
+                name="Dr. Ashutosh Dutta"
+                occupation="Professor and Director, Johns Hopkins
+              University, USA"
+              />
+
+              <ImageCard
+                src={RudraMohanTripathy}
+                name="Dr. Rudra Mohan Tripathy"
+                occupation="Dean, School of Computer Science and
+              Engineering, XIM University, India"
+              />
             </div>
           </section>
 
-          {/* Advisory Committee Section */}
-          <section className="space-y-4">
+          {/*  Advisory Committee Section */}
+          <section className="space-y-4 max-sm:w-full">
             <h2 className="text-2xl font-bold text-blue-400">
               Advisory Committee
             </h2>
-            <div className="space-y-2">
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0 text-gray-400">
-                Fr. S. Antony Raj, S.J., Registrar, XIM University
-              </p>
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0 text-gray-400">
-                Fr. V. Arokiyadass, S.J., Chief Finance Officer, XIM University,
-                India
-              </p>
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0 text-gray-400">
-                Dr. A.K. Turuk, Professor, NIT Rourkela
-              </p>
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0 text-gray-400">
-                Dr. B. Majhi, Professor, VSSUT, VC
-              </p>
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0 text-gray-400">
-                Dr. Bjoran Schuller, Professor, Imperial College, London
-              </p>
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0 text-gray-400">
-                Dr. Chitta Baral, Professor, Arizona State University, USA
-              </p>
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0 text-gray-400">
-                Dr. D.P. Dogra, Associate Head, IIT Bhubaneswar
-              </p>
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0 text-gray-400">
-                Dr. G. Panda, Professor and Advisor, CV Raman Global University
-              </p>
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0 text-gray-400">
-                Dr. K.V.S. Hari, Professor, IISc., Bangalore
-              </p>
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0 text-gray-400">
-                Dr. Prerna Gaur, Director, NSUT, West Campus, Delhi
-              </p>
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0 text-gray-400">
-                Dr. R. Srivastava, Professor, Director IIIT Ranchi
-              </p>
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0 text-gray-400">
-                Dr. Sudip Misra, Professor, IIT KGP
-              </p>
+            <div className="grid grid-cols-2 gap-3 sm:flex sm:flex-row sm:gap-5 sm:flex-wrap w-full">
+              <ImageCard
+                src={AntonyRaj}
+                name="Fr. S. Antony Raj, S.J."
+                occupation="Registrar, XIM University"
+              />
+
+              <ImageCard
+                src={Arokiyadass}
+                name="Fr. V. Arokiyadass, S.J."
+                occupation="Chief Finance Officer, XIM University, India"
+              />
+
+              <ImageCard
+                src={Turuk}
+                name="Dr. A.K. Turuk"
+                occupation="Professor, NIT Rourkela"
+              />
+
+              <ImageCard
+                src={Majhi}
+                name="Dr. B. Majhi"
+                occupation="Professor, VSSUT, VC"
+              />
+
+              <ImageCard
+                src={Schuller}
+                name="Dr. Bjoran Schuller"
+                occupation="Professor, Imperial College, London"
+              />
+
+              <ImageCard
+                src={Baral}
+                name="Dr. Chitta Baral"
+                occupation="Professor, Arizona State University, USA"
+              />
+
+              <ImageCard
+                src={Dogra}
+                name="Dr. D.P. Dogra"
+                occupation="Associate Head, IIT Bhubaneswar"
+              />
+
+              <ImageCard
+                src={Panda}
+                name="Dr. G. Panda"
+                occupation="Professor and Advisor, CV Raman Global University"
+              />
+
+              <ImageCard
+                src={Hari}
+                name="Dr. K.V.S. Hari"
+                occupation="Professor, IISc., Bangalore"
+              />
+
+              <ImageCard
+                src={Gaur}
+                name="Dr. Prerna Gaur"
+                occupation="Director, NSUT, West Campus, Delhi"
+              />
+
+              <ImageCard
+                src={Srivastava}
+                name="Dr. R. Srivastava"
+                occupation="Professor, Director IIIT Ranchi"
+              />
+
+              <ImageCard
+                src={Misra}
+                name="Dr. Sudip Misra"
+                occupation="Professor, IIT KGP"
+              />
             </div>
           </section>
 
-          {/* Steering Committee Section */}
-          <section className="space-y-4">
+          {/* Steering Committee */}
+          <section className="space-y-4 max-sm:w-full">
             <h2 className="text-2xl font-bold text-blue-400">
               Steering Committee
             </h2>
-            <div className="space-y-2">
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0 text-gray-400">
-                Dr. C. Kumar, Professor & Head, Dept. of CSE, IIT(ISM) Dhanbad
-              </p>
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0 text-gray-400">
-                Dr. Dhramendra Kumar Yadav, Professor & Head, Dept. of CSE,
-                MNNIT Allahabad
-              </p>
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0 text-gray-400">
-                Dr. Dilip K Prasad, Professor, UIT Norway
-              </p>
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0 text-gray-400">
-                Dr. R. Subramanian, Professor, IIT Roorkee
-              </p>
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0 text-gray-400">
-                Dr. R.K. Sharma, Professor, Department of Mathematics, IIT Delhi
-              </p>
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0 text-gray-400">
-                Dr. Vidy Potdar, Associate Professor, Curtin University,
-                Australia
-              </p>
+            <div className="grid grid-cols-2 gap-3 sm:flex sm:flex-row sm:gap-5 sm:flex-wrap w-full">
+              <ImageCard
+                src={CKumar}
+                name="Dr. C. Kumar"
+                occupation="Professor & Head, Dept. of CSE, IIT(ISM) Dhanbad"
+              />
+
+              <ImageCard
+                src={Dharmendra}
+                name="Dr. Dharmendra Kumar Yadav"
+                occupation="Professor & Head, Dept. of CSE, MNNIT Allahabad"
+              />
+
+              <ImageCard
+                src={Dilip}
+                name="Dr. Dilip K Prasad"
+                occupation="Professor, UIT Norway"
+              />
+
+              <ImageCard
+                src={Subramanian}
+                name="Dr. R. Subramanian"
+                occupation="Professor, IIT Roorkee"
+              />
+
+              <ImageCard
+                src={RKSharma}
+                name="Dr. R.K. Sharma"
+                occupation="Professor, Department of Mathematics, IIT Delhi"
+              />
+
+              <ImageCard
+                src={Vidy}
+                name="Dr. Vidy Potdar"
+                occupation="Associate Professor, Curtin University, Australia"
+              />
             </div>
           </section>
 
           {/* Organizing Chair Section */}
-          <section className="space-y-4">
+          <section className="space-y-4 max-sm:w-full">
             <h2 className="text-2xl font-bold text-blue-400">
               Organizing Chair
             </h2>
-            <div className="space-y-2">
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0 text-gray-400">
-                Dr. Ashish Kumar, XIM University
-              </p>
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0 text-gray-400">
-                Dr. Devendra Kumar Yadav, XIM University
-              </p>
+            <div className="grid grid-cols-2 gap-3 sm:flex sm:flex-row sm:gap-5 sm:flex-wrap w-full">
+              <ImageCard
+                src={AshishKumar}
+                name="Dr. Ashish Kumar"
+                occupation="XIM University"
+              />
+
+              <ImageCard
+                src={DevendraKumarYadav}
+                name="Dr. Devendra Kumar Yadav"
+                occupation="XIM University"
+              />
             </div>
           </section>
 
           {/* Technical Program Chair Section */}
-          <section className="space-y-4">
+          <section className="space-y-4 max-sm:w-full">
             <h2 className="text-2xl font-bold text-blue-400">
               Technical Program Chair
             </h2>
-            <div className="space-y-2">
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0 text-gray-400">
-                Dr. B.S. Panda, IIT Delhi
-              </p>
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0 text-gray-400">
-                Dr. Pabitra Mohan Khilar, NIT Rourkela
-              </p>
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0 text-gray-400">
-                Dr. Susanta Ray, Jadavpur University
-              </p>
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0 text-gray-400">
-                Dr. Ashish Kumar, XIM University
-              </p>
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0 text-gray-400">
-                Dr. Devendra Kumar Yadav, XIM University
-              </p>
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0 text-gray-400">
-                Dr. Sourav Mondal, XIM University
-              </p>
+            <div className="grid grid-cols-2 gap-3 sm:flex sm:flex-row sm:gap-5 sm:flex-wrap w-full">
+              <ImageCard
+                src={BSPanda}
+                name="Dr. B.S. Panda"
+                occupation="IIT Delhi"
+              />
+
+              <ImageCard
+                src={Pabitra}
+                name="Dr. Pabitra Mohan Khilar"
+                occupation="NIT Rourkela"
+              />
+
+              <ImageCard
+                src={Susanta}
+                name="Dr. Susanta Ray"
+                occupation="Jadavpur University"
+              />
+
+              <ImageCard
+                src={AshishKumar}
+                name="Dr. Ashish Kumar"
+                occupation="XIM University"
+              />
+
+              <ImageCard
+                src={DevendraKumarYadav}
+                name="Dr. Devendra Kumar Yadav"
+                occupation="XIM University"
+              />
+
+              <ImageCard
+                src={SouravMondal}
+                name="Dr. Sourav Mondal"
+                occupation="XIM University"
+              />
             </div>
           </section>
+        </div>
 
+        <div className="mt-12 space-y-12">
           {/* Technical Program Committee Section */}
           <section className="space-y-4">
             <h2 className="text-2xl font-bold text-blue-400">

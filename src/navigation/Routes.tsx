@@ -9,6 +9,8 @@ import Speakers from "@/pages/Speakers";
 import Contact from "@/pages/Contact";
 import SubmissionGuidelines from "@/pages/Submission";
 import CameraReadyInstructions from "@/pages/CameraReadyInstructions";
+import CallForSponsorship from "@/pages/CallForSponsorship";
+import Sponsors from "@/pages/Sponsors";
 
 export const AppRoutes = () => {
   return (
@@ -25,6 +27,8 @@ export const AppRoutes = () => {
         path="/camera-ready-instructions"
         element={<CameraReadyInstructions />}
       />
+      <Route path="/call-for-sponsorship" element={<CallForSponsorship />} />
+      <Route path="/sponsors" element={<Sponsors />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
   );

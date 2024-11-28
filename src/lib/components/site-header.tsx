@@ -58,6 +58,20 @@ export default function Navbar() {
     { name: "Registration", href: "/registration" },
     { name: "Call for Papers", href: "/call-for-papers" },
     { name: "Speakers", href: "/speakers" },
+    {
+      name: "Sponsors",
+      href: "#",
+      items: [
+        {
+          name: "Sponsors",
+          href: "/sponsors",
+        },
+        {
+          name: "Call for Sponsorship",
+          href: "/call-for-sponsorship",
+        },
+      ],
+    },
     { name: "Contact", href: "/contact" },
   ];
 
@@ -71,7 +85,7 @@ export default function Navbar() {
     >
       <div className="w-full flex h-16 items-center justify-between px-4 md:px-8 lg:px-2">
         <div className="flex items-center gap-4 lg:gap-6">
-          <a href="/" className=" gap-2 flex items-center">
+          <div className=" gap-2 flex items-center">
             <a href="https://scse.xim.edu.in/">
               <span>
                 <img
@@ -88,10 +102,13 @@ export default function Navbar() {
                   : `${ignore ? "" : "border-[#2e2e2e]"}`
               }`}
             ></div>
-            <span className="text-lg xl:text-2xl tracking-widest font-semibold whitespace-nowrap">
+            <a
+              href="/"
+              className="text-lg xl:text-2xl tracking-widest font-semibold whitespace-nowrap"
+            >
               ICAIET-2025
-            </span>
-          </a>
+            </a>
+          </div>
           <div className="hidden lg:flex items-center">
             <div
               className={`h-16 w-0 border-r ${
