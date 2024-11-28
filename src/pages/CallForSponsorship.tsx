@@ -71,7 +71,7 @@ const CallForSponsorship = () => {
       </div>
 
       <div className="flex items-center justify-center">
-        <h2 className="text-xl text-blue-500 font-bold">
+        <h2 className="text-xl text-blue-500 font-bold text-left">
           All interested sponsors, fill the Google form below or mail us
           at&nbsp;
           <a href="mailto:deanxcse_office@xim.edu.in">

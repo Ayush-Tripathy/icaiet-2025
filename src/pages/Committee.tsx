@@ -488,7 +488,6 @@ export default function CommitteesPage() {
               Sponsorship Chair
             </h2>
             <div className="space-y-2">
-              <p>XIM University</p>
               <p className="relative pl-5 before:content-['•'] before:absolute before:left-0 text-gray-400">
                 Mrs. Sudhansu Bala Das, XIM University
               </p>
@@ -562,7 +561,6 @@ export default function CommitteesPage() {
               Local Organizing Committee
             </h2>
             <div className="space-y-2">
-              <p>XIM University</p>
               <p className="relative pl-5 before:content-['•'] before:absolute before:left-0 text-gray-400">
                 Dr. Ashish Kumar, XIM University
               </p>
@@ -574,9 +572,6 @@ export default function CommitteesPage() {
               </p>
               <p className="relative pl-5 before:content-['•'] before:absolute before:left-0 text-gray-400">
                 Dr. Devendra Kumar Yadav, XIM University
-              </p>
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0 text-gray-400">
-                Mrs. Larisa Rout, XIM University
               </p>
               <p className="relative pl-5 before:content-['•'] before:absolute before:left-0 text-gray-400">
                 Dr. Pradip Kundu, XIM University
