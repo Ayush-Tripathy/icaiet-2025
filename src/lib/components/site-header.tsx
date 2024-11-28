@@ -52,9 +52,13 @@ export default function Navbar() {
         <div className="flex items-center gap-4 lg:gap-6">
           {/* <div className="h-16 w-0 border-r border-[#2e2e2e]"></div> */}
           <a href="/" className=" gap-2 flex items-center">
+          
+          <a href="https://scse.xim.edu.in/?_gl=1%2A1vilt8v%2A_gcl_au%2AMTk4MjEwMzczLjE3MzI3ODcyODU.%2A_ga%2AMTUxOTIyNjY3MC4xNjkyMjEwOTc3%2A_ga_0QB2TXYT0R%2AMTczMjc4NzI4OS4xLjAuMTczMjc4NzI4OS42MC4wLjIwNzMxMTAxNzU.">
           <span>
           <img src="/XIM_logo.png" alt="XIM University" className="w-12 h-12" />
           </span>
+          </a>
+          
           <div className="h-16 w-0 border-r border-[#2e2e2e]"></div>
             <span className="text-2xl tracking-widest font-semibold">
               ICAIET 2025
