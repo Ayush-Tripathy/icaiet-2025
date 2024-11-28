@@ -32,7 +32,6 @@ const Home = () => {
                 <span className="font-[SatoshiBold]  uppercase leading-tight text-white">
                   (ICAIET) - 2025
                 </span>
-               
               </div>
             </div>
 
@@ -120,7 +119,7 @@ const Home = () => {
             </div>
 
             <div className="">
-              <p className="text-white text-opacity-[0.6] text-lg">
+              <p className="text-white text-opacity-[0.6] text-lg text-justify">
                 XIM University sees itself as a global university delivering
                 quality education to deserving meritorious students. The XIM
                 University affirms its mission of excellent quality higher
@@ -131,6 +130,14 @@ const Home = () => {
                 years has become an example, a legend for all to imitate and
                 follow. This aligns with our motto – Semper Excelsius – Ever
                 Higher.
+                <br />
+                The School of Computer Science & Engineering is a unique school
+                that leverages the high-quality programs of XIM University and
+                emphasizes sound computer science fundamentals, coding,
+                research, innovation, and entrepreneurship. It currently offers
+                B.Tech. (Hons.) in Computer Science & Engineering, M. Tech in
+                Data Science & Analytics, and Ph.D in Computer Science and
+                Engineering.
               </p>
             </div>
           </div>
@@ -150,20 +157,20 @@ const Home = () => {
           The INTERNATIONAL CONFERENCE ON ARTIFICIAL INTELLIGENCE AND EMERGING TECHNOLOGIES (ICAIET 2025) is dedicated to serving as a premier platform for this purpose. Designed to bring together a diverse group of leading industry experts, academicians, researchers, and practitioners from across the globe, ICAIET 2025 fosters an environment of knowledge exchange and collaboration. The conference aims to accelerate the growth and application of AI and emerging technologies in various domains, highlighting their critical role in driving sustainable development, enhancing efficiency, and improving the quality of life."
         />
 
-      <div className="md:flex md:gap-7">
-      <a
-          href="test"
-          className="w-fit flex flex-row items-center gap-3 px-16 py-4 bg-[#ffffff3d] transition-all duration-300 hover:backdrop-blur-0 hover:gap-5 backdrop-blur-[1.25rem] text-lg uppercase rounded-full border border-[#fff]"
-        >
-          Call For Paper <ArrowRight size={24} />
-        </a>
-        <a
-          href="/registration"
-          className="w-fit flex flex-row items-center gap-3 px-16 py-4 bg-[#ffffff3d] transition-all duration-300 hover:backdrop-blur-0 hover:gap-5 backdrop-blur-[1.25rem] text-lg uppercase rounded-full border border-[#fff]"
-        >
-                  Register Now <ArrowRight size={24} />
-                </a>
-      </div>
+        <div className="flex flex-col md:flex-row gap-3 md:gap-7">
+          <a
+            href="/call-for-papers"
+            className="w-full whitespace-nowrap flex flex-row items-center gap-3 px-16 py-4 bg-[#ffffff3d] transition-all duration-300 hover:backdrop-blur-0 hover:gap-5 backdrop-blur-[1.25rem] text-lg uppercase rounded-full border border-[#fff]"
+          >
+            Call For Paper <ArrowRight size={24} />
+          </a>
+          <a
+            href="/registration"
+            className="w-full whitespace-nowrap flex flex-row items-center gap-3 px-16 py-4 bg-[#ffffff3d] transition-all duration-300 hover:backdrop-blur-0 hover:gap-5 backdrop-blur-[1.25rem] text-lg uppercase rounded-full border border-[#fff]"
+          >
+            Register Now <ArrowRight size={24} />
+          </a>
+        </div>
       </section>
     </div>
   );

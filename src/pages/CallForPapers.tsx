@@ -2,7 +2,7 @@ import { ArrowRight } from "lucide-react";
 
 const CallForPapers = () => {
   return (
-    <div className="font-[SatoshiRegular] pt-32 bg-black text-white flex flex-col gap-10 min-h-screen px-3 sm:px-10 lg:px-20 py-10">
+    <div className="text-justify font-[SatoshiRegular] pt-32 bg-black text-white flex flex-col gap-10 min-h-screen px-3 sm:px-10 lg:px-20 py-10">
       <div className="space-y-2">
         <h1 className="text-4xl font-bold tracking-tight">Call For Papers</h1>
         <div className="h-1 w-20 bg-blue-500" />
@@ -61,13 +61,6 @@ const CallForPapers = () => {
         <li>AI in Finance and Business Analytics</li>
         <li>AI for Sustainable Development and Societal Impact</li>
       </ul>
-
-      <p className="text-white text-opacity-[0.6] text-lg">
-        The Microsoft CMT service will be used for managing the peer-reviewing
-        process for this conference. This service will be provided for free by
-        Microsoft and they will bear all expenses, including costs for Azure
-        cloud services as well as for software development and support.
-      </p>
 
       <div className="space-y-2">
         <h1 className="text-4xl font-bold tracking-tight">
@@ -148,6 +141,13 @@ const CallForPapers = () => {
         receive an award in the form of cheque/cash prize and a certificate.
         Awards will be announced and presented in the Last day of the
         Conference.
+      </p>
+
+      <p className="text-white text-opacity-[0.6] text-lg">
+        The Microsoft CMT service will be used for managing the peer-reviewing
+        process for this conference. This service will be provided for free by
+        Microsoft and they will bear all expenses, including costs for Azure
+        cloud services as well as for software development and support.
       </p>
 
       <p>
