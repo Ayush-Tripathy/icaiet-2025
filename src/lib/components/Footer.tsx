@@ -1,10 +1,10 @@
 const Footer = () => {
   return (
-    <footer className="bg-black text-white grid grid-cols-1 md:grid-cols-5 gap-10 px-3 sm:px-10 lg:px-20 py-10 border-t border-[#2e2e2e] font-[SatoshiRegular]">
+    <footer className="bg-blue-400 text-black grid grid-cols-1 md:grid-cols-5 gap-10 px-3 sm:px-10 lg:px-20 py-10 border-t border-input font-[SatoshiRegular]">
       <div className="col-span-2">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3745.4227708308176!2d85.75987517511702!3d20.15811538128217!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a19af103360ec8f%3A0x734b96dc8afdf0ef!2sXIM%20University!5e0!3m2!1sen!2sin!4v1732373764228!5m2!1sen!2sin"
-          className="border border-[#2e2e2e] rounded-lg w-full h-full"
+          className="border border-input rounded-lg w-full h-full"
           allowFullScreen={false}
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"

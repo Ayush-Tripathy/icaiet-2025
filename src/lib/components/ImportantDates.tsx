@@ -9,19 +9,19 @@ import {
 
 const ImportantDates = ({ withHeader = true }: { withHeader?: boolean }) => {
   return (
-    <div className="border border-[#2e2e2e] rounded-lg">
-      <Table className="text-white font-[SatoshiRegular] text-lg">
+    <div className="border border-input rounded-lg">
+      <Table className="font-[SatoshiRegular] text-lg">
         {withHeader && (
           <TableHeader>
-            <TableRow className="hover:bg-inherit border-[#2e2e2e]">
-              <TableHead className="whitespace-nowrap">
+            <TableRow className="hover:bg-inherit border-input">
+              <TableHead className="whitespace-nowrap font-bold">
                 Important Dates
               </TableHead>
             </TableRow>
           </TableHeader>
         )}
         <TableBody>
-          <TableRow className="hover:bg-inherit border-[#2e2e2e]">
+          <TableRow className="hover:bg-inherit border-input">
             <TableCell className="whitespace-nowrap">
               Paper submission deadline
             </TableCell>
@@ -29,7 +29,7 @@ const ImportantDates = ({ withHeader = true }: { withHeader?: boolean }) => {
               1st March 2025
             </TableCell>
           </TableRow>
-          <TableRow className="hover:bg-inherit border-[#2e2e2e]">
+          <TableRow className="hover:bg-inherit border-input">
             <TableCell className="whitespace-nowrap">
               Acceptance Notification
             </TableCell>
@@ -37,7 +37,7 @@ const ImportantDates = ({ withHeader = true }: { withHeader?: boolean }) => {
               1st April, 2025
             </TableCell>
           </TableRow>
-          <TableRow className="hover:bg-inherit border-[#2e2e2e]">
+          <TableRow className="hover:bg-inherit border-input">
             <TableCell className="whitespace-nowrap">
               Camera ready Version submission
             </TableCell>
@@ -45,7 +45,7 @@ const ImportantDates = ({ withHeader = true }: { withHeader?: boolean }) => {
               5th April 2025
             </TableCell>
           </TableRow>
-          <TableRow className="hover:bg-inherit border-[#2e2e2e]">
+          <TableRow className="hover:bg-inherit border-input">
             <TableCell className="whitespace-nowrap">
               Early-Bird Registration
             </TableCell>
@@ -53,7 +53,7 @@ const ImportantDates = ({ withHeader = true }: { withHeader?: boolean }) => {
               10th April 2025
             </TableCell>
           </TableRow>
-          <TableRow className="hover:bg-inherit border-[#2e2e2e]">
+          <TableRow className="hover:bg-inherit border-input">
             <TableCell className="whitespace-nowrap">
               Regular Registration
             </TableCell>
@@ -61,7 +61,7 @@ const ImportantDates = ({ withHeader = true }: { withHeader?: boolean }) => {
               25th April 2025
             </TableCell>
           </TableRow>
-          <TableRow className="hover:bg-inherit border-[#2e2e2e]">
+          <TableRow className="hover:bg-inherit border-input">
             <TableCell className="whitespace-nowrap">
               Dates of Conference
             </TableCell>

@@ -5,13 +5,13 @@ import ImportantDates from "@/lib/components/ImportantDates";
 
 const Home = () => {
   return (
-    <div className="bg-[#7EC7CF] text-white">
+    <div className="bg-[#f4f9f9] text-black">
       <div className="relative">
         {/* <div className="absolute inset-0 bg-[rgb(0,0,0/50)] h-screen"></div> */}
-        <div className="bg-[url(/XIM-BG2.jpg)] relative h-screen bg-no-repeat bg-cover bg-fixed text-white px-3 sm:px-10 lg:px-20 py-32">
+        <div className="text-white bg-[url(/XIM-BG2.jpg)] relative h-screen bg-no-repeat bg-cover bg-fixed  px-3 sm:px-10 lg:px-20 py-32">
           <div className="flex flex-col gap-5">
             <div className="text-[2.5rem] sm:text-[3rem] lg:text-[3.5rem] xl:text-[4rem]">
-              <span className="hidden xl:inline-block font-[SatoshiBold] text-[1rem] sm:text-[1.5rem] lg:text-[2rem] xl:text-[2.5rem] uppercase leading-[0.9] text-outline">
+              <span className="hidden xl:inline-block font-[SatoshiBold] text-[1rem] sm:text-[1.5rem] lg:text-[2rem] xl:text-[2.5rem] uppercase leading-[0.9] text-outline-white">
                 International Conference on
               </span>
 
@@ -20,16 +20,16 @@ const Home = () => {
               </span>
 
               <br />
-              <span className="font-[SatoshiBold]  uppercase leading-tight text-white">
+              <span className="font-[SatoshiBold]  uppercase leading-tight ">
                 Artificial Intelligence And
               </span>
               <br />
-              <span className="font-[SatoshiBold]  uppercase leading-tight text-white">
+              <span className="font-[SatoshiBold]  uppercase leading-tight ">
                 Emerging Technologies
               </span>
               <br />
               <div className="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-10">
-                <span className="font-[SatoshiBold]  uppercase leading-tight text-white">
+                <span className="font-[SatoshiBold]  uppercase leading-tight ">
                   (ICAIET) - 2025
                 </span>
               </div>
@@ -49,12 +49,12 @@ const Home = () => {
       </div>
 
       {/* Countdown timer */}
-      <section className="flex items-center justify-center bg-[#7EC7CF] py-10">
+      <section className="flex items-center justify-center py-10">
         <CountdownTimer targetDate="2025-08-28T11:00:00" />
       </section>
 
       {/* Organized By */}
-      <section className="bg-black text-white flex flex-col lg:flex-row justify-center gap-32 py-10">
+      <section className="flex flex-col lg:flex-row justify-center gap-32 py-10">
         <div className="flex flex-col gap-10 items-center">
           <h3 className="text-center text-4xl font-[SatoshiBold] uppercase">
             Organized By
@@ -89,7 +89,7 @@ const Home = () => {
       </section>
 
       {/* Record number */}
-      <section className="bg-black text-white flex flex-col items-center gap-5 py-10 overflow-hidden">
+      <section className=" flex flex-col items-center gap-5 py-10 overflow-hidden">
         <span className="text-xl font-[SatoshiRegular]">
           Conference Record Number: 65052
         </span>
@@ -101,7 +101,7 @@ const Home = () => {
       </section>
 
       {/* About XIM University */}
-      <section className="px-3 sm:px-10 lg:px-20 py-36 bg-black border-t border-[#2e2e2e] flex flex-row">
+      <section className="px-3 sm:px-10 lg:px-20 py-36  border-t border-input flex flex-row">
         {/* <TextSection
           titlel1="About"
           titlel2="XIM University"
@@ -111,7 +111,7 @@ const Home = () => {
         <div className="flex flex-col xl:flex-row gap-10">
           <div className="bg-inherit flex flex-col flex-1 gap-5">
             <div className="">
-              <h2 className="font-bold text-white font-[SatoshiBold] text-5xl uppercase">
+              <h2 className="font-bold  font-[SatoshiBold] text-5xl uppercase">
                 <span className="text-outline">About</span>
                 <br />
                 XIM University
@@ -119,7 +119,7 @@ const Home = () => {
             </div>
 
             <div className="">
-              <p className="text-white text-opacity-[0.6] text-lg text-justify">
+              <p className=" text-opacity-[0.6] text-lg text-justify">
                 XIM University sees itself as a global university delivering
                 quality education to deserving meritorious students. The XIM
                 University affirms its mission of excellent quality higher
@@ -149,7 +149,7 @@ const Home = () => {
       </section>
 
       {/* About ICAIET */}
-      <section className="px-3 sm:px-10 lg:px-20 py-36 bg-black border-t border-[#2e2e2e] text-white flex flex-col items-center gap-20">
+      <section className="px-3 sm:px-10 lg:px-20 py-36  border-t border-input  flex flex-col items-center gap-20">
         <TextSection
           titlel1="About"
           titlel2="ICAIET 2025"
@@ -160,13 +160,13 @@ const Home = () => {
         <div className="flex flex-col md:flex-row gap-3 md:gap-7">
           <a
             href="/call-for-papers"
-            className="w-full whitespace-nowrap flex flex-row items-center gap-3 px-16 py-4 bg-[#ffffff3d] transition-all duration-300 hover:backdrop-blur-0 hover:gap-5 backdrop-blur-[1.25rem] text-lg uppercase rounded-full border border-[#fff]"
+            className="w-full whitespace-nowrap flex flex-row items-center gap-3 px-16 py-4 bg-[#ccf2f4] border-[#a4ebf3] transition-all duration-300 hover:backdrop-blur-0 hover:gap-5 backdrop-blur-[1.25rem] text-lg uppercase rounded-full border"
           >
             Call For Paper <ArrowRight size={24} />
           </a>
           <a
             href="/registration"
-            className="w-full whitespace-nowrap flex flex-row items-center gap-3 px-16 py-4 bg-[#ffffff3d] transition-all duration-300 hover:backdrop-blur-0 hover:gap-5 backdrop-blur-[1.25rem] text-lg uppercase rounded-full border border-[#fff]"
+            className="w-full whitespace-nowrap flex flex-row items-center gap-3 px-16 py-4 bg-[#ccf2f4] border-[#a4ebf3] transition-all duration-300 hover:backdrop-blur-0 hover:gap-5 backdrop-blur-[1.25rem] text-lg uppercase rounded-full border"
           >
             Register Now <ArrowRight size={24} />
           </a>

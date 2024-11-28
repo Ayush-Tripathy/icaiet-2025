@@ -1,6 +1,6 @@
 export default function CommitteesPage() {
   return (
-    <div className="pt-32 bg-black text-gray-100 font-[SatoshiRegular]">
+    <div className="pt-32 font-[SatoshiRegular]">
       {/* Main Content */}
       <main className="container px-3 sm:px-10 lg:px-20 py-6 md:py-12">
         <div className="space-y-2">

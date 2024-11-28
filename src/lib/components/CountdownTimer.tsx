@@ -34,20 +34,20 @@ const CountdownTimer: React.FC<CountdownTimerProps> = ({ targetDate }) => {
   }, [targetDate]);
 
   return (
-    <div className="bg-black text-white flex flex-row gap-3 font-[SatoshiBold]">
-      <div className="flex flex-col items-center border border-[#2e2e2e] p-3 rounded-lg min-w-16 sm:min-w-24">
+    <div className="flex flex-row gap-3 font-[SatoshiBold]">
+      <div className="flex flex-col items-center border border-input p-3 rounded-lg min-w-16 sm:min-w-24">
         <span className="text-xl sm:text-3xl">{timeLeft.days}</span>
         <span className="font-[SatoshiRegular]">Days</span>
       </div>
-      <div className="flex flex-col items-center border border-[#2e2e2e] p-3 rounded-lg min-w-16 sm:min-w-24">
+      <div className="flex flex-col items-center border border-input p-3 rounded-lg min-w-16 sm:min-w-24">
         <span className="text-xl sm:text-3xl">{timeLeft.hours}</span>
         <span className="font-[SatoshiRegular]">Hours</span>
       </div>
-      <div className="flex flex-col items-center border border-[#2e2e2e] p-3 rounded-lg min-w-16 sm:min-w-24">
+      <div className="flex flex-col items-center border border-input p-3 rounded-lg min-w-16 sm:min-w-24">
         <span className="text-xl sm:text-3xl">{timeLeft.minutes}</span>
         <span className="font-[SatoshiRegular]">Minutes</span>
       </div>
-      <div className="flex flex-col items-center border border-[#2e2e2e] p-3 rounded-lg min-w-16 sm:min-w-24">
+      <div className="flex flex-col items-center border border-input p-3 rounded-lg min-w-16 sm:min-w-24">
         <span className="text-xl sm:text-3xl">{timeLeft.seconds}</span>
         <span className="font-[SatoshiRegular]">Seconds</span>
       </div>

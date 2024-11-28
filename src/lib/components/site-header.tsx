@@ -1,18 +1,14 @@
 "use client";
 
 import * as React from "react";
-import {
-  CalendarDays,
-  ChevronDown,
-  // MapPin,
-  Menu,
-} from "lucide-react";
+import { CalendarDays, ChevronDown, Menu } from "lucide-react";
 
 export default function Navbar() {
   const [activeDropdown, setActiveDropdown] = React.useState<string | null>(
     null
   );
   const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
+  const [isScrolled, setIsScrolled] = React.useState(false);
 
   const handleMouseEnter = (menuItem: string) => {
     setActiveDropdown(menuItem);
@@ -25,6 +21,25 @@ export default function Navbar() {
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
+
+  const [ignore, setIgnore] = React.useState(false);
+
+  React.useEffect(() => {
+    if (window.location.pathname !== "/") {
+      setIgnore(true);
+    } else {
+      setIgnore(false);
+    }
+
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > window.innerHeight);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   const menuItems = [
     { name: "Committee", href: "/committee" },
@@ -47,33 +62,55 @@ export default function Navbar() {
   ];
 
   return (
-    <header className="fixed px-3 sm:px-10 lg:px-20 top-0 z-50 w-full border-b border-[#2e2e2e] backdrop-blur text-white">
+    <header
+      className={`fixed px-3 sm:px-10 lg:px-20 top-0 z-50 w-full ${
+        isScrolled
+          ? "border-input text-black"
+          : `${ignore ? "" : "border-[#2e2e2e] text-white"}`
+      } backdrop-blur border-b transition-colors duration-300`}
+    >
       <div className="container mx-auto flex h-16 items-center justify-between px-4 md:px-8 lg:px-2">
         <div className="flex items-center gap-4 lg:gap-6">
-          {/* <div className="h-16 w-0 border-r border-[#2e2e2e]"></div> */}
           <a href="/" className=" gap-2 flex items-center">
-          
-          <a href="https://scse.xim.edu.in/?_gl=1%2A1vilt8v%2A_gcl_au%2AMTk4MjEwMzczLjE3MzI3ODcyODU.%2A_ga%2AMTUxOTIyNjY3MC4xNjkyMjEwOTc3%2A_ga_0QB2TXYT0R%2AMTczMjc4NzI4OS4xLjAuMTczMjc4NzI4OS42MC4wLjIwNzMxMTAxNzU.">
-          <span>
-          <img src="/XIM_logo.png" alt="XIM University" className="w-12 h-12" />
-          </span>
-          </a>
-          
-          <div className="h-16 w-0 border-r border-[#2e2e2e]"></div>
+            <a href="https://scse.xim.edu.in/">
+              <span>
+                <img
+                  src="/XIM_logo.png"
+                  alt="XIM University"
+                  className="w-12 h-12"
+                />
+              </span>
+            </a>
+            <div
+              className={`h-16 w-0 border-r ${
+                isScrolled
+                  ? "border-input"
+                  : `${ignore ? "" : "border-[#2e2e2e]"}`
+              }`}
+            ></div>
             <span className="text-2xl tracking-widest font-semibold">
-              ICAIET 2025
+              ICAIET-2025
             </span>
-            {/* <span className="text-4xl  font-extrabold"></span> */}
           </a>
           <div className="hidden lg:flex items-center">
-            <div className="h-16 w-0 border-r border-[#2e2e2e]"></div>
+            <div
+              className={`h-16 w-0 border-r ${
+                isScrolled
+                  ? "border-input"
+                  : `${ignore ? "" : "border-[#2e2e2e]"}`
+              }`}
+            ></div>
           </div>
           <div className="hidden lg:flex items-center gap-2 text-sm">
             <CalendarDays className="h-4 w-4" />
             <span>28th-30th AUG</span>
-            <div className="h-16 w-px bg-[#2e2e2e] mx-2"></div>
-            {/* <MapPin className="h-4 w-4" />
-            <span>Bhubaneswar</span> */}
+            <div
+              className={`h-16 border-r ${
+                isScrolled
+                  ? "border-input"
+                  : `${ignore ? "" : "border-[#2e2e2e]"}`
+              } mx-2`}
+            ></div>
           </div>
         </div>
 
@@ -100,7 +137,7 @@ export default function Navbar() {
                   )}
                 </a>
                 {menu.items && activeDropdown === menu.name && (
-                  <div className="absolute left-0 top-full mt-0 w-48 rounded-md shadow-lg border border-[#2e2e2e] bg-[#0a0b1a]/80 backdrop-blur-sm ring-1 ring-black ring-opacity-5">
+                  <div className="absolute left-0 top-full mt-0 w-48 rounded-md shadow-lg border border-input bg-[#0a0b1a]/80 backdrop-blur-sm ring-1 ring-black ring-opacity-5">
                     <div
                       className="py-1"
                       role="menu"

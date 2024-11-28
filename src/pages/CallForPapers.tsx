@@ -2,7 +2,7 @@ import { ArrowRight } from "lucide-react";
 
 const CallForPapers = () => {
   return (
-    <div className="text-justify font-[SatoshiRegular] pt-32 bg-black text-white flex flex-col gap-10 min-h-screen px-3 sm:px-10 lg:px-20 py-10">
+    <div className="text-justify font-[SatoshiRegular] pt-32 flex flex-col gap-10 min-h-screen px-3 sm:px-10 lg:px-20 py-10">
       <div className="space-y-2">
         <h1 className="text-4xl font-bold tracking-tight">Call For Papers</h1>
         <div className="h-1 w-20 bg-blue-500" />
@@ -10,12 +10,12 @@ const CallForPapers = () => {
 
       <a
         href="/Call For Papers.pdf"
-        className="w-fit flex flex-row items-center gap-3 px-4 sm:px-8 md:px-10 py-1 sm:py-2 md:py-3 bg-[#ffffff3d] transition-all duration-300 hover:backdrop-blur-0 hover:gap-5 backdrop-blur-[1.25rem] text-sm sm:text-base md:text-lg uppercase rounded-full border border-[#fff]"
+        className="w-fit flex flex-row items-center gap-3 px-4 sm:px-8 md:px-10 py-1 sm:py-2 md:py-3 bg-[#ccf2f4] border-[#a4ebf3] transition-all duration-300 hover:backdrop-blur-0 hover:gap-5 backdrop-blur-[1.25rem] text-sm sm:text-base md:text-lg uppercase rounded-full border "
       >
         Download CFP <ArrowRight size={24} />
       </a>
 
-      <p className="text-white text-opacity-[0.6] text-lg">
+      <p className="text-opacity-[0.6] text-lg">
         This International Conference On Artificial Intelligence And Emerging
         Technologies (ICAIET-2025), is dedicated to advanced research in the
         areas of microwave as well as antenna engineering, signal processing and
@@ -71,12 +71,12 @@ const CallForPapers = () => {
 
       <a
         href="https://cmt3.research.microsoft.com/User/Login?ReturnUrl=%2FAESPC202%25204"
-        className="w-fit flex flex-row items-center gap-3 px-4 sm:px-8 md:px-10 py-1 sm:py-2 md:py-3 bg-[#ffffff3d] transition-all duration-300 hover:backdrop-blur-0 hover:gap-5 backdrop-blur-[1.25rem] text-sm sm:text-base md:text-lg uppercase rounded-full border border-[#fff]"
+        className="w-fit flex flex-row items-center gap-3 px-4 sm:px-8 md:px-10 py-1 sm:py-2 md:py-3 bg-[#ccf2f4] border-[#a4ebf3] transition-all duration-300 hover:backdrop-blur-0 hover:gap-5 backdrop-blur-[1.25rem] text-sm sm:text-base md:text-lg uppercase rounded-full border "
       >
         Paper Submission Link <ArrowRight size={24} />
       </a>
 
-      <p className="text-white text-opacity-[0.6] text-lg">
+      <p className="text-opacity-[0.6] text-lg">
         Original and unpublished research works on the topics Artificial
         Intelligence, IoT, Machine Learning, NLP etc. are invited for the
         student paper contest in two different categories:
@@ -143,7 +143,7 @@ const CallForPapers = () => {
         Conference.
       </p>
 
-      <p className="text-white text-opacity-[0.6] text-lg">
+      <p className="text-opacity-[0.6] text-lg">
         The Microsoft CMT service will be used for managing the peer-reviewing
         process for this conference. This service will be provided for free by
         Microsoft and they will bear all expenses, including costs for Azure
