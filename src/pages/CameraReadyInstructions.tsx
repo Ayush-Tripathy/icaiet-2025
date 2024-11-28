@@ -123,9 +123,9 @@ export default function CameraReadyInstructions() {
                     in the other cases the copyright text should be adapted
                     accordingly.
                   </strong>
-                  <div className="space-y-1 mt-2 overflow-x-hidden">
+                  <div className="space-y-1 mt-2 overflow-x-hidden relative w-min">
                     <pre>\IEEEoverridecommandlockouts</pre>
-                    <pre className="overflow-x-auto max-w-[calc(100vw-50px)]">
+                    <pre className="overflow-x-auto max-w-[calc(100vw-100px)] sm:break-words sm:whitespace-pre-wrap sm:max-w-full">
                       \IEEEpubid{"{"}\\makebox[\\columnwidth]{"{"}
                       979-8-3315-2261-2/24/$31.00~\\copyright{}2024 IEEE \\hfill
                       {"}"}\\hspace{"{"}\\columnsep{"}"}
@@ -249,7 +249,7 @@ export default function CameraReadyInstructions() {
           <p>
             <a
               href="https://cmt3.research.microsoft.com/User/Login?ReturnUrl=%2FISED2024"
-              className="text-blue-400 hover:underline"
+              className="text-blue-400 hover:underline max-sm:break-words"
             >
               https://cmt3.research.microsoft.com/ISED2024
             </a>
@@ -362,7 +362,7 @@ export default function CameraReadyInstructions() {
             >
               devendra@xim.edu.in
             </a>
-            ,
+            , <br className="max-sm:block hidden" />
             <a
               href="mailto:ashish@xim.edu.in"
               className="text-blue-400 hover:underline mx-1"
