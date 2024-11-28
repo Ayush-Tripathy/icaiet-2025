@@ -91,7 +91,7 @@ export default function Navbar() {
                 <img
                   src="/XIM_logo.png"
                   alt="XIM University"
-                  className="w-12 h-12"
+                  className="min-w-12 max-w-12 h-12"
                 />
               </span>
             </a>
@@ -104,7 +104,7 @@ export default function Navbar() {
             ></div>
             <a
               href="/"
-              className="text-lg xl:text-2xl tracking-widest font-semibold whitespace-nowrap"
+              className="text-lg 2xl:text-2xl tracking-widest font-semibold whitespace-nowrap"
             >
               ICAIET-2025
             </a>
@@ -118,9 +118,11 @@ export default function Navbar() {
               }`}
             ></div>
           </div>
-          <div className="hidden lg:flex items-center gap-2 text-sm">
+          <div className="hidden xl:flex items-center gap-2 text-sm">
             <CalendarDays className="h-4 w-4" />
-            <span className="whitespace-nowrap">28th-30th AUG</span>
+            <span className="whitespace-nowrap text-sm 2xl:text-base">
+              28th-30th AUG
+            </span>
             <div
               className={`h-16 border-r ${
                 isScrolled
@@ -142,7 +144,7 @@ export default function Navbar() {
               >
                 <a
                   href={menu.href}
-                  className="text-sm xl:text-base whitespace-nowrap flex items-center px-1 py-2 hover:bg-white/10 rounded-md transition-colors duration-200"
+                  className="text-sm 2xl:text-base whitespace-nowrap flex items-center px-1 py-2 hover:bg-white/10 rounded-md transition-colors duration-200"
                 >
                   {menu.name}
                   {menu.items && (
