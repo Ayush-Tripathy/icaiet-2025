@@ -41,7 +41,7 @@ const CallForPapers = () => {
         <div className="h-1 w-20 bg-blue-500" />
       </div>
 
-      <ul className="list-disc">
+      <ul className="list-disc px-3 sm:px-0">
         <li>Artificial Intelligence (AI) and Applications</li>
         <li>Machine Learning and Data Mining</li>
         <li>Computer Vision and Image Processing</li>
@@ -56,7 +56,7 @@ const CallForPapers = () => {
         <div className="h-1 w-20 bg-blue-500" />
       </div>
 
-      <ul className="list-disc">
+      <ul className="list-disc px-3 sm:px-0">
         <li>Emerging Technologies in Education</li>
         <li>AI in Finance and Business Analytics</li>
         <li>AI for Sustainable Development and Societal Impact</li>

@@ -69,7 +69,7 @@ export default function Navbar() {
           : `${ignore ? "" : "border-[#2e2e2e] text-white"}`
       } backdrop-blur border-b transition-colors duration-300`}
     >
-      <div className="container mx-auto flex h-16 items-center justify-between px-4 md:px-8 lg:px-2">
+      <div className="w-full flex h-16 items-center justify-between px-4 md:px-8 lg:px-2">
         <div className="flex items-center gap-4 lg:gap-6">
           <a href="/" className=" gap-2 flex items-center">
             <a href="https://scse.xim.edu.in/">
@@ -88,7 +88,7 @@ export default function Navbar() {
                   : `${ignore ? "" : "border-[#2e2e2e]"}`
               }`}
             ></div>
-            <span className="text-2xl tracking-widest font-semibold">
+            <span className="text-lg xl:text-2xl tracking-widest font-semibold whitespace-nowrap">
               ICAIET-2025
             </span>
           </a>
@@ -103,7 +103,7 @@ export default function Navbar() {
           </div>
           <div className="hidden lg:flex items-center gap-2 text-sm">
             <CalendarDays className="h-4 w-4" />
-            <span>28th-30th AUG</span>
+            <span className="whitespace-nowrap">28th-30th AUG</span>
             <div
               className={`h-16 border-r ${
                 isScrolled
@@ -125,7 +125,7 @@ export default function Navbar() {
               >
                 <a
                   href={menu.href}
-                  className="flex items-center px-1 py-2 hover:bg-white/10 rounded-md transition-colors duration-200"
+                  className="text-sm xl:text-base whitespace-nowrap flex items-center px-1 py-2 hover:bg-white/10 rounded-md transition-colors duration-200"
                 >
                   {menu.name}
                   {menu.items && (

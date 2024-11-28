@@ -10,7 +10,7 @@ const Home = () => {
         {/* <div className="absolute inset-0 bg-[rgb(0,0,0/50)] h-screen"></div> */}
         <div className="text-white bg-[url(/XIM-BG2.jpg)] relative h-screen bg-no-repeat bg-cover bg-fixed  px-3 sm:px-10 lg:px-20 py-32">
           <div className="flex flex-col gap-5">
-            <div className="text-[2.5rem] sm:text-[3rem] lg:text-[3.5rem] xl:text-[4rem]">
+            <div className="text-[2.5rem] sm:text-[3rem] lg:text-[3.5rem] xl:text-[4rem] sm:uppercase">
               <span className="hidden xl:inline-block font-[SatoshiBold] text-[1rem] sm:text-[1.5rem] lg:text-[2rem] xl:text-[2.5rem] uppercase leading-[0.9] text-outline-white">
                 International Conference on
               </span>
@@ -20,16 +20,16 @@ const Home = () => {
               </span>
 
               <br />
-              <span className="font-[SatoshiBold]  uppercase leading-tight ">
+              <span className="font-[SatoshiBold] leading-tight">
                 Artificial Intelligence And
               </span>
               <br />
-              <span className="font-[SatoshiBold]  uppercase leading-tight ">
+              <span className="font-[SatoshiBold] leading-tight">
                 Emerging Technologies
               </span>
               <br />
               <div className="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-10">
-                <span className="font-[SatoshiBold]  uppercase leading-tight ">
+                <span className="font-[SatoshiBold] leading-tight">
                   (ICAIET) - 2025
                 </span>
               </div>
@@ -56,14 +56,14 @@ const Home = () => {
       {/* Organized By */}
       <section className="flex flex-col lg:flex-row justify-center gap-32 py-10">
         <div className="flex flex-col gap-10 items-center">
-          <h3 className="text-center text-4xl font-[SatoshiBold] uppercase">
+          <h3 className="text-center text-2xl sm:text-4xl font-[SatoshiBold] uppercase">
             Organized By
           </h3>
           <img src="/XIM_logo.png" alt="XIM University" className="w-40 h-40" />
         </div>
 
         <div className="flex flex-col gap-10 items-center">
-          <h3 className="text-center text-4xl font-[SatoshiBold] uppercase">
+          <h3 className="text-center text-2xl sm:text-4xl font-[SatoshiBold] uppercase">
             Technically Co-Sponsored By
           </h3>
 
@@ -94,14 +94,14 @@ const Home = () => {
           Conference Record Number: 65052
         </span>
 
-        <p className="font-[SatoshiBold] animate-moveRightToLeft text-lg">
+        <p className="font-[SatoshiBold] animate-moveRightToLeft text-lg whitespace-nowrap">
           All accepted and presented papers will be submitted for inclusion in
           IEEE Xplore® Indexed By Scopus®
         </p>
       </section>
 
       {/* About XIM University */}
-      <section className="px-3 sm:px-10 lg:px-20 py-36  border-t border-input flex flex-row">
+      <section className="px-3 sm:px-10 lg:px-20 py-16 sm:py-36  border-t border-input flex flex-row">
         {/* <TextSection
           titlel1="About"
           titlel2="XIM University"
@@ -149,7 +149,7 @@ const Home = () => {
       </section>
 
       {/* About ICAIET */}
-      <section className="px-3 sm:px-10 lg:px-20 py-36  border-t border-input  flex flex-col items-center gap-20">
+      <section className="px-3 sm:px-10 lg:px-20 py-16 sm:py-36  border-t border-input  flex flex-col items-center gap-20">
         <TextSection
           titlel1="About"
           titlel2="ICAIET 2025"
