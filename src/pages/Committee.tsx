@@ -1,5 +1,3 @@
-import Antony from "../assets/p1.jpg";
-
 import ImageCard from "@/lib/components/committee/ImageCard";
 import ChiefPatron from "../assets/committee/ChiefPatron/Fr.-Antony-R.-Uvari-SJ.jpg";
 import AntonyRaj from "../assets/committee/Patron/Prof. Fr.S.Antony Raj.jpg";
