@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://icaiet.co.in/sitemap.xml
