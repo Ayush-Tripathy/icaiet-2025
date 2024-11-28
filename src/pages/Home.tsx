@@ -5,7 +5,7 @@ import ImportantDates from "@/lib/components/ImportantDates";
 
 const Home = () => {
   return (
-    <div className="bg-black text-white">
+    <div className="bg-[#7EC7CF] text-white">
       <div className="relative">
         {/* <div className="absolute inset-0 bg-[rgb(0,0,0/50)] h-screen"></div> */}
         <div className="bg-[url(/XIM-BG2.jpg)] relative h-screen bg-no-repeat bg-cover bg-fixed text-white px-3 sm:px-10 lg:px-20 py-32">
@@ -32,12 +32,7 @@ const Home = () => {
                 <span className="font-[SatoshiBold]  uppercase leading-tight text-white">
                   (ICAIET) - 2025
                 </span>
-                <a
-                  href="/registration"
-                  className="w-fit flex flex-row items-center gap-3 px-4 sm:px-8 md:px-16 py-1 sm:py-2 md:py-4 bg-[#ffffff3d] transition-all duration-300 hover:backdrop-blur-0 hover:gap-5 backdrop-blur-[1.25rem] text-sm sm:text-base md:text-lg uppercase rounded-full border border-[#fff]"
-                >
-                  Register Now <ArrowRight size={24} />
-                </a>
+               
               </div>
             </div>
 
@@ -55,7 +50,7 @@ const Home = () => {
       </div>
 
       {/* Countdown timer */}
-      <section className="flex items-center justify-center bg-black py-10">
+      <section className="flex items-center justify-center bg-[#7EC7CF] py-10">
         <CountdownTimer targetDate="2025-08-28T11:00:00" />
       </section>
 
@@ -155,12 +150,20 @@ const Home = () => {
           The INTERNATIONAL CONFERENCE ON ARTIFICIAL INTELLIGENCE AND EMERGING TECHNOLOGIES (ICAIET 2025) is dedicated to serving as a premier platform for this purpose. Designed to bring together a diverse group of leading industry experts, academicians, researchers, and practitioners from across the globe, ICAIET 2025 fosters an environment of knowledge exchange and collaboration. The conference aims to accelerate the growth and application of AI and emerging technologies in various domains, highlighting their critical role in driving sustainable development, enhancing efficiency, and improving the quality of life."
         />
 
-        <a
+      <div className="md:flex md:gap-7">
+      <a
           href="test"
           className="w-fit flex flex-row items-center gap-3 px-16 py-4 bg-[#ffffff3d] transition-all duration-300 hover:backdrop-blur-0 hover:gap-5 backdrop-blur-[1.25rem] text-lg uppercase rounded-full border border-[#fff]"
         >
           Call For Paper <ArrowRight size={24} />
         </a>
+        <a
+          href="/registration"
+          className="w-fit flex flex-row items-center gap-3 px-16 py-4 bg-[#ffffff3d] transition-all duration-300 hover:backdrop-blur-0 hover:gap-5 backdrop-blur-[1.25rem] text-lg uppercase rounded-full border border-[#fff]"
+        >
+                  Register Now <ArrowRight size={24} />
+                </a>
+      </div>
       </section>
     </div>
   );

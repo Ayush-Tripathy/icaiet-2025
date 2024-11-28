@@ -51,7 +51,11 @@ export default function Navbar() {
       <div className="container mx-auto flex h-16 items-center justify-between px-4 md:px-8 lg:px-2">
         <div className="flex items-center gap-4 lg:gap-6">
           {/* <div className="h-16 w-0 border-r border-[#2e2e2e]"></div> */}
-          <a href="/" className="flex items-center">
+          <a href="/" className=" gap-2 flex items-center">
+          <span>
+          <img src="/XIM_logo.png" alt="XIM University" className="w-12 h-12" />
+          </span>
+          <div className="h-16 w-0 border-r border-[#2e2e2e]"></div>
             <span className="text-2xl tracking-widest font-semibold">
               ICAIET 2025
             </span>
@@ -62,7 +66,7 @@ export default function Navbar() {
           </div>
           <div className="hidden lg:flex items-center gap-2 text-sm">
             <CalendarDays className="h-4 w-4" />
-            <span>28-30 AUG</span>
+            <span>28th-30th AUG</span>
             <div className="h-16 w-px bg-[#2e2e2e] mx-2"></div>
             {/* <MapPin className="h-4 w-4" />
             <span>Bhubaneswar</span> */}
