@@ -148,7 +148,7 @@ export default function Navbar() {
                         <a
                           key={item.name}
                           href={item.href}
-                          className="block px-4 py-2 text-sm text-white hover:bg-white/10"
+                          className={`block px-4 py-2 text-sm hover:bg-white/10`}
                           role="menuitem"
                         >
                           {item.name}
@@ -199,7 +199,11 @@ export default function Navbar() {
                           <li key={item.name}>
                             <a
                               href={item.href}
-                              className="block py-1 text-sm text-white/80 hover:text-white"
+                              className={`block py-1 text-sm ${
+                                isScrolled
+                                  ? "text-black"
+                                  : `${ignore ? "" : "text-white"}`
+                              }`}
                             >
                               {item.name}
                             </a>
