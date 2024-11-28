@@ -8,7 +8,7 @@ const Home = () => {
     <div className="bg-[#f4f9f9] text-black">
       <div className="relative">
         {/* <div className="absolute inset-0 bg-[rgb(0,0,0/50)] h-screen"></div> */}
-        <div className="text-white bg-[url(/XIM-BG2.jpg)] relative h-screen bg-no-repeat bg-cover bg-fixed  px-3 sm:px-10 lg:px-20 py-32">
+        <div className="text-white bg-[url(/XIM-BG2.jpg)] relative bg-no-repeat bg-cover bg-fixed px-3 sm:px-10 lg:px-20 py-32">
           <div className="flex flex-col gap-5">
             <div className="text-[2.5rem] sm:text-[3rem] lg:text-[3.5rem] xl:text-[4rem] sm:uppercase">
               <span className="hidden xl:inline-block font-[SatoshiBold] text-[1rem] sm:text-[1.5rem] lg:text-[2rem] xl:text-[2.5rem] uppercase leading-[0.9] text-outline-white">

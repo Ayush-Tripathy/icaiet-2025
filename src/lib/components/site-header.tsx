@@ -137,7 +137,13 @@ export default function Navbar() {
                   )}
                 </a>
                 {menu.items && activeDropdown === menu.name && (
-                  <div className="absolute left-0 top-full mt-0 w-48 rounded-md shadow-lg border border-input bg-[#0a0b1a]/80 backdrop-blur-sm ring-1 ring-black ring-opacity-5">
+                  <div
+                    className={`absolute left-0 top-full mt-0 w-48 rounded-md shadow-lg border ${
+                      isScrolled
+                        ? "border-input bg-white"
+                        : `${ignore ? "" : "border-[#2e2e2e] bg-[#0a0b1a]/80"}`
+                    } backdrop-blur-sm ring-1 ring-black ring-opacity-5`}
+                  >
                     <div
                       className="py-1"
                       role="menu"
@@ -148,7 +154,15 @@ export default function Navbar() {
                         <a
                           key={item.name}
                           href={item.href}
-                          className={`block px-4 py-2 text-sm hover:bg-white/10`}
+                          className={`block px-4 py-2 text-sm  ${
+                            isScrolled
+                              ? "border-input hover:bg-gray-200"
+                              : `${
+                                  ignore
+                                    ? ""
+                                    : "border-[#2e2e2e] hover:bg-white/10"
+                                }`
+                          }`}
                           role="menuitem"
                         >
                           {item.name}
