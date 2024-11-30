@@ -51,7 +51,7 @@ export default function SubmissionGuidelines() {
               {
                 title: "Review Process:",
                 content:
-                  "ICAIET follows a blind review process by at least 3 reviewers and is conducted by a distinguished set of academicians and professionals (the Program Committee). To avoid conflicts of interest, a reviewer cannot self-select papers.",
+                  "ICAIET follows a blind review process and is conducted by a distinguished set of academicians and professionals (the Program Committee). To avoid conflicts of interest, a reviewer cannot self-select papers.",
               },
               {
                 title: "Presentation Format:",
