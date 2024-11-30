@@ -59,14 +59,14 @@ const CallForSponsorship = () => {
         <div className="h-1 w-20 bg-blue-500" />
       </div>
 
-      <h2 className="text-xl">
+      <h2 className="text-xl text-left">
         Industrial and Institutional Sponsors are welcome to support ICAIET-2025
         conference under the following categories:
       </h2>
 
       <div className="flex flex-col lg:grid lg:grid-cols-2 xl:grid-cols-3 gap-5">
-        {tiers.map((tier) => (
-          <SponsorshipTierCard tier={tier} />
+        {tiers.map((tier, idx) => (
+          <SponsorshipTierCard tier={tier} key={idx} />
         ))}
       </div>
 

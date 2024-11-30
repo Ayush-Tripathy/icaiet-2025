@@ -1,4 +1,4 @@
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 import Home from "../pages/Home";
 import NotFound from "../pages/NotFound";
 import CommitteesPage from "@/pages/Committee";
@@ -11,8 +11,16 @@ import SubmissionGuidelines from "@/pages/Submission";
 import CameraReadyInstructions from "@/pages/CameraReadyInstructions";
 import CallForSponsorship from "@/pages/CallForSponsorship";
 import Sponsors from "@/pages/Sponsors";
+import { useEffect } from "react";
 
 export const AppRoutes = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    console.log("Scrolling to top");
+    window.scrollTo(0, 0);
+  }, [location]);
+
   return (
     <Routes>
       <Route path="/" element={<Home />} />

@@ -18,8 +18,8 @@ const SponsorshipTierCard = ({ tier }: { tier: Partial<SponsorshipTier> }) => {
             </p>
             <p className="mt-6 "> Benefits include:</p>
             <ul role="list" className="mt-6 space-y-6">
-              {tier.features?.map((feature: string) => (
-                <li className="flex">
+              {tier.features?.map((feature: string, idx) => (
+                <li className="flex" key={idx}>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
@@ -27,9 +27,9 @@ const SponsorshipTierCard = ({ tier }: { tier: Partial<SponsorshipTier> }) => {
                     viewBox="0 0 24 24"
                     fill="none"
                     stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                     className="flex-shrink-0 w-6 h-6 text-emerald-500"
                     aria-hidden="true"
                   >

@@ -1,7 +1,7 @@
 import { createContext, useContext } from "react";
 
 interface NavigationContextProps {
-  navigate: (path: string) => void;
+  goto: (path: string) => void;
   goBack: () => void;
 }
 

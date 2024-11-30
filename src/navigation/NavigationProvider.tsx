@@ -11,7 +11,7 @@ export const NavigationProvider: React.FC<{ children: React.ReactNode }> = ({
   };
 
   return (
-    <NavigationContext.Provider value={{ navigate, goBack }}>
+    <NavigationContext.Provider value={{ goto: navigate, goBack }}>
       {children}
     </NavigationContext.Provider>
   );

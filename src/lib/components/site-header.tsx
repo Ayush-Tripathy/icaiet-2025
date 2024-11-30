@@ -1,14 +1,13 @@
 "use client";
 
-import * as React from "react";
+import { useState, useEffect } from "react";
 import { CalendarDays, ChevronDown, Menu } from "lucide-react";
+import { Link, useLocation } from "react-router-dom";
 
 export default function Navbar() {
-  const [activeDropdown, setActiveDropdown] = React.useState<string | null>(
-    null
-  );
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
-  const [isScrolled, setIsScrolled] = React.useState(false);
+  const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
 
   const handleMouseEnter = (menuItem: string) => {
     setActiveDropdown(menuItem);
@@ -22,15 +21,19 @@ export default function Navbar() {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
-  const [ignore, setIgnore] = React.useState(false);
+  const [ignore, setIgnore] = useState(false);
 
-  React.useEffect(() => {
-    if (window.location.pathname !== "/") {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.pathname !== "/") {
       setIgnore(true);
     } else {
       setIgnore(false);
     }
+  }, [location]);
 
+  useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > window.innerHeight);
     };
@@ -42,6 +45,7 @@ export default function Navbar() {
   }, []);
 
   const menuItems = [
+    { name: "Home", href: "/" },
     { name: "Committee", href: "/committee" },
     {
       name: "For Authors",
@@ -83,9 +87,9 @@ export default function Navbar() {
           : `${ignore ? "" : "border-[#2e2e2e] text-white"}`
       } backdrop-blur border-b transition-colors duration-300`}
     >
-      <div className="w-full flex h-16 items-center justify-between px-4 md:px-8 lg:px-2">
-        <div className="flex items-center gap-4 lg:gap-6">
-          <div className=" gap-2 flex items-center">
+      <div className="w-full flex h-16 items-center justify-between">
+        <div className="flex items-center">
+          <div className="flex items-center">
             <a href="https://scse.xim.edu.in/">
               <span>
                 <img
@@ -95,23 +99,28 @@ export default function Navbar() {
                 />
               </span>
             </a>
+
+            {/* | Line */}
             <div
-              className={`h-16 w-0 border-r ${
+              className={`h-16 w-0 border-r mx-2 ${
                 isScrolled
                   ? "border-input"
                   : `${ignore ? "" : "border-[#2e2e2e]"}`
               }`}
             ></div>
-            <a
-              href="/"
-              className="text-lg 2xl:text-2xl tracking-widest font-semibold whitespace-nowrap"
+
+            <Link
+              to="/"
+              className="text-lg 2xl:text-2xl tracking-widest font-semibold whitespace-nowrap flex flex-row items-center"
             >
               ICAIET-2025
-            </a>
+            </Link>
           </div>
+
           <div className="hidden lg:flex items-center">
+            {/* | Line */}
             <div
-              className={`h-16 w-0 border-r ${
+              className={`h-16 w-0 border-r mx-2 ${
                 isScrolled
                   ? "border-input"
                   : `${ignore ? "" : "border-[#2e2e2e]"}`
@@ -142,8 +151,8 @@ export default function Navbar() {
                 onMouseEnter={() => menu.items && handleMouseEnter(menu.name)}
                 onMouseLeave={() => menu.items && handleMouseLeave()}
               >
-                <a
-                  href={menu.href}
+                <Link
+                  to={menu.href}
                   className="text-sm 2xl:text-base whitespace-nowrap flex items-center px-1 py-2 hover:bg-white/10 rounded-md transition-colors duration-200"
                 >
                   {menu.name}
@@ -154,7 +163,7 @@ export default function Navbar() {
                       }`}
                     />
                   )}
-                </a>
+                </Link>
                 {menu.items && activeDropdown === menu.name && (
                   <div
                     className={`absolute left-0 top-full mt-0 w-48 rounded-md shadow-lg border ${
@@ -170,9 +179,9 @@ export default function Navbar() {
                       aria-labelledby="options-menu"
                     >
                       {menu.items.map((item) => (
-                        <a
+                        <Link
                           key={item.name}
-                          href={item.href}
+                          to={item.href}
                           className={`block px-4 py-2 text-sm  ${
                             isScrolled
                               ? "border-input hover:bg-gray-200"
@@ -185,7 +194,7 @@ export default function Navbar() {
                           role="menuitem"
                         >
                           {item.name}
-                        </a>
+                        </Link>
                       ))}
                     </div>
                   </div>
@@ -230,8 +239,11 @@ export default function Navbar() {
                       <ul className="mt-2 ml-4 space-y-2">
                         {menu.items.map((item) => (
                           <li key={item.name}>
-                            <a
-                              href={item.href}
+                            <Link
+                              onClick={() => {
+                                setIsMobileMenuOpen((_) => false);
+                              }}
+                              to={item.href}
                               className={`block py-1 text-sm ${
                                 isScrolled
                                   ? "text-black"
@@ -239,16 +251,22 @@ export default function Navbar() {
                               }`}
                             >
                               {item.name}
-                            </a>
+                            </Link>
                           </li>
                         ))}
                       </ul>
                     )}
                   </>
                 ) : (
-                  <a href={menu.href} className="block py-2 text-left">
+                  <Link
+                    onClick={() => {
+                      setIsMobileMenuOpen((_) => false);
+                    }}
+                    to={menu.href}
+                    className="block py-2 text-left"
+                  >
                     {menu.name}
-                  </a>
+                  </Link>
                 )}
               </li>
             ))}
