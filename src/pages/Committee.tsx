@@ -293,156 +293,156 @@ export default function CommitteesPage() {
               Technical Program Committee
             </h2>
             <div className="space-y-2">
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0 text-gray-400">
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Dr. Abinash Pujari, SRM University, AP
               </p>
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0 text-gray-400">
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Dr. Alok Ranjan, Bosch
               </p>
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0 text-gray-400">
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Dr. Arijit Karati, National Sun Yat-Sen University, Taiwan
               </p>
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0 text-gray-400">
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Dr. Arun Kumar, NIT Rourkela
               </p>
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0 text-gray-400">
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Dr. Asif Eqbal, IIT Patna
               </p>
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0 text-gray-400">
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Dr. Bhaskar Mondal, NIT Patna
               </p>
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0 text-gray-400">
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Dr. Bidyut Kumar Patra, IIT(BHU), Varanasi
               </p>
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0 text-gray-400">
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Dr. Damodar Reddy Edla, NIT Goa
               </p>
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0 text-gray-400">
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Dr. Daya Sagar Gupta, IIT Patna
               </p>
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0 text-gray-400">
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Dr. Debashis Giri, MAKAUT
               </p>
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0 text-gray-400">
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Dr. Debbrota Paul Chowdhury, NIT Silchar
               </p>
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0 text-gray-400">
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Dr. Deepak Ranjan Nayak, MNIT Jaipur
               </p>
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0 text-gray-400">
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Dr. Hari Om, IIT (ISM) Dhanbad
               </p>
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0 text-gray-400">
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Dr. M. Tanveer, IIT Indore
               </p>
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0 text-gray-400">
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Dr. Mahendra Pratap Yadav, IIIT Pune
               </p>
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0 text-gray-400">
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Dr. Malay Bhattacharyya, ISI Kolkata
               </p>
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0 text-gray-400">
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Dr. Nabajyoti Mazumdar, IIIT Allahabad
               </p>
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0 text-gray-400">
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Dr. Preeti Chandrakar, NIT Raipur
               </p>
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0 text-gray-400">
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Dr. R. P. Mahapatra, SRM Institute of Science and Technology
               </p>
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0 text-gray-400">
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Dr. Rakesh Chandra Balabantaray, IIIT Bhubaneswar
               </p>
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0 text-gray-400">
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Dr. Ravi Yadav, IIT Jodhpur
               </p>
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0 text-gray-400">
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Dr. Samarendra Das, ICAR-National Institute on Foot and Mouth
                 Disease, Bhubaneswar
               </p>
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0 text-gray-400">
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Dr. Samarjit Kar, NIT DGP
               </p>
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0 text-gray-400">
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Dr. Sanjaya Kumar Panda, NIT Warangal
               </p>
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0 text-gray-400">
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Dr. Santos Kumar Das, NIT Rourkela
               </p>
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0 text-gray-400">
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Dr. Sasaram Ranvir Singh, IIT Guwahati
               </p>
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0 text-gray-400">
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Dr. SK Hafizul Islam, IIIT Kalyani
               </p>
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0 text-gray-400">
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Dr. Sriparna Saha, IIT Patna
               </p>
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0 text-gray-400">
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Dr. Suchismita Chinara, NIT Rourkela
               </p>
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0 text-gray-400">
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Dr. Sudip Kumar Naskar, Jadavpur University
               </p>
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0 text-gray-400">
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Dr. Tapas Kumar Mishra, NIT Rourkela
               </p>
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0 text-gray-400">
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Dr. Yamuna Prasad, IIT Jammu
               </p>
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0 text-gray-400">
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Dr. Naveen Kumar Gupta, NIT Jalandhar
               </p>
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0 text-gray-400">
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Dr. Ajay Kumar Mallick, NIT Hamirpur
               </p>
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0 text-gray-400">
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Dr. Ashwini Kumar, Bennett University
               </p>
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0 text-gray-400">
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Dr. Debendra Kumar Muduli, CV Raman Global University
               </p>
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0 text-gray-400">
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Dr. Ram Chandra Barik, CV Raman Global University
               </p>
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0 text-gray-400">
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Dr. Lalatendu Muduli, Utkal University
               </p>
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0 text-gray-400">
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Dr. Rasmi Kant Pati, Sambalpur University Institute of
                 Information and Technology
               </p>
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0 text-gray-400">
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Dr. Prabhat Dansena, CV Raman Global University
               </p>
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0 text-gray-400">
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Dr. Surendra Kumar Nanda, CV Raman Global University
               </p>
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0 text-gray-400">
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Dr. Pradeep Roy, Indian Institute of Management Nagpur
               </p>
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0 text-gray-400">
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Dr. Amrendra Kumar Yadav, ABV-IIITM, Gwalior
               </p>
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0 text-gray-400">
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Dr. Pramit Mazumdar, IIIT Vadodara
               </p>
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0 text-gray-400">
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Dr. Prasun Chandra Tripathi, IITRAM, Ahmedabad
               </p>
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0 text-gray-400">
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Dr. Ruhul Amin, NIT Jamshedpur
               </p>
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0 text-gray-400">
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Dr. Ram Narayan Yadav, IITRAM, Ahmedabad
               </p>
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0 text-gray-400">
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Dr. Bharat Ranjan Jyoti Sahoo, ITER, SOA, Bhubaneswar
               </p>
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0 text-gray-400">
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Dr. Parabir Sethy, Guru Ghasidas Vishwavidyalaya, Bilaspur
               </p>
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0 text-gray-400">
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Dr. Santosh Kumar Majhi, Guru Ghasidas Vishwavidyalaya, Bilaspur
               </p>
             </div>
@@ -452,13 +452,23 @@ export default function CommitteesPage() {
           <section className="space-y-4">
             <h2 className="text-2xl font-bold text-blue-400">Finance Chair</h2>
             <div className="space-y-2">
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0 text-gray-400">
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Dr. Pradip Kundu, XIM University
               </p>
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0 text-gray-400">
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Dr. Chandan Misra, XIM University
               </p>
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0 text-gray-400">
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
+                Dr. Fr. Joshy K X, S.J., XIM University
+              </p>
+            </div>
+          </section>
+
+          {/* Web Chair Section */}
+          <section className="space-y-4">
+            <h2 className="text-2xl font-bold text-blue-400">Web Chair</h2>
+            <div className="space-y-2">
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Dr. Fr. Joshy K X, S.J., XIM University
               </p>
             </div>
@@ -470,13 +480,13 @@ export default function CommitteesPage() {
               Publication Chairs
             </h2>
             <div className="space-y-2">
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0 text-gray-400">
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Dr. Arif Ahmed Sekh, UiT Norway
               </p>
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0 text-gray-400">
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Dr. Sourav Mondal, XIM University
               </p>
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0 text-gray-400">
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Dr. Swarup Chattopadhyay, XIM University
               </p>
             </div>
@@ -488,10 +498,7 @@ export default function CommitteesPage() {
               Sponsorship Chair
             </h2>
             <div className="space-y-2">
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0 text-gray-400">
-                Mrs. Sudhansu Bala Das, XIM University
-              </p>
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0 text-gray-400">
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Dr. Chandan Misra, XIM University
               </p>
             </div>
@@ -503,16 +510,16 @@ export default function CommitteesPage() {
               Registration Chair and Transportation Chair
             </h2>
             <div className="space-y-2">
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0 text-gray-400">
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Dr. Chandan Misra, XIM University
               </p>
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0 text-gray-400">
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Mr. Pravat Ranjan Jena, XIM University
               </p>
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0 text-gray-400">
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Mr. Sripati Mahapatra, XIM University
               </p>
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0 text-gray-400">
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Mr. Biswajit Mohapatra, XIM University
               </p>
             </div>
@@ -524,16 +531,16 @@ export default function CommitteesPage() {
               Publicity Chair
             </h2>
             <div className="space-y-2">
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0 text-gray-400">
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Dr. Deepak Ranjan Nayak, MNIT Jaipur
               </p>
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0 text-gray-400">
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Dr. Lov Kumar, NIT Kurukshetra
               </p>
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0 text-gray-400">
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Dr. Sanjaya Kumar Panda, NIT Warangal
               </p>
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0 text-gray-400">
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Dr. Rojalina Priyadarshini, CV Raman Global University,
                 Bhubaneswar
               </p>
@@ -546,10 +553,10 @@ export default function CommitteesPage() {
               Tutorial & Industry Talk Chair
             </h2>
             <div className="space-y-2">
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0 text-gray-400">
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Mr. Akanksha Priyadarshini, Co-Founder & CEO of Aurassure
               </p>
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0 text-gray-400">
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Mr. Bodhisattwa Sanghapriya, Co-Founder & CEO of IG Drones
               </p>
             </div>
@@ -561,32 +568,32 @@ export default function CommitteesPage() {
               Local Organizing Committee
             </h2>
             <div className="space-y-2">
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0 text-gray-400">
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Dr. Ashish Kumar, XIM University
               </p>
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0 text-gray-400">
-                Mr. Biswajit Mohapatra, XIM University
-              </p>
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0 text-gray-400">
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Dr. Chandan Misra, XIM University
               </p>
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0 text-gray-400">
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Dr. Devendra Kumar Yadav, XIM University
               </p>
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0 text-gray-400">
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Dr. Pradip Kundu, XIM University
               </p>
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0 text-gray-400">
-                Mr. Pravat Ranjan Jena, XIM University
-              </p>
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0 text-gray-400">
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Dr. Sourav Mandal, XIM University
               </p>
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0 text-gray-400">
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
+                Dr. Swarup Chattopadhyay, XIM University
+              </p>
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Mr. Sripati Mahapatra, XIM University
               </p>
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0 text-gray-400">
-                Dr. Swarup Chattopadhyay, XIM University
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
+                Mr. Biswajit Mohapatra, XIM University
+              </p>
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
+                Mr. Pravat Ranjan Jena, XIM University
               </p>
             </div>
           </section>
@@ -597,59 +604,59 @@ export default function CommitteesPage() {
               IEEE Student Branch Volunteers
             </h2>
             <div className="space-y-2">
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0 text-gray-400">
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Ms. Ipsita Prusty, IEEE Student Member, XIM University
               </p>
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0 text-gray-400">
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Ms. Ishika Bandhopadhyay, IEEE Student Member, XIM University
               </p>
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0 text-gray-400">
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Mr. Manish Nanda, IEEE Student Member, XIM University
               </p>
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0 text-gray-400">
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Mr. Nishikanta Kar, IEEE Student Member, XIM University
               </p>
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0 text-gray-400">
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Ms. Pratirupa Toppo, IEEE Student Member, XIM University
               </p>
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0 text-gray-400">
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Mr. R. Pawan Kumar Reddy, IEEE Student Member, XIM University
               </p>
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0 text-gray-400">
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Ms. Saishrita Mohapatra, IEEE Student Member, XIM University
               </p>
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0 text-gray-400">
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Ms. Shreya Dutta, IEEE Student Member, XIM University
               </p>
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0 text-gray-400">
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Ms. Simran Osta, IEEE Student Member, XIM University
               </p>
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0 text-gray-400">
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Ms. Sneha Grace Kujur, IEEE Student Member, XIM University
               </p>
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0 text-gray-400">
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Ms. Sonali Nayak, IEEE Student Member, XIM University
               </p>
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0 text-gray-400">
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Mr. Soumya Prakash Satapathy, IEEE Student Member, XIM
                 University
               </p>
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0 text-gray-400">
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Mr. Subhasis Panda, IEEE Student Member, XIM University
               </p>
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0 text-gray-400">
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Ms. Subhasree Das, IEEE Student Member, XIM University
               </p>
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0 text-gray-400">
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Mr. Suraj Maharana, IEEE Student Member, XIM University
               </p>
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0 text-gray-400">
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Mr. Swayam Mishra, IEEE Student Member, XIM University
               </p>
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0 text-gray-400">
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Mr. Swayam Prakash, IEEE Student Member, XIM University
               </p>
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0 text-gray-400">
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Mr. Ujjwal Prajapati, IEEE Student Member, XIM University
               </p>
             </div>
