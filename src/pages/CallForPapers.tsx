@@ -41,8 +41,8 @@ const CallForPapers = () => {
         <div className="h-1 w-20 bg-blue-500" />
       </div>
 
-      <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-        <div className="bg-white p-6 rounded-lg shadow-md">
+      <div className="grid gap-8 md:grid-cols-2 xl:grid-cols-3 text-left" >
+        <div className="bg-white p-6 rounded-lg border border-gray-200">
           <h2 className="text-xl font-bold mb-4">Artificial Intelligence (AI) and Applications</h2>
           <ul className="list-disc pl-5 space-y-2 text-sm">
             <li>Overview of foundational and cutting-edge AI techniques.</li>
@@ -55,7 +55,7 @@ const CallForPapers = () => {
           </ul>
         </div>
 
-        <div className="bg-white p-6 rounded-lg shadow-md">
+        <div className="bg-white p-6 rounded-lg border border-gray-200">
           <h2 className="text-xl font-bold mb-4">Machine Learning and Data Mining</h2>
           <ul className="list-disc pl-5 space-y-2 text-sm">
             <li>Supervised, unsupervised, and reinforcement learning techniques.</li>
@@ -68,7 +68,7 @@ const CallForPapers = () => {
           </ul>
         </div>
 
-        <div className="bg-white p-6 rounded-lg shadow-md">
+        <div className="bg-white p-6 rounded-lg border border-gray-200">
           <h2 className="text-xl font-bold mb-4">Computer Vision and Image Processing</h2>
           <ul className="list-disc pl-5 space-y-2 text-sm">
             <li>Techniques for image recognition, segmentation, and classification.</li>
@@ -81,7 +81,7 @@ const CallForPapers = () => {
           </ul>
         </div>
 
-        <div className="bg-white p-6 rounded-lg shadow-md">
+        <div className="bg-white p-6 rounded-lg border border-gray-200">
           <h2 className="text-xl font-bold mb-4">Natural Language Processing (NLP)</h2>
           <ul className="list-disc pl-5 space-y-2 text-sm">
             <li>Advances in sentiment analysis, text summarization, and machine translation.</li>
@@ -94,7 +94,7 @@ const CallForPapers = () => {
           </ul>
         </div>
 
-        <div className="bg-white p-6 rounded-lg shadow-md">
+        <div className="bg-white p-6 rounded-lg border border-gray-200">
           <h2 className="text-xl font-bold mb-4">IoT and Cyber-Physical Systems</h2>
           <ul className="list-disc pl-5 space-y-2 text-sm">
             <li>Role of IoT in smart homes, healthcare, and industrial automation.</li>
@@ -106,7 +106,7 @@ const CallForPapers = () => {
           </ul>
         </div>
 
-        <div className="bg-white p-6 rounded-lg shadow-md">
+        <div className="bg-white p-6 rounded-lg border border-gray-200">
           <h2 className="text-xl font-bold mb-4">Network Security and Privacy</h2>
           <ul className="list-disc pl-5 space-y-2 text-sm">
             <li>Cryptographic techniques for secure communication.</li>
@@ -119,7 +119,7 @@ const CallForPapers = () => {
           </ul>
         </div>
 
-        <div className="bg-white p-6 rounded-lg shadow-md">
+        <div className="bg-white p-6 rounded-lg border border-gray-200">
           <h2 className="text-xl font-bold mb-4">Sequential, Parallel, Distributed, and Cloud Computing</h2>
           <ul className="list-disc pl-5 space-y-2 text-sm">
             <li>Differences between sequential, parallel, and distributed systems.</li>
@@ -138,8 +138,8 @@ const CallForPapers = () => {
         <div className="h-1 w-20 bg-blue-500" />
       </div>
 
-      <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-        <div className="bg-white p-6 rounded-lg shadow-md">
+      <div className="grid gap-8 md:grid-cols-2 xl:grid-cols-3 text-left">
+        <div className="bg-white p-6 rounded-lg border border-gray-200">
           <h2 className="text-xl font-bold mb-4">Emerging Technologies in Education</h2>
           <ul className="list-disc pl-5 space-y-2 text-sm">
             <li>Role of AI in personalized and adaptive learning.</li>
@@ -152,7 +152,7 @@ const CallForPapers = () => {
           </ul>
         </div>
 
-        <div className="bg-white p-6 rounded-lg shadow-md">
+        <div className="bg-white p-6 rounded-lg border border-gray-200">
           <h2 className="text-xl font-bold mb-4">AI in Finance and Business Analytics</h2>
           <ul className="list-disc pl-5 space-y-2 text-sm">
             <li>Predictive analytics for financial decision-making.</li>
@@ -165,7 +165,7 @@ const CallForPapers = () => {
           </ul>
         </div>
 
-        <div className="bg-white p-6 rounded-lg shadow-md">
+        <div className="bg-white p-6 rounded-lg border border-gray-200">
           <h2 className="text-xl font-bold mb-4">AI for Sustainable Development and Societal Impact</h2>
           <ul className="list-disc pl-5 space-y-2 text-sm">
             <li>Role of AI in addressing climate change and resource management.</li>
