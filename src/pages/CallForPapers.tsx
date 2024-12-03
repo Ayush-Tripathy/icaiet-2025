@@ -1,4 +1,4 @@
-import { ArrowRight } from "lucide-react";
+import { ArrowRight } from 'lucide-react';
 
 const CallForPapers = () => {
   return (
@@ -27,7 +27,7 @@ const CallForPapers = () => {
         talks by eminent researchers from around the world, technical paper
         sessions, poster sessions, demos, tutorials and workshops. Accepted
         papers will be submitted for inclusion into IEEE Xplore subject to
-        meeting IEEE Xplore’s scope and quality requirements. Prospective
+        meeting IEEE Xplore's scope and quality requirements. Prospective
         authors are encouraged to submit their original research contributions
         in IEEE format. Papers submitted to ICAIET 2025 should contain original
         research/study and should not have been published or submitted for
@@ -41,26 +41,143 @@ const CallForPapers = () => {
         <div className="h-1 w-20 bg-blue-500" />
       </div>
 
-      <ul className="list-disc px-3 sm:px-0">
-        <li>Artificial Intelligence (AI) and Applications</li>
-        <li>Machine Learning and Data Mining</li>
-        <li>Computer Vision and Image Processing</li>
-        <li>Natural Language Processing (NLP)</li>
-        <li>IoT and Cyber-Physical Systems</li>
-        <li>Network Security and Privacy</li>
-        <li>Sequential, parallel, distributed and Cloud computing</li>
-      </ul>
+      <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <div className="bg-white p-6 rounded-lg shadow-md">
+          <h2 className="text-xl font-bold mb-4">Artificial Intelligence (AI) and Applications</h2>
+          <ul className="list-disc pl-5 space-y-2 text-sm">
+            <li>Overview of foundational and cutting-edge AI techniques.</li>
+            <li>Applications in healthcare, robotics, gaming, and more.</li>
+            <li>Ethical considerations and fairness in AI implementations.</li>
+            <li>Advanced AI algorithms and their practical implementations.</li>
+            <li>Exploring reinforcement learning and its use cases.</li>
+            <li>Challenges in deploying AI systems in real-world scenarios.</li>
+            <li>Integration of AI in smart cities and transportation.</li>
+          </ul>
+        </div>
+
+        <div className="bg-white p-6 rounded-lg shadow-md">
+          <h2 className="text-xl font-bold mb-4">Machine Learning and Data Mining</h2>
+          <ul className="list-disc pl-5 space-y-2 text-sm">
+            <li>Supervised, unsupervised, and reinforcement learning techniques.</li>
+            <li>Feature engineering and model optimization strategies.</li>
+            <li>Exploring clustering, classification, and regression tasks.</li>
+            <li>Data mining methodologies for pattern discovery in large datasets.</li>
+            <li>Application of ML in business, finance, and scientific research.</li>
+            <li>Tools and libraries for building and training ML models.</li>
+            <li>Real-world case studies of ML deployment.</li>
+          </ul>
+        </div>
+
+        <div className="bg-white p-6 rounded-lg shadow-md">
+          <h2 className="text-xl font-bold mb-4">Computer Vision and Image Processing</h2>
+          <ul className="list-disc pl-5 space-y-2 text-sm">
+            <li>Techniques for image recognition, segmentation, and classification.</li>
+            <li>Role of deep learning in computer vision advancements.</li>
+            <li>Applications in autonomous vehicles, surveillance, and AR/VR.</li>
+            <li>Pre-processing techniques like filtering, edge detection, and transformation.</li>
+            <li>Challenges in object detection, tracking, and pose estimation.</li>
+            <li>Development of real-time vision systems.</li>
+            <li>Integrating computer vision with IoT and robotics.</li>
+          </ul>
+        </div>
+
+        <div className="bg-white p-6 rounded-lg shadow-md">
+          <h2 className="text-xl font-bold mb-4">Natural Language Processing (NLP)</h2>
+          <ul className="list-disc pl-5 space-y-2 text-sm">
+            <li>Advances in sentiment analysis, text summarization, and machine translation.</li>
+            <li>The role of transformers and attention mechanisms in NLP.</li>
+            <li>Sentiment and emotion detection in textual data.</li>
+            <li>Applications in chatbots, virtual assistants, and speech recognition.</li>
+            <li>Challenges in understanding and generating human-like text.</li>
+            <li>Addressing bias and ethical concerns in NLP systems.</li>
+            <li>Tools and datasets for NLP research and application.</li>
+          </ul>
+        </div>
+
+        <div className="bg-white p-6 rounded-lg shadow-md">
+          <h2 className="text-xl font-bold mb-4">IoT and Cyber-Physical Systems</h2>
+          <ul className="list-disc pl-5 space-y-2 text-sm">
+            <li>Role of IoT in smart homes, healthcare, and industrial automation.</li>
+            <li>Design and optimization of cyber-physical systems.</li>
+            <li>Protocols and standards in IoT connectivity and interoperability.</li>
+            <li>Challenges in scalability and reliability of IoT networks.</li>
+            <li>Integration of edge and fog computing with IoT systems.</li>
+            <li>Security concerns in IoT and cyber-physical implementations.</li>
+          </ul>
+        </div>
+
+        <div className="bg-white p-6 rounded-lg shadow-md">
+          <h2 className="text-xl font-bold mb-4">Network Security and Privacy</h2>
+          <ul className="list-disc pl-5 space-y-2 text-sm">
+            <li>Cryptographic techniques for secure communication.</li>
+            <li>Advanced persistent threats and mitigation strategies.</li>
+            <li>Securing cloud and distributed computing systems.</li>
+            <li>Privacy-preserving data sharing and storage mechanisms.</li>
+            <li>Intrusion detection systems and their applications.</li>
+            <li>Secure authentication and access control mechanisms.</li>
+            <li>The role of AI and ML in enhancing cybersecurity.</li>
+          </ul>
+        </div>
+
+        <div className="bg-white p-6 rounded-lg shadow-md">
+          <h2 className="text-xl font-bold mb-4">Sequential, Parallel, Distributed, and Cloud Computing</h2>
+          <ul className="list-disc pl-5 space-y-2 text-sm">
+            <li>Differences between sequential, parallel, and distributed systems.</li>
+            <li>Scalability and load balancing in distributed systems.</li>
+            <li>Cloud architecture and service models (IaaS, PaaS, SaaS).</li>
+            <li>Task scheduling and resource allocation in parallel systems.</li>
+            <li>Applications of distributed computing in big data processing.</li>
+            <li>Virtualization and containerization in cloud environments.</li>
+            <li>Energy efficiency and optimization in computing systems.</li>
+          </ul>
+        </div>
+      </div>
 
       <div className="space-y-2">
         <h1 className="text-4xl font-bold tracking-tight">Special Tracks</h1>
         <div className="h-1 w-20 bg-blue-500" />
       </div>
 
-      <ul className="list-disc px-3 sm:px-0">
-        <li>Emerging Technologies in Education</li>
-        <li>AI in Finance and Business Analytics</li>
-        <li>AI for Sustainable Development and Societal Impact</li>
-      </ul>
+      <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <div className="bg-white p-6 rounded-lg shadow-md">
+          <h2 className="text-xl font-bold mb-4">Emerging Technologies in Education</h2>
+          <ul className="list-disc pl-5 space-y-2 text-sm">
+            <li>Role of AI in personalized and adaptive learning.</li>
+            <li>Gamification and its impact on student engagement.</li>
+            <li>Virtual and augmented reality in immersive learning environments.</li>
+            <li>Challenges in integrating technology with traditional education systems.</li>
+            <li>Applications of blockchain for credentialing and record-keeping.</li>
+            <li>Use of data analytics to predict and improve learning outcomes.</li>
+            <li>Development of inclusive and accessible educational technologies.</li>
+          </ul>
+        </div>
+
+        <div className="bg-white p-6 rounded-lg shadow-md">
+          <h2 className="text-xl font-bold mb-4">AI in Finance and Business Analytics</h2>
+          <ul className="list-disc pl-5 space-y-2 text-sm">
+            <li>Predictive analytics for financial decision-making.</li>
+            <li>AI-based fraud detection systems in banking and e-commerce.</li>
+            <li>Optimization of investment portfolios using ML algorithms.</li>
+            <li>Applications in credit scoring, risk assessment, and underwriting.</li>
+            <li>Chatbots and virtual assistants for customer service in finance.</li>
+            <li>Enhancing supply chain management using AI insights.</li>
+            <li>Ethical concerns and transparency in AI-driven financial systems.</li>
+          </ul>
+        </div>
+
+        <div className="bg-white p-6 rounded-lg shadow-md">
+          <h2 className="text-xl font-bold mb-4">AI for Sustainable Development and Societal Impact</h2>
+          <ul className="list-disc pl-5 space-y-2 text-sm">
+            <li>Role of AI in addressing climate change and resource management.</li>
+            <li>Smart agriculture through AI-powered analytics and robotics.</li>
+            <li>Applications in healthcare accessibility and remote diagnostics.</li>
+            <li>Addressing inequalities through AI-driven education and job matching.</li>
+            <li>Development of sustainable urban infrastructures with AI.</li>
+            <li>Ethical considerations in AI-driven societal changes.</li>
+            <li>Case studies on AI applications in humanitarian efforts.</li>
+          </ul>
+        </div>
+      </div>
 
       <div className="space-y-2">
         <h1 className="text-4xl font-bold tracking-tight">
@@ -167,3 +284,4 @@ const CallForPapers = () => {
 };
 
 export default CallForPapers;
+
