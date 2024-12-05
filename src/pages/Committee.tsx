@@ -501,6 +501,9 @@ export default function CommitteesPage() {
               <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Dr. Chandan Misra, XIM University
               </p>
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
+                Dr. Fr. Joshy K X, S.J., XIM University
+              </p>
             </div>
           </section>
 

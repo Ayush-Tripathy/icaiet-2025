@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function CameraReadyInstructions() {
   return (
     <div className="min-h-screen py-8 pt-32 px-3 sm:px-10 lg:px-20 font-[SatoshiRegular]">
@@ -15,12 +17,12 @@ export default function CameraReadyInstructions() {
           <p className="font-bold">
             At least one author must complete the registration before deadline.
             See the:
-            <a
-              href="/registration"
+            <Link
+              to="/registration"
               className="text-blue-400 hover:underline ml-1"
             >
               Registrations Page
-            </a>{" "}
+            </Link>{" "}
             for details.
           </p>
 
@@ -248,10 +250,10 @@ export default function CameraReadyInstructions() {
 
           <p>
             <a
-              href="https://cmt3.research.microsoft.com/User/Login?ReturnUrl=%2FISED2024"
+              href="https://cmt3.research.microsoft.com/ICAIET2025"
               className="text-blue-400 hover:underline max-sm:break-words"
             >
-              https://cmt3.research.microsoft.com/ISED2024
+              https://cmt3.research.microsoft.com/ICAIET2025
             </a>
           </p>
 
@@ -261,7 +263,7 @@ export default function CameraReadyInstructions() {
               <span>
                 Login to{" "}
                 <a
-                  href="https://cmt3.research.microsoft.com/User/Login?ReturnUrl=%2FISED2024"
+                  href="https://cmt3.research.microsoft.com/User/Login?ReturnUrl=%2FICAIET2025"
                   className="text-blue-400 hover:underline"
                 >
                   CMT
@@ -309,7 +311,7 @@ export default function CameraReadyInstructions() {
               <span>
                 Login to{" "}
                 <a
-                  href="https://cmt3.research.microsoft.com/User/Login?ReturnUrl=%2FISED2024"
+                  href="https://cmt3.research.microsoft.com/User/Login?ReturnUrl=%2FICAIET2025"
                   className="text-blue-400 hover:underline"
                 >
                   CMT

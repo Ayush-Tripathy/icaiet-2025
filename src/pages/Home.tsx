@@ -2,6 +2,7 @@ import TextSection from "@/lib/components/TextSection";
 import { ArrowRight } from "lucide-react";
 import CountdownTimer from "@/lib/components/CountdownTimer";
 import ImportantDates from "@/lib/components/ImportantDates";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -137,7 +138,13 @@ const Home = () => {
                 research, innovation, and entrepreneurship. It currently offers
                 B.Tech. (Hons.) in Computer Science & Engineering, M. Tech in
                 Data Science & Analytics, and Ph.D in Computer Science and
-                Engineering.
+                Engineering.{" "}
+                <a
+                  href="https://xim.edu.in/"
+                  className="text-gray-500 text-base hover:cursor-pointer hover:underline"
+                >
+                  Learn more
+                </a>
               </p>
             </div>
           </div>
@@ -158,18 +165,18 @@ const Home = () => {
         />
 
         <div className="flex flex-col md:flex-row gap-3 md:gap-7">
-          <a
-            href="/call-for-papers"
+          <Link
+            to="/call-for-papers"
             className="w-full whitespace-nowrap flex flex-row items-center gap-3 px-16 py-4 bg-[#ccf2f4] border-[#a4ebf3] transition-all duration-300 hover:backdrop-blur-0 hover:gap-5 backdrop-blur-[1.25rem] text-lg uppercase rounded-full border"
           >
             Call For Paper <ArrowRight size={24} />
-          </a>
-          <a
-            href="/registration"
+          </Link>
+          <Link
+            to="/registration"
             className="w-full whitespace-nowrap flex flex-row items-center gap-3 px-16 py-4 bg-[#ccf2f4] border-[#a4ebf3] transition-all duration-300 hover:backdrop-blur-0 hover:gap-5 backdrop-blur-[1.25rem] text-lg uppercase rounded-full border"
           >
             Register Now <ArrowRight size={24} />
-          </a>
+          </Link>
         </div>
       </section>
     </div>

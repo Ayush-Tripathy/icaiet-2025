@@ -26,7 +26,7 @@ const ImportantDates = ({ withHeader = true }: { withHeader?: boolean }) => {
               Paper submission deadline
             </TableCell>
             <TableCell className="text-right whitespace-nowrap">
-              1st March 2025
+              01 March 2025
             </TableCell>
           </TableRow>
           <TableRow className="hover:bg-inherit border-input">
@@ -34,7 +34,7 @@ const ImportantDates = ({ withHeader = true }: { withHeader?: boolean }) => {
               Acceptance Notification
             </TableCell>
             <TableCell className="text-right whitespace-nowrap">
-              1st April, 2025
+              01 April 2025
             </TableCell>
           </TableRow>
           <TableRow className="hover:bg-inherit border-input">
@@ -42,7 +42,7 @@ const ImportantDates = ({ withHeader = true }: { withHeader?: boolean }) => {
               Camera ready Version submission
             </TableCell>
             <TableCell className="text-right whitespace-nowrap">
-              5th April 2025
+              05 April 2025
             </TableCell>
           </TableRow>
           <TableRow className="hover:bg-inherit border-input">
@@ -50,7 +50,7 @@ const ImportantDates = ({ withHeader = true }: { withHeader?: boolean }) => {
               Early-Bird Registration
             </TableCell>
             <TableCell className="text-right whitespace-nowrap">
-              10th April 2025
+              10 April 2025
             </TableCell>
           </TableRow>
           <TableRow className="hover:bg-inherit border-input">
@@ -58,7 +58,7 @@ const ImportantDates = ({ withHeader = true }: { withHeader?: boolean }) => {
               Regular Registration
             </TableCell>
             <TableCell className="text-right whitespace-nowrap">
-              25th April 2025
+              25 April 2025
             </TableCell>
           </TableRow>
           <TableRow className="hover:bg-inherit border-input">
@@ -66,7 +66,7 @@ const ImportantDates = ({ withHeader = true }: { withHeader?: boolean }) => {
               Dates of Conference
             </TableCell>
             <TableCell className="text-right whitespace-nowrap">
-              28th – 30th August 2025
+              28 – 30 August 2025
             </TableCell>
           </TableRow>
         </TableBody>

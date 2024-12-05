@@ -90,7 +90,7 @@ export default function Navbar() {
       <div className="w-full flex h-16 items-center justify-between">
         <div className="flex items-center">
           <div className="flex items-center">
-            <a href="https://scse.xim.edu.in/">
+            <a href="https://xim.edu.in/">
               <span>
                 <img
                   src="/XIM_logo.png"
@@ -241,7 +241,7 @@ export default function Navbar() {
                           <li key={item.name}>
                             <Link
                               onClick={() => {
-                                setIsMobileMenuOpen((_) => false);
+                                setIsMobileMenuOpen(() => false);
                               }}
                               to={item.href}
                               className={`block py-1 text-sm ${
@@ -260,7 +260,7 @@ export default function Navbar() {
                 ) : (
                   <Link
                     onClick={() => {
-                      setIsMobileMenuOpen((_) => false);
+                      setIsMobileMenuOpen(() => false);
                     }}
                     to={menu.href}
                     className="block py-2 text-left"
