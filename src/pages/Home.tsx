@@ -38,7 +38,7 @@ const Home = () => {
 
             <div className="flex flex-col items-start gap-3">
               <p className="font-[SatoshiRegular] text-base sm:text-lg lg:text-xl uppercase">
-                Organized By School of Computer Science and Engineering, XIM
+                Organized By School of Computer Science & Engineering, XIM
                 University, Bhubaneswar (New Campus), Harirajpur
               </p>
               <span className="font-[SatoshiRegular] uppercase text-lg bg-[#ffffff26] py-3 px-6 rounded-xl backdrop-blur-[13px]">
@@ -96,8 +96,10 @@ const Home = () => {
         </span>
 
         <p className="font-[SatoshiBold] animate-moveRightToLeft text-lg whitespace-nowrap">
-          All accepted and presented papers will be submitted for inclusion in
-          IEEE Xplore® Indexed By Scopus®
+          {/* All accepted and presented papers will be submitted for inclusion in
+          IEEE Xplore® Indexed By Scopus®.  */}
+          Accepted papers will be submitted for inclusion into IEEE Xplore
+          subject to meeting IEEE Xplore’s scope and quality requirements.
         </p>
       </section>
 

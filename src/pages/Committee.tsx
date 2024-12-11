@@ -332,6 +332,10 @@ export default function CommitteesPage() {
                 Dr. Bjoran Schuller, Professor, Imperial College, London
               </p>
               <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
+                Dr. Carlos Rivas, President, International Association of Jesuit
+                Engineering Schools (IAJES)
+              </p>
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Dr. Debi Prosad Dogra, Associate Head, IIT Bhubaneswar
               </p>
               <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
