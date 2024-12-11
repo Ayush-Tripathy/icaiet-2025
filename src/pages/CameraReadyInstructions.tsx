@@ -1,6 +1,11 @@
+import { ClipboardCheck, Copy } from "lucide-react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 
 export default function CameraReadyInstructions() {
+  const [isCopied, setIsCopied] = useState<boolean>(false);
+  const [copiedKey, setCopiedKey] = useState<string>("");
+
   return (
     <div className="min-h-screen py-8 pt-32 primary-padding font-[SatoshiRegular]">
       <div className="container mx-auto px-4">
@@ -126,9 +131,54 @@ export default function CameraReadyInstructions() {
                     accordingly.
                   </strong>
                   <div className="space-y-1 mt-2 overflow-x-hidden relative grid grid-cols-1">
-                    <pre className="bg-[#f8f9fa] text-[#37474f] py-px px-1 rounded-lg border border-input">
+                    <div className="flex items-end justify-end">
+                      <button
+                        className="bg-[#f8f9fa] text-[#37474f] p-1 rounded border border-input"
+                        onClick={() => {
+                          setCopiedKey("1"); // Can improve
+                          setIsCopied(() => true);
+                          setTimeout(() => {
+                            setIsCopied(() => false);
+                            setCopiedKey("");
+                          }, 3000);
+                          navigator.clipboard.writeText(
+                            "\\IEEEoverridecommandlockouts"
+                          );
+                        }}
+                      >
+                        {copiedKey === "1" && isCopied ? (
+                          <ClipboardCheck className="w-4 h-4" />
+                        ) : (
+                          <Copy className="w-4 h-4" />
+                        )}
+                      </button>
+                    </div>
+                    <pre className="!mb-5 bg-[#f8f9fa] text-[#37474f] py-px px-1 rounded-lg border border-input">
                       \IEEEoverridecommandlockouts
                     </pre>
+
+                    <div className="flex items-end justify-end">
+                      <button
+                        className="bg-[#f8f9fa] text-[#37474f] p-1 rounded border border-input"
+                        onClick={() => {
+                          setCopiedKey("2"); // Can improve
+                          setIsCopied(() => true);
+                          setTimeout(() => {
+                            setIsCopied(() => false);
+                            setCopiedKey("");
+                          }, 3000);
+                          navigator.clipboard.writeText(
+                            "IEEEpubid{\\makebox[\\columnwidth]{979-8-3315-2261-2/24/$31.00~\\copyright2024 IEEE \\hfill}\\hspace{\\columnsep}\\makebox[\\columnwidth]{ }}"
+                          );
+                        }}
+                      >
+                        {copiedKey === "2" && isCopied ? (
+                          <ClipboardCheck className="w-4 h-4" />
+                        ) : (
+                          <Copy className="w-4 h-4" />
+                        )}
+                      </button>
+                    </div>
                     <pre className="overflow-x-auto scrollbar-thin bg-[#f8f9fa] text-[#37474f] py-px px-1 rounded-lg border border-input">
                       \IEEEpubid{"{"}\\makebox[\\columnwidth]{"{"}
                       979-8-3315-2261-2/24/$31.00~\\copyright{}2024 IEEE \\hfill
