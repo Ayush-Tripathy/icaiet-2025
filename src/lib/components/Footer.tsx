@@ -63,8 +63,9 @@ const Footer = () => {
             Contact Us
           </h3>
           <p>
-            <strong>Address:&nbsp;</strong>International Center, XIM University
-            Bhubaneswar (New Campus), Harirajpur-752050, Odisha, India.
+            <strong>Address:&nbsp;</strong>School of Computer Science &
+            Engineering, XIM University Bhubaneswar (New Campus),
+            Harirajpur-752050, Odisha, India.
           </p>
           <p>
             <strong>Email:&nbsp;</strong>

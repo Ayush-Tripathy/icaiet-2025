@@ -407,7 +407,7 @@ export default function CameraReadyInstructions() {
             need to repeat these steps for each accepted paper.
           </p>
 
-          <p className="mt-6">
+          {/* <p className="mt-6">
             Any difficulty with final camera-ready paper submission, please
             contact
             <a
@@ -431,7 +431,7 @@ export default function CameraReadyInstructions() {
               deanxcse_office@xim.edu.in
             </a>
             .
-          </p>
+          </p> */}
 
           <p className="mt-6">
             <strong>Note:</strong> Ensure that the plagiarism level in your

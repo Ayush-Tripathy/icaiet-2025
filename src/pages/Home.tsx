@@ -109,8 +109,9 @@ const Home = () => {
         <p className="font-[SatoshiBold] animate-moveRightToLeft text-lg whitespace-nowrap">
           {/* All accepted and presented papers will be submitted for inclusion in
           IEEE Xplore® Indexed By Scopus®.  */}
-          Accepted papers will be submitted for inclusion into IEEE Xplore
+          Accepted papers will be submitted for inclusion in IEEE Xplore®,
           subject to meeting IEEE Xplore’s scope and quality requirements.
+          Indexed by Scopus®.
         </p>
       </section>
 
