@@ -128,3 +128,7 @@ h1 {
   font-weight: 400;
   font-style: normal;
 }
+
+.primary-padding {
+  @apply px-3 sm:px-10 xl:px-20;
+}

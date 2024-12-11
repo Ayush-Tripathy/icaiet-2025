@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#006699] text-white flex flex-col gap-5 items-center px-3 sm:px-10 lg:px-20 pt-10 pb-3 border-t border-input font-[SatoshiRegular]">
+    <footer className="bg-[#006699] text-white flex flex-col gap-5 items-center primary-padding pt-10 pb-3 border-t border-input font-[SatoshiRegular]">
       <div className="grid grid-cols-1 md:grid-cols-5 gap-10">
         <div className="col-span-2">
           <iframe

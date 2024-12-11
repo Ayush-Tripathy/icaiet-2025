@@ -2,7 +2,7 @@ import { ArrowRight } from "lucide-react";
 
 export default function SubmissionGuidelines() {
   return (
-    <div className="min-h-screen py-8 pt-32 px-3 sm:px-10 lg:px-20 font-[SatoshiRegular]">
+    <div className="min-h-screen py-8 pt-32 primary-padding font-[SatoshiRegular]">
       <div className="container mx-auto px-4">
         <div className="mb-8">
           <h1 className="text-3xl font-bold">Submission Guidelines</h1>

@@ -40,7 +40,7 @@ export default function CommitteesPage() {
   return (
     <div className="pt-32 font-[SatoshiRegular]">
       {/* Main Content */}
-      <main className="container px-3 sm:px-10 lg:px-20 py-6 md:py-12">
+      <main className="container primary-padding py-6 md:py-12">
         <div className="space-y-2">
           <h1 className="text-4xl font-bold tracking-tight">Committees</h1>
           <div className="h-1 w-20 bg-blue-500" />

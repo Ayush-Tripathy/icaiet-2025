@@ -9,7 +9,7 @@ const Home = () => {
     <div className="bg-[#f4f9f9] text-black">
       <div className="relative">
         {/* <div className="absolute inset-0 bg-[rgb(0,0,0/50)] h-screen"></div> */}
-        <div className="text-white bg-[url(/XIM-BG2.jpg)] relative bg-no-repeat bg-cover bg-fixed px-3 sm:px-10 lg:px-20 py-32">
+        <div className="text-white bg-[url(/XIM-BG2.jpg)] relative bg-no-repeat bg-cover bg-fixed primary-padding py-32">
           <div className="flex flex-col gap-5">
             <div className="text-[2.5rem] sm:text-[3rem] lg:text-[3.5rem] xl:text-[4rem] sm:uppercase">
               <span className="hidden xl:inline-block font-[SatoshiBold] text-[1rem] sm:text-[1.5rem] lg:text-[2rem] xl:text-[2.5rem] uppercase leading-[0.9] text-outline-white">
@@ -55,17 +55,20 @@ const Home = () => {
       </section>
 
       {/* Organized By */}
-      <section className="flex flex-col lg:flex-row justify-center gap-32 py-10">
+      <section className="grid grid-cols-1 lg:grid-cols-3 gap-32 py-10">
         <div className="flex flex-col gap-10 items-center">
-          <h3 className="text-center text-2xl sm:text-4xl font-[SatoshiBold] uppercase">
+          <h3 className="text-center text-2xl sm:text-2xl font-[SatoshiBold] uppercase">
             Organized By
           </h3>
-          <img src="/XIM.png" alt="XIM University" className="w-44 h-44" />
+          <a href="https://xim.edu.in/">
+            <img src="/XIM.png" alt="XIM University" className="w-44 h-44" />
+          </a>
         </div>
 
         <div className="flex flex-col gap-10 items-center">
-          <h3 className="text-center text-2xl sm:text-4xl font-[SatoshiBold] uppercase">
-            Technically Co-Sponsored By
+          <h3 className="text-center text-2xl sm:text-2xl font-[SatoshiBold] uppercase">
+            Technically <span className="whitespace-nowrap">Co-Sponsored</span>{" "}
+            By
           </h3>
 
           <div className="flex flex-col gap-5">
@@ -88,10 +91,12 @@ const Home = () => {
           </div>
         </div>
         <div className="flex flex-col gap-10 items-center">
-          <h3 className="text-center text-2xl sm:text-4xl font-[SatoshiBold] uppercase">
+          <h3 className="text-center text-2xl sm:text-2xl font-[SatoshiBold] uppercase">
             In partnership with IAJES
           </h3>
-          <img src="/iajes.png" alt="XIM University" className="w-44 h-44" />
+          <a href="https://www.iajes.org/">
+            <img src="/iajes.png" alt="XIM University" className="w-44 h-44" />
+          </a>
         </div>
       </section>
 
@@ -110,7 +115,7 @@ const Home = () => {
       </section>
 
       {/* About XIM University */}
-      <section className="px-3 sm:px-10 lg:px-20 py-10 sm:py-16  border-t border-input flex flex-row">
+      <section className="primary-padding py-10 sm:py-16  border-t border-input flex flex-row">
         {/* <TextSection
           titlel1="About"
           titlel2="XIM University"
@@ -157,13 +162,13 @@ const Home = () => {
             </div>
           </div>
 
-          <div className="overflow-x-auto max-sm:max-w-[calc(100vw-50px)]">
+          <div className="overflow-x-auto grid grid-cols-1">
             <ImportantDates />
           </div>
         </div>
       </section>
 
-      <section className="px-3 sm:px-10 lg:px-20 py-10 sm:py-16  border-t border-input flex flex-row">
+      <section className="primary-padding py-10 sm:py-16  border-t border-input flex flex-row">
         <TextSection
           titlel1="About"
           titlel2="SCSE"
@@ -173,7 +178,7 @@ const Home = () => {
       </section>
 
       {/* About ICAIET */}
-      <section className="px-3 sm:px-10 lg:px-20 py-10 sm:py-16  border-t border-input  flex flex-col items-center gap-20">
+      <section className="primary-padding py-10 sm:py-16  border-t border-input  flex flex-col items-center gap-20">
         <TextSection
           titlel1="About"
           titlel2="ICAIET 2025"

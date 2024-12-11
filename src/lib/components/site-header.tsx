@@ -81,7 +81,7 @@ export default function Navbar() {
 
   return (
     <header
-      className={`fixed px-3 sm:px-10 lg:px-20 top-0 z-50 w-full ${
+      className={`fixed px-3 sm:px-10 xl:px-20 top-0 z-50 w-full ${
         isScrolled
           ? "border-input text-black"
           : `${ignore ? "" : "border-[#2e2e2e] text-white"}`
