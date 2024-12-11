@@ -125,9 +125,11 @@ export default function CameraReadyInstructions() {
                     in the other cases the copyright text should be adapted
                     accordingly.
                   </strong>
-                  <div className="space-y-1 mt-2 overflow-x-hidden relative w-min">
-                    <pre>\IEEEoverridecommandlockouts</pre>
-                    <pre className="overflow-x-auto max-w-[calc(100vw-100px)] sm:break-words sm:whitespace-pre-wrap sm:max-w-full">
+                  <div className="space-y-1 mt-2 overflow-x-hidden relative grid grid-cols-1">
+                    <pre className="bg-[#f8f9fa] text-[#37474f] py-px px-1 rounded-lg border border-input">
+                      \IEEEoverridecommandlockouts
+                    </pre>
+                    <pre className="overflow-x-auto scrollbar-thin bg-[#f8f9fa] text-[#37474f] py-px px-1 rounded-lg border border-input">
                       \IEEEpubid{"{"}\\makebox[\\columnwidth]{"{"}
                       979-8-3315-2261-2/24/$31.00~\\copyright{}2024 IEEE \\hfill
                       {"}"}\\hspace{"{"}\\columnsep{"}"}
