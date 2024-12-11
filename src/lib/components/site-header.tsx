@@ -93,9 +93,9 @@ export default function Navbar() {
             <a href="https://xim.edu.in/">
               <span>
                 <img
-                  src="/XIM_logo.png"
+                  src="/XIM.png"
                   alt="XIM University"
-                  className="min-w-12 max-w-12 h-12"
+                  className="min-w-14 max-w-14 h-14"
                 />
               </span>
             </a>
@@ -109,15 +109,33 @@ export default function Navbar() {
               }`}
             ></div>
 
+            <Link to="/">
+              <span>
+                <img
+                  src="/logo.png"
+                  alt="XIM University"
+                  className="mr-2 min-w-12 max-w-12 h-12 mix-blend-darken"
+                />
+              </span>
+            </Link>
+
             <Link
               to="/"
-              className="text-lg 2xl:text-2xl tracking-widest font-semibold whitespace-nowrap flex flex-row items-center"
+              className="montserrat-regular text-lg 2xl:text-xl tracking-widest font-semibold whitespace-nowrap flex flex-row items-center"
             >
               ICAIET-2025
             </Link>
           </div>
 
           <div className="hidden lg:flex items-center">
+            {/* | Line */}
+            {/* <div
+              className={`h-16 w-0 border-r mx-2 ${
+                isScrolled
+                  ? "border-input"
+                  : `${ignore ? "" : "border-[#2e2e2e]"}`
+              }`}
+            ></div> */}
             {/* | Line */}
             <div
               className={`h-16 w-0 border-r mx-2 ${
@@ -130,7 +148,7 @@ export default function Navbar() {
           <div className="hidden xl:flex items-center gap-2 text-sm">
             <CalendarDays className="h-4 w-4" />
             <span className="whitespace-nowrap text-sm 2xl:text-base">
-              28th-30th AUG
+              28 - 30 AUG
             </span>
             <div
               className={`h-16 border-r ${

@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="bg-blue-400 text-black flex flex-col gap-5 items-center px-3 sm:px-10 lg:px-20 pt-10 pb-3 border-t border-input font-[SatoshiRegular]">
+    <footer className="bg-[#006699] text-white flex flex-col gap-5 items-center px-3 sm:px-10 lg:px-20 pt-10 pb-3 border-t border-input font-[SatoshiRegular]">
       <div className="grid grid-cols-1 md:grid-cols-5 gap-10">
         <div className="col-span-2">
           <iframe
@@ -68,13 +68,12 @@ const Footer = () => {
           </p>
           <p>
             <strong>Email:&nbsp;</strong>
-            <a href="mailto:deanxcse_office@xim.edu.in">
-              deanxcse_office@xim.edu.in
-            </a>
+            <a href="mailto:icaiet-2025@xim.edu.in">icaiet-2025@xim.edu.in</a>
           </p>
           <p>
             <strong>Phone:&nbsp;</strong>
-            <a href="tel:+917008014054">+917008014054</a>,
+            {/* <a href="tel:+917008014054">+917008014054</a>, */}
+            <a href="tel:+918280006677">+918280006677</a>,
             <a href="tel:+917978910321"> +917978910321</a>,
             <a href="tel:+916205015853"> +916205015853</a>
           </p>

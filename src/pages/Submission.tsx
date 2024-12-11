@@ -20,18 +20,20 @@ export default function SubmissionGuidelines() {
               { title: "Paper Formatting:", content: "IEEE format." },
               {
                 title: "Page Limit:",
+                // content:
+                //   "6 pages. Additional pages can be bought at INR 750/- per page.",
                 content:
-                  "6 pages. Additional pages can be bought at INR 750/- per page.",
+                  "The maximum page limit is six pages including references. No author biography at the end. We allow only one extra page at an additional charge of INR 1000 (Indian) or USD 15 (Others).",
               },
-              {
-                title: "Author Information:",
-                content:
-                  "Please include author names, affiliations, contact details, and a brief biography (40-70 words) for each author. Mention if you have a separate corresponding author.",
-              },
+              // {
+              //   title: "Author Information:",
+              //   content:
+              //     "Please include author names, affiliations, contact details, and a brief biography (40-70 words) for each author. Mention if you have a separate corresponding author.",
+              // },
               {
                 title: "Abstract:",
                 content:
-                  "Summarize the main contribution and findings in no more than 1000 words.",
+                  "Summarize the main contribution and findings in not more than 200 words.",
               },
               {
                 title: "Keywords:",
@@ -41,7 +43,7 @@ export default function SubmissionGuidelines() {
               {
                 title: "Originality and Plagiarism:",
                 content:
-                  "Please submit original work; the conference imposes IEEE's policy on plagiarism. Your submission confirms that the paper is not under consideration elsewhere and that all sources have been appropriately cited.",
+                  "Please submit original work, the conference imposes IEEE's policy on plagiarism. Your submission confirms that the paper is not under consideration elsewhere and that all sources have been appropriately cited. Similarity with other papers should be low (it is the responsibility of the authors to ensure that the similarity index of the paper is below 15%. If the plagiarism level is more than 15%, the conference organizers have the right to exclude the paper from publication in the IEEE Xplore). Maximum File Size allowed is 3 MB and the file format is Adobe PDF (.pdf) without any encryption and/or passwords.",
               },
               {
                 title: "Ethical Considerations:",
@@ -57,6 +59,11 @@ export default function SubmissionGuidelines() {
                 title: "Presentation Format:",
                 content:
                   "The papers are expected to be presented orally unless they are in a poster session.",
+              },
+              {
+                content:
+                  "The authors are expected to make sure that the comments of the reviewers/meta-reviewers have been addressed in the final manuscript.",
+                title: "Review Comments:",
               },
               {
                 title: "Copyright and Publication:",

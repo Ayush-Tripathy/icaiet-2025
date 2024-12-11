@@ -38,11 +38,11 @@ const Home = () => {
 
             <div className="flex flex-col items-start gap-3">
               <p className="font-[SatoshiRegular] text-base sm:text-lg lg:text-xl uppercase">
-                School of Computer Science and Engineering, XIM University,
-                Bhubaneswar (New Campus), Harirajpur
+                Organized By School of Computer Science and Engineering, XIM
+                University, Bhubaneswar (New Campus), Harirajpur
               </p>
               <span className="font-[SatoshiRegular] uppercase text-lg bg-[#ffffff26] py-3 px-6 rounded-xl backdrop-blur-[13px]">
-                August 28<sup>th</sup>–30<sup>th</sup>, 2025
+                August 28<span className="font-serif"> - </span>30, 2025
               </span>
             </div>
           </div>
@@ -60,7 +60,7 @@ const Home = () => {
           <h3 className="text-center text-2xl sm:text-4xl font-[SatoshiBold] uppercase">
             Organized By
           </h3>
-          <img src="/XIM_logo.png" alt="XIM University" className="w-40 h-40" />
+          <img src="/XIM.png" alt="XIM University" className="w-44 h-44" />
         </div>
 
         <div className="flex flex-col gap-10 items-center">
@@ -102,7 +102,7 @@ const Home = () => {
       </section>
 
       {/* About XIM University */}
-      <section className="px-3 sm:px-10 lg:px-20 py-16 sm:py-36  border-t border-input flex flex-row">
+      <section className="px-3 sm:px-10 lg:px-20 py-10 sm:py-16  border-t border-input flex flex-row">
         {/* <TextSection
           titlel1="About"
           titlel2="XIM University"
@@ -112,7 +112,7 @@ const Home = () => {
         <div className="flex flex-col xl:flex-row gap-10">
           <div className="bg-inherit flex flex-col flex-1 gap-5">
             <div className="">
-              <h2 className="font-bold  font-[SatoshiBold] text-5xl uppercase">
+              <h2 className="font-bold font-[SatoshiBold] text-5xl uppercase">
                 <span className="text-outline">About</span>
                 <br />
                 XIM University
@@ -124,7 +124,7 @@ const Home = () => {
                 XIM University sees itself as a global university delivering
                 quality education to deserving meritorious students. The XIM
                 University affirms its mission of excellent quality higher
-                education. It aspires to lead the country in management
+                education. It aspires to lead the country in multidisciplinary
                 education by focusing on research and innovation. Our
                 intellectual capital rankings have been in the top five in the
                 country consistently. The excellence we have lived through the
@@ -132,13 +132,13 @@ const Home = () => {
                 follow. This aligns with our motto – Semper Excelsius – Ever
                 Higher.
                 <br />
-                The School of Computer Science & Engineering is a unique school
+                {/* The School of Computer Science & Engineering is a unique school
                 that leverages the high-quality programs of XIM University and
                 emphasizes sound computer science fundamentals, coding,
                 research, innovation, and entrepreneurship. It currently offers
                 B.Tech. (Hons.) in Computer Science & Engineering, M. Tech in
-                Data Science & Analytics, and Ph.D in Computer Science and
-                Engineering.{" "}
+                Computer Science and Engineering, specialization in Data
+                Science, and Ph.D in Computer Science and Engineering. */}
                 <a
                   href="https://xim.edu.in/"
                   className="text-gray-500 text-base hover:cursor-pointer hover:underline"
@@ -155,8 +155,17 @@ const Home = () => {
         </div>
       </section>
 
+      <section className="px-3 sm:px-10 lg:px-20 py-10 sm:py-16  border-t border-input flex flex-row">
+        <TextSection
+          titlel1="About"
+          titlel2="SCSE"
+          text="The School of Computer Science & Engineering is a unique school that leverages the high-quality programs of XIM University and emphasizes sound computer science fundamentals, coding, research, innovation, and entrepreneurship. It currently offers B.Tech. (Hons.) in Computer Science & Engineering, M. Tech in Computer Science and Engineering, specialization in Data Science, and Ph.D in Computer Science and Engineering."
+          link="https://scse.xim.edu.in/"
+        />
+      </section>
+
       {/* About ICAIET */}
-      <section className="px-3 sm:px-10 lg:px-20 py-16 sm:py-36  border-t border-input  flex flex-col items-center gap-20">
+      <section className="px-3 sm:px-10 lg:px-20 py-10 sm:py-16  border-t border-input  flex flex-col items-center gap-20">
         <TextSection
           titlel1="About"
           titlel2="ICAIET 2025"
@@ -165,12 +174,12 @@ const Home = () => {
         />
 
         <div className="flex flex-col md:flex-row gap-3 md:gap-7">
-          <Link
-            to="/call-for-papers"
+          <a
+            href="https://cmt3.research.microsoft.com/ICAIET2025"
             className="w-full whitespace-nowrap flex flex-row items-center gap-3 px-16 py-4 bg-[#ccf2f4] border-[#a4ebf3] transition-all duration-300 hover:backdrop-blur-0 hover:gap-5 backdrop-blur-[1.25rem] text-lg uppercase rounded-full border"
           >
-            Call For Paper <ArrowRight size={24} />
-          </Link>
+            Submit Paper <ArrowRight size={24} />
+          </a>
           <Link
             to="/registration"
             className="w-full whitespace-nowrap flex flex-row items-center gap-3 px-16 py-4 bg-[#ccf2f4] border-[#a4ebf3] transition-all duration-300 hover:backdrop-blur-0 hover:gap-5 backdrop-blur-[1.25rem] text-lg uppercase rounded-full border"

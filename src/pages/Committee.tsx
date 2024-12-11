@@ -1,40 +1,40 @@
-import ImageCard from "@/lib/components/committee/ImageCard";
-import ChiefPatron from "../assets/committee/ChiefPatron/Fr.-Antony-R.-Uvari-SJ.jpg";
-import AntonyRaj from "../assets/committee/Patron/Prof. Fr.S.Antony Raj.jpg";
-import GopalKrishnaNayak from "../assets/committee/Patron/Dr. Gopal Krishna Nayak.png";
-import RudraMohanTripathy from "../assets/committee/GeneralChair/Dr. Rudra mohan tripathy.png";
-import AshutoshDutta from "../assets/committee/GeneralChair/Ashutosh-Dutta.jpg";
+// import ImageCard from "@/lib/components/committee/ImageCard";
+// import ChiefPatron from "../assets/committee/ChiefPatron/Fr.-Antony-R.-Uvari-SJ.jpg";
+// import AntonyRaj from "../assets/committee/Patron/Prof. Fr.S.Antony Raj.jpg";
+// import GopalKrishnaNayak from "../assets/committee/Patron/Dr. Gopal Krishna Nayak.png";
+// import RudraMohanTripathy from "../assets/committee/GeneralChair/Dr. Rudra mohan tripathy.png";
+// import AshutoshDutta from "../assets/committee/GeneralChair/Ashutosh-Dutta.jpg";
 
 // Advisory Committee photos
-import Arokiyadass from "../assets/committee/AdvisoryCommittee/Fr.-V.-Arokiyadass-S.J..jpg";
-import Turuk from "../assets/committee/AdvisoryCommittee/A.K. Turuk.jpg";
-import Majhi from "../assets/committee/AdvisoryCommittee/Prof.B.Majhi.jpg";
-import Schuller from "../assets/committee/AdvisoryCommittee/Bjoern Schuller.jpg";
-import Baral from "../assets/committee/AdvisoryCommittee/chitta baral.png";
-import Dogra from "../assets/committee/AdvisoryCommittee/D.P Dogra.png";
-import Panda from "../assets/committee/AdvisoryCommittee/Ganapati panda.jpg";
-import Hari from "../assets/committee/AdvisoryCommittee/kvs hari.jpg";
-import Gaur from "../assets/committee/AdvisoryCommittee/Prerna Gaur.jpeg";
-import Srivastava from "../assets/committee/AdvisoryCommittee/Rajeev Srivastava.jpg";
-import Misra from "../assets/committee/AdvisoryCommittee/Sudip Misra.jpg";
+// import Arokiyadass from "../assets/committee/AdvisoryCommittee/Fr.-V.-Arokiyadass-S.J..jpg";
+// import Turuk from "../assets/committee/AdvisoryCommittee/A.K. Turuk.jpg";
+// import Majhi from "../assets/committee/AdvisoryCommittee/Prof.B.Majhi.jpg";
+// import Schuller from "../assets/committee/AdvisoryCommittee/Bjoern Schuller.jpg";
+// import Baral from "../assets/committee/AdvisoryCommittee/chitta baral.png";
+// import Dogra from "../assets/committee/AdvisoryCommittee/D.P Dogra.png";
+// import Panda from "../assets/committee/AdvisoryCommittee/Ganapati panda.jpg";
+// import Hari from "../assets/committee/AdvisoryCommittee/kvs hari.jpg";
+// import Gaur from "../assets/committee/AdvisoryCommittee/Prerna Gaur.jpeg";
+// import Srivastava from "../assets/committee/AdvisoryCommittee/Rajeev Srivastava.jpg";
+// import Misra from "../assets/committee/AdvisoryCommittee/Sudip Misra.jpg";
 
 // Steering Committee photos
-import CKumar from "../assets/committee/SteeringCommittee/C.Kumar.jpg";
-import Dharmendra from "../assets/committee/SteeringCommittee/Dharmendra Kumar Yadav.jpg";
-import Dilip from "../assets/committee/SteeringCommittee/Dilip K.prasad.jpg";
-import Subramanian from "../assets/committee/SteeringCommittee/SUbramanian.png";
-import RKSharma from "../assets/committee/SteeringCommittee/R.K. Sharma.jpg";
-import Vidy from "../assets/committee/SteeringCommittee/vidy potdar.png";
+// import CKumar from "../assets/committee/SteeringCommittee/C.Kumar.jpg";
+// import Dharmendra from "../assets/committee/SteeringCommittee/Dharmendra Kumar Yadav.jpg";
+// import Dilip from "../assets/committee/SteeringCommittee/Dilip K.prasad.jpg";
+// import Subramanian from "../assets/committee/SteeringCommittee/SUbramanian.png";
+// import RKSharma from "../assets/committee/SteeringCommittee/R.K. Sharma.jpg";
+// import Vidy from "../assets/committee/SteeringCommittee/vidy potdar.png";
 
 // Organizing Chair photos
-import AshishKumar from "../assets/committee/OrganizingChair/Ashish Kumar.png";
-import DevendraKumarYadav from "../assets/committee/OrganizingChair/Devendra Kumar Yadav.png";
+// import AshishKumar from "../assets/committee/OrganizingChair/Ashish Kumar.png";
+// import DevendraKumarYadav from "../assets/committee/OrganizingChair/Devendra Kumar Yadav.png";
 
 // Technical Program Chair photos
-import BSPanda from "../assets/committee/TechnicalProgramChair/B S Panda.jpg";
-import Pabitra from "../assets/committee/TechnicalProgramChair/Pabitra MOhan Khilar.jpg";
-import Susanta from "../assets/committee/TechnicalProgramChair/Susanta Ray.jpg";
-import SouravMondal from "../assets/committee/TechnicalProgramChair/Sourav mandal.png";
+// import BSPanda from "../assets/committee/TechnicalProgramChair/B S Panda.jpg";
+// import Pabitra from "../assets/committee/TechnicalProgramChair/Pabitra MOhan Khilar.jpg";
+// import Susanta from "../assets/committee/TechnicalProgramChair/Susanta Ray.jpg";
+// import SouravMondal from "../assets/committee/TechnicalProgramChair/Sourav mandal.png";
 
 export default function CommitteesPage() {
   return (
@@ -46,10 +46,9 @@ export default function CommitteesPage() {
           <div className="h-1 w-20 bg-blue-500" />
         </div>
 
-        <div className="flex flex-row items-start flex-wrap mt-10 gap-28">
-          {/* Chief Patron Section */}
+        {/* <div className="flex flex-row items-start flex-wrap mt-10 gap-28">
           <section className="space-y-4 max-sm:w-full">
-            <h2 className="text-2xl font-bold text-blue-400">Chief Patron</h2>
+            <h2 className="text-2xl font-bold text-blue-400">Patron</h2>
             <div className="grid grid-cols-2 gap-3 sm:flex sm:flex-row sm:gap-5 sm:flex-wrap w-full">
               <ImageCard
                 src={ChiefPatron}
@@ -59,7 +58,6 @@ export default function CommitteesPage() {
             </div>
           </section>
 
-          {/* Patron Section */}
           <section className="space-y-4 max-sm:w-full">
             <h2 className="text-2xl font-bold text-blue-400">Patron</h2>
             <div className="grid grid-cols-2 gap-3 sm:flex sm:flex-row sm:gap-5 sm:flex-wrap w-full">
@@ -77,7 +75,6 @@ export default function CommitteesPage() {
             </div>
           </section>
 
-          {/* General Chair Section */}
           <section className="space-y-4 max-sm:w-full">
             <h2 className="text-2xl font-bold text-blue-400">General Chair</h2>
             <div className="grid grid-cols-2 gap-3 sm:flex sm:flex-row sm:gap-5 sm:flex-wrap w-full">
@@ -97,7 +94,6 @@ export default function CommitteesPage() {
             </div>
           </section>
 
-          {/*  Advisory Committee Section */}
           <section className="space-y-4 max-sm:w-full">
             <h2 className="text-2xl font-bold text-blue-400">
               Advisory Committee
@@ -177,7 +173,6 @@ export default function CommitteesPage() {
             </div>
           </section>
 
-          {/* Steering Committee */}
           <section className="space-y-4 max-sm:w-full">
             <h2 className="text-2xl font-bold text-blue-400">
               Steering Committee
@@ -221,27 +216,6 @@ export default function CommitteesPage() {
             </div>
           </section>
 
-          {/* Organizing Chair Section */}
-          <section className="space-y-4 max-sm:w-full">
-            <h2 className="text-2xl font-bold text-blue-400">
-              Organizing Chair
-            </h2>
-            <div className="grid grid-cols-2 gap-3 sm:flex sm:flex-row sm:gap-5 sm:flex-wrap w-full">
-              <ImageCard
-                src={AshishKumar}
-                name="Dr. Ashish Kumar"
-                occupation="XIM University"
-              />
-
-              <ImageCard
-                src={DevendraKumarYadav}
-                name="Dr. Devendra Kumar Yadav"
-                occupation="XIM University"
-              />
-            </div>
-          </section>
-
-          {/* Technical Program Chair Section */}
           <section className="space-y-4 max-sm:w-full">
             <h2 className="text-2xl font-bold text-blue-400">
               Technical Program Chair
@@ -279,9 +253,182 @@ export default function CommitteesPage() {
 
               <ImageCard
                 src={SouravMondal}
-                name="Dr. Sourav Mondal"
+                name="Dr. Sourav Mandal"
                 occupation="XIM University"
               />
+            </div>
+          </section>
+
+          <section className="space-y-4 max-sm:w-full">
+            <h2 className="text-2xl font-bold text-blue-400">
+              Organizing Chair
+            </h2>
+            <div className="grid grid-cols-2 gap-3 sm:flex sm:flex-row sm:gap-5 sm:flex-wrap w-full">
+              <ImageCard
+                src={AshishKumar}
+                name="Dr. Ashish Kumar"
+                occupation="XIM University"
+              />
+
+              <ImageCard
+                src={DevendraKumarYadav}
+                name="Dr. Devendra Kumar Yadav"
+                occupation="XIM University"
+              />
+            </div>
+          </section>
+        </div> */}
+
+        <div className="space-y-12 mt-10">
+          {/* Chief Patron Section */}
+          <section className="space-y-4">
+            <h2 className="text-2xl font-bold text-blue-400">Patron</h2>
+            <div className="space-y-2">
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
+                Fr. Antony R. Uvari, S.J., Vice Chancellor, XIM University,
+                India
+              </p>
+            </div>
+          </section>
+
+          {/* General Chair Section */}
+          <section className="space-y-4">
+            <h2 className="text-2xl font-bold text-blue-400">General Chair</h2>
+            <div className="space-y-2">
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
+                Dr. Ashutosh Dutta, Professor and Director, Johns Hopkins
+                University, USA
+              </p>
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
+                Dr. Rudra Mohan Tripathy, Dean, School of Computer Science and
+                Engineering, XIM University, India
+              </p>
+            </div>
+          </section>
+
+          {/*  Advisory Committee Section */}
+          <section className="space-y-4">
+            <h2 className="text-2xl font-bold text-blue-400">
+              Advisory Committee
+            </h2>
+            <div className="space-y-2">
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
+                Fr. S. Antony Raj, S.J., Registrar, XIM University
+              </p>
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
+                Fr. V. Arokiyadass, S.J., Chief Finance Officer, XIM University,
+                India
+              </p>
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
+                Dr. Chitta Baral, Professor, Arizona State University, USA
+              </p>
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
+                Dr. Ashok Kumar Turuk, Professor, NIT Rourkela
+              </p>
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
+                Dr. Banshidhar Majhi, Professor, VSSUT, VC
+              </p>
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
+                Dr. Bjoran Schuller, Professor, Imperial College, London
+              </p>
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
+                Dr. Debi Prosad Dogra, Associate Head, IIT Bhubaneswar
+              </p>
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
+                Dr. Ganapati Panda, Professor and Advisor, CV Raman Global
+                University
+              </p>
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
+                Dr. Gopal Krishna Nayak, Professor, XIM University, India
+              </p>
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
+                Dr. K.V.S. Hari, Professor, IISc., Bangalore
+              </p>
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
+                Dr. Prerna Gaur, Director, NSUT, West Campus, Delhi
+              </p>
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
+                Dr. Rajeev Srivastava, Professor, Director IIIT Ranchi
+              </p>
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
+                Dr. Sudip Misra, Professor, IIT KGP
+              </p>
+            </div>
+          </section>
+
+          {/* Steering Committee */}
+          <section className="space-y-4">
+            <h2 className="text-2xl font-bold text-blue-400">
+              Steering Committee
+            </h2>
+            <div className="space-y-2">
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
+                Dr. Chiranjeev Kumar, Professor & Head, Dept. of CSE, IIT(ISM)
+                Dhanbad
+              </p>
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
+                Dr. Dharmendra Kumar Yadav, Professor & Head, Dept. of CSE,
+                MNNIT Allahabad
+              </p>
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
+                Dr. Dilip K Prasad, Professor, UIT Norway
+              </p>
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
+                Dr. R. Balasubramanian, Professor, IIT Roorkee
+              </p>
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
+                Dr. Rajendra Kumar Sharma, Professor, Department of Mathematics,
+                IIT Delhi
+              </p>
+              {/* <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
+                Dr. Vidy Potdar, Associate Professor, Curtin University,
+                Australia
+              </p> */}
+            </div>
+          </section>
+
+          {/* Technical Program Chair Section */}
+          <section className="space-y-4">
+            <h2 className="text-2xl font-bold text-blue-400">
+              Technical Program Chair
+            </h2>
+            <div className="space-y-2">
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
+                Dr. Bhawani Sankar Panda, IIT Delhi
+              </p>
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
+                Dr. Pabitra Mohan Khilar, NIT Rourkela
+              </p>
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
+                Dr. Susanta Ray, Jadavpur University
+              </p>
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
+                Dr. Ashish Kumar, XIM University
+              </p>
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
+                Dr. Devendra Kumar Yadav, XIM University
+              </p>
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
+                Dr. Sourav Mandal, XIM University
+              </p>
+            </div>
+          </section>
+
+          {/* Organizing Chair Section */}
+          <section className="space-y-4">
+            <h2 className="text-2xl font-bold text-blue-400">
+              Organizing Chair
+            </h2>
+            <div className="space-y-2">
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
+                Dr. Ashish Kumar, XIM University
+              </p>
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
+                Dr. Devendra Kumar Yadav, XIM University
+              </p>
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
+                Dr. Fr. Joshy K X, S.J., XIM University
+              </p>
             </div>
           </section>
         </div>
@@ -333,7 +480,7 @@ export default function CommitteesPage() {
                 Dr. Hari Om, IIT (ISM) Dhanbad
               </p>
               <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
-                Dr. M. Tanveer, IIT Indore
+                Dr. Mohammad Tanveer, IIT Indore
               </p>
               <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Dr. Mahendra Pratap Yadav, IIIT Pune
@@ -348,7 +495,8 @@ export default function CommitteesPage() {
                 Dr. Preeti Chandrakar, NIT Raipur
               </p>
               <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
-                Dr. R. P. Mahapatra, SRM Institute of Science and Technology
+                Dr. Rajendra Prasad Mahapatra, SRM Institute of Science and
+                Technology
               </p>
               <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Dr. Rakesh Chandra Balabantaray, IIIT Bhubaneswar
@@ -455,12 +603,12 @@ export default function CommitteesPage() {
               <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Dr. Pradip Kundu, XIM University
               </p>
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
+              {/* <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Dr. Chandan Misra, XIM University
               </p>
               <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Dr. Fr. Joshy K X, S.J., XIM University
-              </p>
+              </p> */}
             </div>
           </section>
 
@@ -469,7 +617,7 @@ export default function CommitteesPage() {
             <h2 className="text-2xl font-bold text-blue-400">Web Chair</h2>
             <div className="space-y-2">
               <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
-                Dr. Fr. Joshy K X, S.J., XIM University
+                Dr. Chandan Misra, XIM University
               </p>
             </div>
           </section>
@@ -480,11 +628,11 @@ export default function CommitteesPage() {
               Publication Chairs
             </h2>
             <div className="space-y-2">
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
+              {/* <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Dr. Arif Ahmed Sekh, UiT Norway
-              </p>
+              </p> */}
               <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
-                Dr. Sourav Mondal, XIM University
+                Dr. Sourav Mandal, XIM University
               </p>
               <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Dr. Swarup Chattopadhyay, XIM University
@@ -499,16 +647,16 @@ export default function CommitteesPage() {
             </h2>
             <div className="space-y-2">
               <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
-                Dr. Chandan Misra, XIM University
+                Dr. Alok Ranjan, Bosch
               </p>
               <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
-                Dr. Fr. Joshy K X, S.J., XIM University
+                Mr. Satyajit Nath, Senior Director, Capgemini
               </p>
             </div>
           </section>
 
           {/* Registration Chair and Transportation Chair Section */}
-          <section className="space-y-4">
+          {/* <section className="space-y-4">
             <h2 className="text-2xl font-bold text-blue-400">
               Registration Chair and Transportation Chair
             </h2>
@@ -526,7 +674,7 @@ export default function CommitteesPage() {
                 Mr. Biswajit Mohapatra, XIM University
               </p>
             </div>
-          </section>
+          </section> */}
 
           {/* Publicity Chair Section */}
           <section className="space-y-4">
@@ -534,6 +682,9 @@ export default function CommitteesPage() {
               Publicity Chair
             </h2>
             <div className="space-y-2">
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
+                Dr. Arif Ahmed Sekh, UiT Norway
+              </p>
               <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Dr. Deepak Ranjan Nayak, MNIT Jaipur
               </p>

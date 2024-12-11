@@ -36,6 +36,13 @@ const CallForPapers = () => {
         register for the conference and present his/her paper.
       </p>
 
+      <a
+        href="https://cmt3.research.microsoft.com/ICAIET2025"
+        className="w-fit flex flex-row items-center gap-3 px-4 sm:px-8 md:px-10 py-1 sm:py-2 md:py-3 bg-[#ccf2f4] border-[#a4ebf3] transition-all duration-300 hover:backdrop-blur-0 hover:gap-5 backdrop-blur-[1.25rem] text-sm sm:text-base md:text-lg uppercase rounded-full border "
+      >
+        Paper Submission Link <ArrowRight size={24} />
+      </a>
+
       <div className="space-y-2">
         <h1 className="text-4xl font-bold tracking-tight">Conference Tracks</h1>
         <div className="h-1 w-20 bg-blue-500" />
@@ -59,7 +66,7 @@ const CallForPapers = () => {
 
         <div className="bg-white p-6 rounded-lg border border-gray-200">
           <h2 className="text-xl font-bold mb-4">
-            Machine Learning and Data Mining
+            Machine Learning and Data Science
           </h2>
           <ul className="list-disc pl-5 space-y-2 text-sm">
             <li>
@@ -266,7 +273,7 @@ const CallForPapers = () => {
         </div>
       </div>
 
-      <div className="space-y-2">
+      {/* <div className="space-y-2">
         <h1 className="text-4xl font-bold tracking-tight">
           Call for Technical Student Paper Contest
         </h1>
@@ -352,7 +359,7 @@ const CallForPapers = () => {
         process for this conference. This service will be provided for free by
         Microsoft and they will bear all expenses, including costs for Azure
         cloud services as well as for software development and support.
-      </p>
+      </p> */}
 
       <p>
         For questions relating to contest, paper submissions etc. please

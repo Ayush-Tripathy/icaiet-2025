@@ -121,3 +121,10 @@ h1 {
   -webkit-text-stroke-color: #fff;
   color: #fff0;
 }
+
+.montserrat-regular {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
