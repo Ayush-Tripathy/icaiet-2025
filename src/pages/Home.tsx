@@ -87,6 +87,12 @@ const Home = () => {
             </div>
           </div>
         </div>
+        <div className="flex flex-col gap-10 items-center">
+          <h3 className="text-center text-2xl sm:text-4xl font-[SatoshiBold] uppercase">
+            In partnership with IAJES
+          </h3>
+          <img src="/iajes.png" alt="XIM University" className="w-44 h-44" />
+        </div>
       </section>
 
       {/* Record number */}
