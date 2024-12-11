@@ -361,7 +361,7 @@ const CallForPapers = () => {
         cloud services as well as for software development and support.
       </p> */}
 
-      <p>
+      {/* <p>
         For questions relating to contest, paper submissions etc. please
         contact:
       </p>
@@ -372,7 +372,7 @@ const CallForPapers = () => {
         Mobile:&nbsp;+917978910321
         <br />
         Email:&nbsp;devendra@xim.edu.in
-      </p>
+      </p> */}
     </div>
   );
 };
