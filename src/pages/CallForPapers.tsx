@@ -45,8 +45,12 @@ const CallForPapers = () => {
 
       <div className="space-y-2">
         <h1 className="text-4xl font-bold tracking-tight">Conference Tracks</h1>
+
         <div className="h-1 w-20 bg-blue-500" />
+
+        
       </div>
+      <span className="-mt-5">(The tracks in the conference include the following - but not limited to)</span>
 
       <div className="grid gap-8 md:grid-cols-2 xl:grid-cols-3 text-left">
         <div className="bg-white p-6 rounded-lg border border-gray-200">
@@ -140,6 +144,7 @@ const CallForPapers = () => {
               Role of IoT in smart homes, healthcare, and industrial automation.
             </li>
             <li>Design and optimization of cyber-physical systems.</li>
+            <li>The role of AI and ML in IoT.</li>
             <li>
               Protocols and standards in IoT connectivity and interoperability.
             </li>
