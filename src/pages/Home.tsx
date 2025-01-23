@@ -55,7 +55,7 @@ const Home = () => {
       </section>
 
       {/* Organized By */}
-      <section className="grid grid-cols-1 lg:grid-cols-3 gap-32 py-10">
+      <section className="grid grid-cols-1 lg:grid-cols-3  py-10">
         <div className="flex flex-col gap-10 items-center">
           <h3 className="text-center text-2xl sm:text-2xl font-[SatoshiBold] uppercase">
             Organized By
@@ -65,7 +65,7 @@ const Home = () => {
           </a>
         </div>
 
-        <div className="flex flex-col gap-10 items-center">
+        <div className="flex flex-col gap-10 items-center max-sm:mt-16">
           <h3 className="text-center text-2xl sm:text-2xl font-[SatoshiBold] uppercase">
             Technically <span className="whitespace-nowrap">Co-Sponsored</span>{" "}
             By
@@ -73,24 +73,42 @@ const Home = () => {
 
           <div className="flex flex-col gap-5">
             <div className="flex flex-row gap-5">
-              <img src="/IEEE-official.png" alt="IEEE" className="w-40" />
-              <img
-                src="/IEEE-kolkata.png"
-                alt="IEEE Kolkata"
-                className="w-40"
-              />
+              <a href="https://www.ieee.org/">
+                <img src="/IEEE-official.png" alt="IEEE" className="w-40" />
+              </a>
+
+              <a href="https://ewh.ieee.org/r10/calcutta/">
+                <img
+                  src="/IEEE-kolkata.png"
+                  alt="IEEE Kolkata"
+                  className="w-40 h-full"
+                />
+              </a>
             </div>
             <div className="flex flex-row gap-5">
-              <img
-                src="/ieee-kolkata-bbsr-joint.png"
-                alt="IEEE Kolkata Bhubaneswar Joint Chapter"
-                className="w-40"
-              />
-              <img src="/IEEE-xim.png" alt="IEEE XIM" className="w-40" />
+              <a href="https://site.ieee.org/bhubaneswar/">
+                <img
+                  src="/ieee-kolkata-bbsr-joint.png"
+                  alt="IEEE Kolkata Bhubaneswar Joint Chapter"
+                  className="w-40 h-full"
+                />
+              </a>
+              <a href="https://futurenetworks.ieee.org/">
+                <img
+                  src="/ieee-future-networks-logo.png"
+                  alt="IEEE Future Networks"
+                  className="w-40"
+                />
+              </a>
+            </div>
+            <div className="flex flex-row gap-5 justify-center">
+              <a href="https://edu.ieee.org/in-ximub/">
+                <img src="/IEEE-xim.png" alt="IEEE XIM" className="w-40" />
+              </a>
             </div>
           </div>
         </div>
-        <div className="flex flex-col gap-10 items-center">
+        <div className="flex flex-col gap-10 items-center max-sm:mt-16">
           <h3 className="text-center text-2xl sm:text-2xl font-[SatoshiBold] uppercase">
             In partnership with IAJES
           </h3>

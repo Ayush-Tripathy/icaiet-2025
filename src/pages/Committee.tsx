@@ -329,7 +329,7 @@ export default function CommitteesPage() {
                 Dr. Banshidhar Majhi, Professor, VSSUT, VC
               </p>
               <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
-                Dr. Bjoran Schuller, Professor, Imperial College, London
+                Dr. Bjoern Schuller, Professor, Imperial College, London
               </p>
               <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Dr. Carlos Rivas, President, International Association of Jesuit
@@ -384,10 +384,10 @@ export default function CommitteesPage() {
                 Dr. Rajendra Kumar Sharma, Professor, Department of Mathematics,
                 IIT Delhi
               </p>
-              {/* <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Dr. Vidy Potdar, Associate Professor, Curtin University,
                 Australia
-              </p> */}
+              </p>
             </div>
           </section>
 
@@ -448,7 +448,13 @@ export default function CommitteesPage() {
                 Dr. Abinash Pujari, SRM University, AP
               </p>
               <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
+                Dr. Ajay Kumar Mallick, NIT Hamirpur
+              </p>
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Dr. Alok Ranjan, Bosch
+              </p>
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
+                Dr. Amrendra Kumar Yadav, ABV-IIITM, Gwalior
               </p>
               <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Dr. Arijit Karati, National Sun Yat-Sen University, Taiwan
@@ -457,7 +463,13 @@ export default function CommitteesPage() {
                 Dr. Arun Kumar, NIT Rourkela
               </p>
               <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
+                Dr. Ashwini Kumar, Bennett University
+              </p>
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Dr. Asif Eqbal, IIT Patna
+              </p>
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
+                Dr. Bharat Ranjan Jyoti Sahoo, ITER, SOA, Bhubaneswar
               </p>
               <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Dr. Bhaskar Mondal, NIT Patna
@@ -478,10 +490,16 @@ export default function CommitteesPage() {
                 Dr. Debbrota Paul Chowdhury, NIT Silchar
               </p>
               <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
+                Dr. Debendra Kumar Muduli, CV Raman Global University
+              </p>
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Dr. Deepak Ranjan Nayak, MNIT Jaipur
               </p>
               <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Dr. Hari Om, IIT (ISM) Dhanbad
+              </p>
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
+                Dr. Lalatendu Muduli, Utkal University
               </p>
               <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Dr. Mohammad Tanveer, IIT Indore
@@ -496,7 +514,32 @@ export default function CommitteesPage() {
                 Dr. Nabajyoti Mazumdar, IIIT Allahabad
               </p>
               <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
+                Dr. Naveen Kumar Gupta, NIT Jalandhar
+              </p>
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
+                Dr. Parabir Sethy, Guru Ghasidas Vishwavidyalaya, Bilaspur
+              </p>
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
+                Dr. Prabhat Dansena, CV Raman Global University
+              </p>
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
+                Dr. Pradeep Roy, Indian Institute of Management Nagpur
+              </p>
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
+                Dr. Pramit Mazumdar, IIIT Vadodara
+              </p>
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
+                Dr. Prasun Chandra Tripathi, IITRAM, Ahmedabad
+              </p>
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Dr. Preeti Chandrakar, NIT Raipur
+              </p>
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
+                Dr. Rabindra K. Barik, Kalinga Institute of Industrial
+                Technology
+              </p>
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
+                Dr. Rabi Shaw, NIT Jalandhar
               </p>
               <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Dr. Rajendra Prasad Mahapatra, SRM Institute of Science and
@@ -506,7 +549,20 @@ export default function CommitteesPage() {
                 Dr. Rakesh Chandra Balabantaray, IIIT Bhubaneswar
               </p>
               <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
+                Dr. Ram Chandra Barik, CV Raman Global University
+              </p>
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
+                Dr. Ram Narayan Yadav, IITRAM, Ahmedabad
+              </p>
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
+                Dr. Rasmi Kant Pati, Sambalpur University Institute of
+                Information and Technology
+              </p>
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Dr. Ravi Yadav, IIT Jodhpur
+              </p>
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
+                Dr. Ruhul Amin, NIT Jamshedpur
               </p>
               <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Dr. Samarendra Das, ICAR-National Institute on Foot and Mouth
@@ -517,6 +573,9 @@ export default function CommitteesPage() {
               </p>
               <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Dr. Sanjaya Kumar Panda, NIT Warangal
+              </p>
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
+                Dr. Santosh Kumar Majhi, Guru Ghasidas Vishwavidyalaya, Bilaspur
               </p>
               <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Dr. Santos Kumar Das, NIT Rourkela
@@ -537,65 +596,13 @@ export default function CommitteesPage() {
                 Dr. Sudip Kumar Naskar, Jadavpur University
               </p>
               <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
+                Dr. Surendra Kumar Nanda, CV Raman Global University
+              </p>
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Dr. Tapas Kumar Mishra, NIT Rourkela
               </p>
               <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Dr. Yamuna Prasad, IIT Jammu
-              </p>
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
-                Dr. Naveen Kumar Gupta, NIT Jalandhar
-              </p>
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
-                Dr. Ajay Kumar Mallick, NIT Hamirpur
-              </p>
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
-                Dr. Ashwini Kumar, Bennett University
-              </p>
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
-                Dr. Debendra Kumar Muduli, CV Raman Global University
-              </p>
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
-                Dr. Ram Chandra Barik, CV Raman Global University
-              </p>
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
-                Dr. Lalatendu Muduli, Utkal University
-              </p>
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
-                Dr. Rasmi Kant Pati, Sambalpur University Institute of
-                Information and Technology
-              </p>
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
-                Dr. Prabhat Dansena, CV Raman Global University
-              </p>
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
-                Dr. Surendra Kumar Nanda, CV Raman Global University
-              </p>
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
-                Dr. Pradeep Roy, Indian Institute of Management Nagpur
-              </p>
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
-                Dr. Amrendra Kumar Yadav, ABV-IIITM, Gwalior
-              </p>
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
-                Dr. Pramit Mazumdar, IIIT Vadodara
-              </p>
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
-                Dr. Prasun Chandra Tripathi, IITRAM, Ahmedabad
-              </p>
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
-                Dr. Ruhul Amin, NIT Jamshedpur
-              </p>
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
-                Dr. Ram Narayan Yadav, IITRAM, Ahmedabad
-              </p>
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
-                Dr. Bharat Ranjan Jyoti Sahoo, ITER, SOA, Bhubaneswar
-              </p>
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
-                Dr. Parabir Sethy, Guru Ghasidas Vishwavidyalaya, Bilaspur
-              </p>
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
-                Dr. Santosh Kumar Majhi, Guru Ghasidas Vishwavidyalaya, Bilaspur
               </p>
             </div>
           </section>

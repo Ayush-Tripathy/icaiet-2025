@@ -47,10 +47,11 @@ const CallForPapers = () => {
         <h1 className="text-4xl font-bold tracking-tight">Conference Tracks</h1>
 
         <div className="h-1 w-20 bg-blue-500" />
-
-        
       </div>
-      <span className="-mt-5">(The tracks in the conference include the following - but not limited to)</span>
+      <span className="-mt-5">
+        (The tracks in the conference include the following - but not limited
+        to)
+      </span>
 
       <div className="grid gap-8 md:grid-cols-2 xl:grid-cols-3 text-left">
         <div className="bg-white p-6 rounded-lg border border-gray-200">
@@ -58,6 +59,7 @@ const CallForPapers = () => {
             Artificial Intelligence (AI) and Applications
           </h2>
           <ul className="list-disc pl-5 space-y-2 text-sm">
+            <li>Generative AI and Explainable AI.</li>
             <li>Overview of foundational and cutting-edge AI techniques.</li>
             <li>Applications in healthcare, robotics, gaming, and more.</li>
             <li>Ethical considerations and fairness in AI implementations.</li>
