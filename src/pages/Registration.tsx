@@ -65,7 +65,7 @@ const Registration = () => {
                 Participant)
               </TableCell>
               <TableCell className="whitespace-nowrap">1500</TableCell>
-              <TableCell className="">1500</TableCell>
+              <TableCell className="">2000</TableCell>
             </TableRow>
           </TableBody>
         </Table>
