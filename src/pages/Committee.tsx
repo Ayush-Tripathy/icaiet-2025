@@ -469,6 +469,9 @@ export default function CommitteesPage() {
                 Dr. Asif Eqbal, IIT Patna
               </p>
               <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
+                Dr. Bhabendu Kumar Mohanta, United Arab Emirates University
+              </p>
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Dr. Bharat Ranjan Jyoti Sahoo, ITER, SOA, Bhubaneswar
               </p>
               <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
