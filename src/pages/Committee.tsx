@@ -355,6 +355,9 @@ export default function CommitteesPage() {
                 Dr. Rajeev Srivastava, Professor, Director IIIT Ranchi
               </p>
               <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
+                Dr. Singam Jayanthu, NIT Rourkela
+              </p>
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Dr. Sudip Misra, Professor, IIT KGP
               </p>
             </div>
