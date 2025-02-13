@@ -596,6 +596,9 @@ export default function CommitteesPage() {
                 Dr. Sriparna Saha, IIT Patna
               </p>
               <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
+                Dr. Subhashree Darshana, KIIT University
+              </p>
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Dr. Suchismita Chinara, NIT Rourkela
               </p>
               <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
