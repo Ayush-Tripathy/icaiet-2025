@@ -88,7 +88,7 @@ const Home = () => {
             <div className="flex flex-row gap-5">
               <a href="https://site.ieee.org/bhubaneswar/">
                 <img
-                  src="/ieee-kolkata-bbsr-joint.png"
+                  src="/ieee-bhubaneswar.png"
                   alt="IEEE Kolkata Bhubaneswar Joint Chapter"
                   className="w-40 h-full"
                 />

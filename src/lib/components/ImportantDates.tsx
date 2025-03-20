@@ -26,7 +26,11 @@ const ImportantDates = ({ withHeader = true }: { withHeader?: boolean }) => {
               Paper submission deadline
             </TableCell>
             <TableCell className="text-right whitespace-nowrap">
-              01 March 2025
+              <span className="line-through">
+                01 March 2025 (First deadline)
+              </span>
+              <br />
+              <span className="">Extended till 01 April 2025</span>
             </TableCell>
           </TableRow>
           <TableRow className="hover:bg-inherit border-input">
@@ -34,7 +38,13 @@ const ImportantDates = ({ withHeader = true }: { withHeader?: boolean }) => {
               Acceptance Notification
             </TableCell>
             <TableCell className="text-right whitespace-nowrap">
-              01 April 2025
+              <span>
+                01 April 2025 (1<sup>st</sup> phase acceptance)
+              </span>
+              <br />
+              <span>
+                25 April 2025 (2<sup>nd</sup> phase acceptance)
+              </span>
             </TableCell>
           </TableRow>
           <TableRow className="hover:bg-inherit border-input">
