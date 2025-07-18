@@ -1,40 +1,5 @@
 import { Link } from "react-router-dom";
 
-// import { initializeApp } from "firebase/app";
-// import {
-//   getFirestore,
-//   doc,
-//   // updateDoc,
-//   // increment,
-//   // getDoc,
-//   onSnapshot,
-// } from "firebase/firestore";
-// import { getAnalytics } from "firebase/analytics";
-// import { useEffect } from "react";
-
-// const firebaseConfig = {
-//   apiKey: "AIzaSyDTGQbrjmWhfmPD_TUBkulM2Jhh2VeLQ80",
-//   authDomain: "icaiet-10a36.firebaseapp.com",
-//   projectId: "icaiet-10a36",
-//   storageBucket: "icaiet-10a36.firebasestorage.app",
-//   messagingSenderId: "949730950977",
-//   appId: "1:949730950977:web:d5e0ccedad6f0b60696bc0",
-//   measurementId: "G-J4F43KKX06",
-// };
-
-// const app = initializeApp(firebaseConfig);
-// const db = getFirestore(app);
-// const analytics = getAnalytics(app);
-
-// const visitorRef = doc(db, "visitors", "active");
-// onSnapshot(visitorRef, (doc) => {
-//   console.log("Current data: ", doc.data());
-//   if (doc.exists()) {
-//     const visitorCount = document.getElementById("visitor-count");
-//     if (visitorCount) visitorCount.innerText = `Visitors: ${doc.data().count}`;
-//   }
-// });
-
 const Footer = () => {
   // useEffect(() => {
   //   console.log("analytics", analytics.app.name);
