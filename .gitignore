@@ -5,6 +5,8 @@ package-lock.json
 bun.lockb
 bun.lock
 
+.env
+
 # Logs
 logs
 *.log

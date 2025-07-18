@@ -39,11 +39,11 @@ const ImportantDates = ({ withHeader = true }: { withHeader?: boolean }) => {
             </TableCell>
             <TableCell className="text-right whitespace-nowrap">
               <span>
-                01 April 2025 (1<sup>st</sup> phase acceptance)
+                14 April 2025 (1<sup>st</sup> phase acceptance)
               </span>
               <br />
               <span>
-                25 April 2025 (2<sup>nd</sup> phase acceptance)
+                14 May 2025 (2<sup>nd</sup> phase acceptance)
               </span>
             </TableCell>
           </TableRow>
@@ -52,7 +52,7 @@ const ImportantDates = ({ withHeader = true }: { withHeader?: boolean }) => {
               Camera ready Version submission
             </TableCell>
             <TableCell className="text-right whitespace-nowrap">
-              05 April 2025
+              28 May 2025
             </TableCell>
           </TableRow>
           <TableRow className="hover:bg-inherit border-input">
@@ -60,17 +60,17 @@ const ImportantDates = ({ withHeader = true }: { withHeader?: boolean }) => {
               Early-Bird Registration
             </TableCell>
             <TableCell className="text-right whitespace-nowrap">
-              10 April 2025
+              28 May 2025
             </TableCell>
           </TableRow>
-          <TableRow className="hover:bg-inherit border-input">
+          {/* <TableRow className="hover:bg-inherit border-input">
             <TableCell className="whitespace-nowrap">
               Regular Registration
             </TableCell>
             <TableCell className="text-right whitespace-nowrap">
               25 April 2025
             </TableCell>
-          </TableRow>
+          </TableRow> */}
           <TableRow className="hover:bg-inherit border-input">
             <TableCell className="whitespace-nowrap">
               Dates of Conference

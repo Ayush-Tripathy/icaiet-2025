@@ -1,3 +1,5 @@
+import { ConferenceTrack } from "@/lib/components/ConferenceTrack";
+import { SPECIALTRACKS, TRACKS } from "@/lib/constants/tracks";
 import { ArrowRight } from "lucide-react";
 
 const CallForPapers = () => {
@@ -16,10 +18,7 @@ const CallForPapers = () => {
       </a>
 
       <p className="text-opacity-[0.6] text-lg">
-        This International Conference On Artificial Intelligence And Emerging
-        Technologies (ICAIET-2025), is dedicated to advanced research in the
-        areas of microwave as well as antenna engineering, signal processing and
-        communication. The conference aims at bringing together the researchers,
+        The International Conference on Artificial Intelligence and Emerging Technologies (ICAIET-2025) is dedicated to advanced research in Artificial Intelligence, Machine Learning, Data Science, IoT, Blockchain, Network Security, Cloud Computing, and related emerging technologies. The conference aims at bringing together the researchers,
         scientists, engineers and research scholars from all areas of
         engineering and technology, to provide an international forum to
         exchange their ideas, foster collaboration, practical developments
@@ -54,7 +53,17 @@ const CallForPapers = () => {
       </span>
 
       <div className="grid gap-8 md:grid-cols-2 xl:grid-cols-3 text-left">
-        <div className="bg-white p-6 rounded-lg border border-gray-200">
+        {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-8"> */}
+        {TRACKS.map((track, index) => (
+          <ConferenceTrack
+            key={index}
+            title={track.title}
+            topics={track.topics}
+            chairs={track.chairs}
+          />
+        ))}
+        {/* </div> */}
+        {/* <div className="bg-white p-6 rounded-lg border border-gray-200">
           <h2 className="text-xl font-bold mb-4">
             Artificial Intelligence (AI) and Applications
           </h2>
@@ -199,7 +208,7 @@ const CallForPapers = () => {
             <li>Virtualization and containerization in cloud environments.</li>
             <li>Energy efficiency and optimization in computing systems.</li>
           </ul>
-        </div>
+        </div> */}
       </div>
 
       <div className="space-y-2">
@@ -208,7 +217,15 @@ const CallForPapers = () => {
       </div>
 
       <div className="grid gap-8 md:grid-cols-2 xl:grid-cols-3 text-left">
-        <div className="bg-white p-6 rounded-lg border border-gray-200">
+        {SPECIALTRACKS.map((track, index) => (
+          <ConferenceTrack
+            key={index}
+            title={track.title}
+            topics={track.topics}
+            chairs={track.chairs}
+          />
+        ))}
+        {/* <div className="bg-white p-6 rounded-lg border border-gray-200">
           <h2 className="text-xl font-bold mb-4">
             Emerging Technologies in Education
           </h2>
@@ -277,7 +294,7 @@ const CallForPapers = () => {
             <li>Ethical considerations in AI-driven societal changes.</li>
             <li>Case studies on AI applications in humanitarian efforts.</li>
           </ul>
-        </div>
+        </div> */}
       </div>
 
       {/* <div className="space-y-2">

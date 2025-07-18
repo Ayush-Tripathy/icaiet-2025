@@ -212,6 +212,12 @@ const Home = () => {
           >
             Submit Paper <ArrowRight size={24} />
           </a>
+          <a
+            href="https://forms.gle/P7TStcoWdnRMoQtd7"
+            className="w-full whitespace-nowrap flex flex-row items-center gap-3 px-16 py-4 bg-[#ccf2f4] border-[#a4ebf3] transition-all duration-300 hover:backdrop-blur-0 hover:gap-5 backdrop-blur-[1.25rem] text-lg uppercase rounded-full border"
+          >
+            Submit Poster <ArrowRight size={24} />
+          </a>
           <Link
             to="/registration"
             className="w-full whitespace-nowrap flex flex-row items-center gap-3 px-16 py-4 bg-[#ccf2f4] border-[#a4ebf3] transition-all duration-300 hover:backdrop-blur-0 hover:gap-5 backdrop-blur-[1.25rem] text-lg uppercase rounded-full border"

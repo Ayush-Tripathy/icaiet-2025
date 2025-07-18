@@ -61,6 +61,7 @@ export default function Navbar() {
     },
     { name: "Registration", href: "/registration" },
     { name: "Call for Papers", href: "/call-for-papers" },
+    { name: "Call for Posters", href: "/call-for-posters" },
     { name: "Speakers", href: "/speakers" },
     {
       name: "Sponsors",

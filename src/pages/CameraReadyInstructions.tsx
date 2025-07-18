@@ -17,7 +17,7 @@ export default function CameraReadyInstructions() {
         <div className="space-y-6">
           <p className="font-bold">
             Please note that the last date for uploading the final camera-ready
-            manuscript is April 5, 2025, 23:59 IST.
+            manuscript is April 20, 2025, 23:59 IST.
           </p>
           <p className="font-bold">
             At least one author must complete the registration before deadline.
@@ -99,20 +99,20 @@ export default function CameraReadyInstructions() {
                 <p>
                   For papers in which all authors are employed by a Crown
                   government (UK, Canada, and Australia), the copyright notice
-                  is: <strong>979-8-3315-2261-2/24/$31.00 ©2024 Crown</strong>
+                  is: <strong>979-8-3315-2261-2/24/$31.00 ©2025 Crown</strong>
                 </p>
                 <br />
                 <p>
                   For papers in which all authors are employed by the European
                   Union, the copyright notice is:{" "}
                   <strong>
-                    979-8-3315-2261-2/24/$31.00 ©2024 European Union
+                    979-8-3315-2261-2/24/$31.00 ©2025 European Union
                   </strong>
                 </p>
                 <br />
                 <p>
                   For all other papers the copyright notice is:{" "}
-                  <strong>979-8-3315-2261-2/24/$31.00 ©2024 IEEE</strong>
+                  <strong>979-8-3315-2261-2/24/$31.00 ©2025 IEEE</strong>
                 </p>
                 <br />
                 <p>
@@ -168,7 +168,7 @@ export default function CameraReadyInstructions() {
                             setCopiedKey("");
                           }, 3000);
                           navigator.clipboard.writeText(
-                            "IEEEpubid{\\makebox[\\columnwidth]{979-8-3315-2261-2/24/$31.00~\\copyright2024 IEEE \\hfill}\\hspace{\\columnsep}\\makebox[\\columnwidth]{ }}"
+                            "IEEEpubid{\\makebox[\\columnwidth]{979-8-3315-2261-2/24/$31.00~\\copyright2025 IEEE \\hfill}\\hspace{\\columnsep}\\makebox[\\columnwidth]{ }}"
                           );
                         }}
                       >
@@ -181,7 +181,7 @@ export default function CameraReadyInstructions() {
                     </div>
                     <pre className="overflow-x-auto scrollbar-thin bg-[#f8f9fa] text-[#37474f] py-px px-1 rounded-lg border border-input">
                       \IEEEpubid{"{"}\\makebox[\\columnwidth]{"{"}
-                      979-8-3315-2261-2/24/$31.00~\\copyright{}2024 IEEE \\hfill
+                      979-8-3315-2261-2/24/$31.00~\\copyright{}2025 IEEE \\hfill
                       {"}"}\\hspace{"{"}\\columnsep{"}"}
                       \\makebox[\\columnwidth]{"{ }"}
                       {"}"}
@@ -197,15 +197,7 @@ export default function CameraReadyInstructions() {
             level, is unacceptable. Therefore, the conference reserves the right
             to reject the final manuscript which is found to have high degree of
             plagiarism after registration without refund. IEEE policy requires
-            that all accepted papers must be checked for plagiarism. This can be
-            accomplished through the{" "}
-            <a
-              href="https://www.ieee.org/publications/rights/cross-check-portal.html"
-              className="text-blue-400 hover:underline"
-            >
-              IEEE Crosscheck Portal
-            </a>{" "}
-            if copyright is owned by IEEE.
+            that all accepted papers must be checked for plagiarism.
           </p>
 
           <h2 className="text-2xl font-bold mt-8">
@@ -220,7 +212,7 @@ export default function CameraReadyInstructions() {
           <p>
             After carefully checking if your manuscript conforms to IEEE Xplore
             guidelines, you need to get it approved by IEEE PDF eXpress. To this
-            purpose, you can login (Enter Conference ID <strong>63599X</strong>)
+            purpose, you can login (Enter Conference ID <strong>65052X</strong>)
             to the{" "}
             <a
               href="https://ieee-pdf-express.org/account/login?ReturnUrl=%2F"
@@ -434,11 +426,11 @@ export default function CameraReadyInstructions() {
           </p> */}
 
           <p className="mt-6">
-            <strong>Note:</strong> Ensure that the plagiarism level in your
+            <strong>Note: </strong> Ensure that the similarity level in your
             final camera-ready paper <strong>does not exceed 20%.</strong> This
             limit applies to the entire paper, without exceptions for any
             individual components. The conference and the IEEE will also check
-            that you have adhered to the plagiarism upper bound before final
+            that you have adhered to the similarity upper bound before final
             acceptance.
           </p>
         </div>

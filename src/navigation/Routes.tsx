@@ -12,6 +12,8 @@ import CameraReadyInstructions from "@/pages/CameraReadyInstructions";
 import CallForSponsorship from "@/pages/CallForSponsorship";
 import Sponsors from "@/pages/Sponsors";
 import { useEffect } from "react";
+import CallForPosters from "@/pages/CallForPosters";
+// import RegistrationForm from "@/pages/RegistrationForm";
 
 export const AppRoutes = () => {
   const location = useLocation();
@@ -37,6 +39,7 @@ export const AppRoutes = () => {
       />
       <Route path="/call-for-sponsorship" element={<CallForSponsorship />} />
       <Route path="/sponsors" element={<Sponsors />} />
+      <Route path="/call-for-posters" element={<CallForPosters />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
   );

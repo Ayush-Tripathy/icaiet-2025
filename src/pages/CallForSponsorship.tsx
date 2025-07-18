@@ -3,50 +3,76 @@ import SponsorshipTierCard from "@/lib/components/SponsorshipTierCard";
 const CallForSponsorship = () => {
   const tiers = [
     {
-      title: "Platinum Sponsor",
-      price: "INR 5.0L",
+      title: "Title Sponsor",
+      price: "INR 3.0L",
       features: [
-        "10 Complimentary delegate passes",
-        "40 minutes presentation slot",
+        "4 Complimentary delegate passes",
+        "25 minutes presentation slot",
         "Acknowledgement during Awards & Valedictory Function",
-        "2 Complimentary exhibit booths at Prime Location",
         "Prominent display of logo on all printed material, backdrop and website",
-        "Permission to keep the Company brochure in the registration Kit",
+        "Permission to keep the Company brochure / logo in the registration Kit",
+        "Inclusion of company logo and name in conference paper/poster presentations",
+        "Social Media Promotion by XIM University"
+      ],
+    },
+
+    {
+      title: "Diamond Sponsor",
+      price: "INR 2.0L",
+      features: [
+        "3 Complimentary delegate passes",
+        "20 minutes presentation slot",
+        "Acknowledgement during Awards & Valedictory Function",
+        "Prominent display of logo on all printed material, backdrop and website",
+        "Inclusion of company logo and name in conference paper/poster presentations",
+        "Social Media Promotion by XIM University"
       ],
     },
 
     {
       title: "Gold Sponsor",
-      price: "INR 3.0L",
+      price: "INR 1.0L",
       features: [
-        "5 Complimentary delegate passes",
-        "20 minutes presentation slot",
-        "Acknowledgement during Awards & Valedictory Function",
-        "1 Complimentary exhibit booth at Prime Location",
-        "Prominent display of logo on all printed material, backdrop and website",
-        "Permission to keep the Company brochure in the registration Kit",
-      ],
-    },
-
-    {
-      title: "Silver Sponsor",
-      price: "INR 2.0L",
-      features: [
-        "3 Complimentary delegate passes",
+        "2 Complimentary delegate passes",
         "15 minutes presentation slot",
         "Acknowledgement during Awards & Valedictory Function",
         "Prominent display of logo on all printed material, backdrop and website",
         "Permission to keep the Company brochure in the registration Kit",
+        "Social Media Promotion by XIM University"
       ],
     },
     {
-      title: "Bronze Sponsor",
+      title: "Silver Sponsor",
+      price: "INR 75K",
+      features: [
+        "1 Complimentary delegate passes",
+        "10 minutes presentation slot",
+        "Acknowledgement during Awards & Valedictory Function",
+        "Prominent display of logo on all printed material, backdrop and website",
+        "Social Media Promotion by XIM University"
+      ],
+    },
+    {
+      title: "Conference Kit Sponsor",
+      price: "INR 75K",
+      features: [
+        "2 Complimentary delegate passes",
+        "10 minutes presentation slot",
+        "Acknowledgement during Awards & Valedictory Function",
+        "Prominent display of logo on all printed material, backdrop and website",
+        "Permission to keep the Company brochure / logo in the registration Kit",
+        "Social Media Promotion by XIM University"
+      ],
+    },
+    {
+      title: "Banquet Dinner Sponsor",
       price: "INR 1.0L",
       features: [
         "2 Complimentary delegate passes",
         "10 minutes presentation slot",
         "Acknowledgement during Awards & Valedictory Function",
         "Prominent display of logo on all printed material, backdrop and website",
+        "Social Media Promotion by XIM University"
       ],
     },
   ];
@@ -72,10 +98,10 @@ const CallForSponsorship = () => {
 
       <div className="flex items-center justify-center">
         <h2 className="text-xl text-blue-500 font-bold text-left">
-          All interested sponsors, fill the Google form below or mail us
+          All interested sponsors, mail us
           at&nbsp;
-          <a href="mailto:deanxcse_office@xim.edu.in">
-            deanxcse_office@xim.edu.in
+          <a href="mailto: icaiet-2025@xim.edu.in">
+            icaiet-2025@xim.edu.in
           </a>
         </h2>
       </div>
