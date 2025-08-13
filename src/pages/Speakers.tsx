@@ -20,7 +20,7 @@ const speakersData: Speaker[] = [
   {
     id: 4,
     name: "Dr. Ashutosh Dutta",
-    affiliation: "John Hopkins University, USA",
+    affiliation: "Johns Hopkins University, USA",
     title: "Professor",
     image: "/s/ashutosh_dutta.webp",
   },
