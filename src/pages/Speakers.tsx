@@ -26,10 +26,10 @@ const speakersData: Speaker[] = [
   },
   {
     id: 1,
-    name: "Dr. Chiranjeev Kumar",
-    affiliation: "IIT (ISM), Dhanbad",
+    name: "Dr. Suchismita Chinara",
+    affiliation: "NIT Rourkela",
     title: "Professor",
-    image: "/s/ChiranjeevKumar.jfif",
+    image: "/s/suchismita-chinara.jpeg",
   },
   {
     id: 5,
