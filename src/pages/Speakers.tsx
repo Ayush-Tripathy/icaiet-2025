@@ -28,7 +28,7 @@ const speakersData: Speaker[] = [
     id: 1,
     name: "Dr. Suchismita Chinara",
     affiliation: "NIT Rourkela",
-    title: "Professor",
+    title: "Associate Professor",
     image: "/s/suchismita-chinara.jpeg",
   },
   {

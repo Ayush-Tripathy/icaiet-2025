@@ -6,10 +6,12 @@ import {
   TableHeader,
   TableRow,
 } from "@/lib/components/ui/table";
+import { ArrowRight } from "lucide-react";
 
 const ImportantDates = ({ withHeader = true }: { withHeader?: boolean }) => {
   return (
-    <div className="border border-input rounded-lg">
+    <>
+      <div className="border border-input rounded-lg">
       <Table className="font-[SatoshiRegular] text-lg">
         {withHeader && (
           <TableHeader>
@@ -82,6 +84,21 @@ const ImportantDates = ({ withHeader = true }: { withHeader?: boolean }) => {
         </TableBody>
       </Table>
     </div>
+
+      <div className="flex flex-col justify-start py-6">
+        <a
+          href="/ICAIET-2025_Schedule.pdf"
+          download
+          className="flex flex-row items-center w-fit gap-2 px-8 py-3 bg-[#f0f5ff] border border-[#d6e4ff] text-[#1d39c4] rounded-full text-base font-medium transition-all duration-300 hover:gap-3 hover:bg-[#d6e4ff]/40"
+        >
+          Download Daywise Schedule <ArrowRight size={20} />
+        </a>
+
+        <p className="mt-3 pl-5 text-sm text-gray-600 text-center w-fit">
+          Get the detailed daywise program (PDF)
+        </p>
+      </div>
+    </>
   );
 };
 
