@@ -89,30 +89,39 @@ export default function CameraReadyInstructions() {
                 <br />
                 <br />
                 <p>
-                  For papers in which all authors are employed by the US
+                  For papers where all authors are employed by the U.S. government: <strong> U.S. Government work not protected by U.S. copyright</strong>
+
+                  {/* For papers in which all authors are employed by the US
                   government, the copyright notice is:{" "}
                   <strong>
                     U.S. Government work not protected by U.S. copyright.
-                  </strong>
+                  </strong> */}
                 </p>
                 <br />
                 <p>
-                  For papers in which all authors are employed by a Crown
+                  For papers where all authors are employed by a Crown government (UK, Canada, Australia):
+<strong> 979-8-3315-1375-7/25/$31.00 ©2025 Crown</strong>
+                  {/* For papers in which all authors are employed by a Crown
                   government (UK, Canada, and Australia), the copyright notice
-                  is: <strong>979-8-3315-2261-2/24/$31.00 ©2025 Crown</strong>
+                  is: <strong>979-8-3315-2261-2/24/$31.00 ©2025 Crown</strong> */}
                 </p>
                 <br />
                 <p>
-                  For papers in which all authors are employed by the European
+                  For papers where all authors are employed by the European Union:
+<strong> 979-8-3315-1375-7/25/$31.00 ©2025 European Union</strong>
+                  {/* For papers in which all authors are employed by the European
                   Union, the copyright notice is:{" "}
                   <strong>
                     979-8-3315-2261-2/24/$31.00 ©2025 European Union
-                  </strong>
+                  </strong> */}
                 </p>
                 <br />
                 <p>
-                  For all other papers the copyright notice is:{" "}
-                  <strong>979-8-3315-2261-2/24/$31.00 ©2025 IEEE</strong>
+                  For all other papers:
+<strong> 979-8-3315-1375-7/25/$31.00 ©2025 IEEE</strong>
+
+                  {/* For all other papers the copyright notice is:{" "}
+                  <strong>979-8-3315-2261-2/24/$31.00 ©2025 IEEE</strong> */}
                 </p>
                 <br />
                 <p>
@@ -168,7 +177,7 @@ export default function CameraReadyInstructions() {
                             setCopiedKey("");
                           }, 3000);
                           navigator.clipboard.writeText(
-                            "IEEEpubid{\\makebox[\\columnwidth]{979-8-3315-2261-2/24/$31.00~\\copyright2025 IEEE \\hfill}\\hspace{\\columnsep}\\makebox[\\columnwidth]{ }}"
+                            "\\IEEEpubid{\\makebox[\\columnwidth]{979-8-3315-1375-7/25/$31.00~\\copyright2025 IEEE \\hfill}\\hspace{\\columnsep}\\makebox[\\columnwidth]{ }}"
                           );
                         }}
                       >
@@ -181,7 +190,7 @@ export default function CameraReadyInstructions() {
                     </div>
                     <pre className="overflow-x-auto scrollbar-thin bg-[#f8f9fa] text-[#37474f] py-px px-1 rounded-lg border border-input">
                       \IEEEpubid{"{"}\\makebox[\\columnwidth]{"{"}
-                      979-8-3315-2261-2/24/$31.00~\\copyright{}2025 IEEE \\hfill
+                      979-8-3315-1375-7/25/$31.00~\\copyright{}2025 IEEE \\hfill
                       {"}"}\\hspace{"{"}\\columnsep{"}"}
                       \\makebox[\\columnwidth]{"{ }"}
                       {"}"}

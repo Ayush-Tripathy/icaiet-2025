@@ -45,6 +45,13 @@ const speakersData: Speaker[] = [
     title: "Senior Director",
     image: "/s/SatyajitNath.jfif",
   },
+  {
+    id: 6,
+    name: "Dr. Ganapati Panda",
+    affiliation: "CV Raman Global University, Bhubaneswar",
+    title: "Professor",
+    image: "/s/GanapatiPanda.jfif",
+  },
 ];
 
 const SpeakerCard: React.FC<{ speaker: Speaker }> = ({ speaker }) => {
