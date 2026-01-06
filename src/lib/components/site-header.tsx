@@ -124,7 +124,7 @@ export default function Navbar() {
               to="/"
               className="montserrat-regular text-lg 2xl:text-xl tracking-widest font-semibold whitespace-nowrap flex flex-row items-center"
             >
-              ICAIET-2025
+              ICAIET-2027
             </Link>
           </div>
 
@@ -149,7 +149,7 @@ export default function Navbar() {
           <div className="hidden xl:flex items-center gap-2 text-sm">
             <CalendarDays className="h-4 w-4" />
             <span className="whitespace-nowrap text-sm 2xl:text-base">
-              28 - 30 AUG
+              28 - 30 JAN
             </span>
             <div
               className={`h-16 border-r ${

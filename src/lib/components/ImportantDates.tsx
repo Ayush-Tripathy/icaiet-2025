@@ -6,7 +6,6 @@ import {
   TableHeader,
   TableRow,
 } from "@/lib/components/ui/table";
-import { ArrowRight } from "lucide-react";
 
 const ImportantDates = ({ withHeader = true }: { withHeader?: boolean }) => {
   return (
@@ -28,11 +27,11 @@ const ImportantDates = ({ withHeader = true }: { withHeader?: boolean }) => {
               Paper submission deadline
             </TableCell>
             <TableCell className="text-right whitespace-nowrap">
-              <span className="line-through">
-                01 March 2025 (First deadline)
+              <span className="">
+                30 April 2026
               </span>
-              <br />
-              <span className="">Extended till 01 April 2025</span>
+              {/* <br /> */}
+              {/* <span className="">Extended till 01 April 2025</span> */}
             </TableCell>
           </TableRow>
           <TableRow className="hover:bg-inherit border-input">
@@ -40,12 +39,15 @@ const ImportantDates = ({ withHeader = true }: { withHeader?: boolean }) => {
               Acceptance Notification
             </TableCell>
             <TableCell className="text-right whitespace-nowrap">
-              <span>
+              {/* <span>
                 14 April 2025 (1<sup>st</sup> phase acceptance)
               </span>
               <br />
               <span>
                 14 May 2025 (2<sup>nd</sup> phase acceptance)
+              </span> */}
+              <span>
+                1 June 2026
               </span>
             </TableCell>
           </TableRow>
@@ -54,7 +56,7 @@ const ImportantDates = ({ withHeader = true }: { withHeader?: boolean }) => {
               Camera ready Version submission
             </TableCell>
             <TableCell className="text-right whitespace-nowrap">
-              28 May 2025
+              30 June 2026
             </TableCell>
           </TableRow>
           <TableRow className="hover:bg-inherit border-input">
@@ -62,7 +64,7 @@ const ImportantDates = ({ withHeader = true }: { withHeader?: boolean }) => {
               Early-Bird Registration
             </TableCell>
             <TableCell className="text-right whitespace-nowrap">
-              28 May 2025
+              30 June 2026
             </TableCell>
           </TableRow>
           {/* <TableRow className="hover:bg-inherit border-input">
@@ -78,14 +80,14 @@ const ImportantDates = ({ withHeader = true }: { withHeader?: boolean }) => {
               Dates of Conference
             </TableCell>
             <TableCell className="text-right whitespace-nowrap">
-              28 – 30 August 2025
+              28 – 30 January 2027
             </TableCell>
           </TableRow>
         </TableBody>
       </Table>
     </div>
 
-      <div className="flex flex-col justify-start py-6">
+      {/* <div className="flex flex-col justify-start py-6">
         <a
           href="/ICAIET-2025_Schedule.pdf"
           download
@@ -97,7 +99,7 @@ const ImportantDates = ({ withHeader = true }: { withHeader?: boolean }) => {
         <p className="mt-3 pl-5 text-sm text-gray-600 text-center w-fit">
           Get the detailed daywise program (PDF)
         </p>
-      </div>
+      </div> */}
     </>
   );
 };

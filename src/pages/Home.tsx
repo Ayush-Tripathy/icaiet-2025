@@ -1,6 +1,5 @@
 import TextSection from "@/lib/components/TextSection";
 import { ArrowRight } from "lucide-react";
-import CountdownTimer from "@/lib/components/CountdownTimer";
 import ImportantDates from "@/lib/components/ImportantDates";
 import { Link } from "react-router-dom";
 
@@ -31,7 +30,7 @@ const Home = () => {
               <br />
               <div className="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-10">
                 <span className="font-[SatoshiBold] leading-tight">
-                  (ICAIET) - 2025
+                  (ICAIET) - 2027
                 </span>
               </div>
             </div>
@@ -42,7 +41,7 @@ const Home = () => {
                 University, Bhubaneswar (New Campus), Harirajpur
               </p>
               <span className="font-[SatoshiRegular] uppercase text-lg bg-[#ffffff26] py-3 px-6 rounded-xl backdrop-blur-[13px]">
-                August 28<span className="font-serif"> - </span>30, 2025
+                January 28<span className="font-serif"> - </span>30, 2027
               </span>
             </div>
           </div>
@@ -50,9 +49,9 @@ const Home = () => {
       </div>
 
       {/* Countdown timer */}
-      <section className="flex items-center justify-center py-10">
+      {/* <section className="flex items-center justify-center py-10">
         <CountdownTimer targetDate="2025-08-28T11:00:00" />
-      </section>
+      </section> */}
 
       {/* Organized By */}
       <section className="grid grid-cols-1 lg:grid-cols-3  py-10">
@@ -77,15 +76,19 @@ const Home = () => {
                 <img src="/IEEE-official.png" alt="IEEE" className="w-40" />
               </a>
 
-              <a href="https://ewh.ieee.org/r10/calcutta/">
+              <a href="https://edu.ieee.org/in-ximub/">
+                <img src="/IEEE-xim.png" alt="IEEE XIM" className="w-40" />
+              </a>
+
+              {/* <a href="https://ewh.ieee.org/r10/calcutta/">
                 <img
                   src="/IEEE-kolkata.png"
                   alt="IEEE Kolkata"
                   className="w-40 h-full"
                 />
-              </a>
+              </a> */}
             </div>
-            <div className="flex flex-row gap-5">
+            <div className="flex flex-row justify-center gap-5">
               <a href="https://site.ieee.org/bhubaneswar/">
                 <img
                   src="/ieee-bhubaneswar.png"
@@ -93,19 +96,19 @@ const Home = () => {
                   className="w-40 h-full"
                 />
               </a>
-              <a href="https://futurenetworks.ieee.org/">
+              {/* <a href="https://futurenetworks.ieee.org/">
                 <img
                   src="/ieee-future-networks-logo.png"
                   alt="IEEE Future Networks"
                   className="w-40"
                 />
-              </a>
+              </a> */}
             </div>
-            <div className="flex flex-row gap-5 justify-center">
+            {/* <div className="flex flex-row gap-5 justify-center">
               <a href="https://edu.ieee.org/in-ximub/">
                 <img src="/IEEE-xim.png" alt="IEEE XIM" className="w-40" />
               </a>
-            </div>
+            </div> */}
           </div>
         </div>
         <div className="flex flex-col gap-10 items-center max-sm:mt-16">
