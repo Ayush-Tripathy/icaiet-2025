@@ -1,21 +1,29 @@
+type Sponsor = {
+  name: string,
+  type: string,
+  logo: string,
+  description: string,
+  website: string
+}
+
 const Sponsors = () => {
-  const sponsorsData = [
-    {
-      name: "Capgemini",
-      type: "Knowledge Sponsor",
-      logo: "/Capgemini_Logo_Color_RGB.png",
-      description:
-        "A global leader in consulting, technology services and digital transformation.",
-      website: "https://www.capgemini.com/",
-    },
-    {
-      name: "UTNT",
-      type: "",
-      logo: "/UTNT.png",
-      description:
-        "Unite Trades & Technologies is a global exporter of high-quality scientific and IoT instruments.",
-      website: "https://www.utnt.in/",
-    }
+  const sponsorsData: Sponsor[] = [
+    // {
+    //   name: "Capgemini",
+    //   type: "Knowledge Sponsor",
+    //   logo: "/Capgemini_Logo_Color_RGB.png",
+    //   description:
+    //     "A global leader in consulting, technology services and digital transformation.",
+    //   website: "https://www.capgemini.com/",
+    // },
+    // {
+    //   name: "UTNT",
+    //   type: "",
+    //   logo: "/UTNT.png",
+    //   description:
+    //     "Unite Trades & Technologies is a global exporter of high-quality scientific and IoT instruments.",
+    //   website: "https://www.utnt.in/",
+    // }
   ]
 
   return (
@@ -27,6 +35,11 @@ const Sponsors = () => {
 
       <div className="space-y-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {!sponsorsData.length && (
+              <div>
+                <p>Coming Soon</p>
+              </div>
+            )}
             {sponsorsData.map((sponsor, index) => (
               <div key={index} className="max-w-2xl">
                 <div className="bg-white rounded-xl border transition-all duration-300 p-8">

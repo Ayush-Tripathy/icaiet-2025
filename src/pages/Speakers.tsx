@@ -1,5 +1,5 @@
 import type React from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 interface Speaker {
   id: number;
@@ -10,48 +10,48 @@ interface Speaker {
 }
 
 const speakersData: Speaker[] = [
-  {
-    id: 2,
-    name: "Dr. Amitabha Bagchi",
-    affiliation: "IIT, Delhi",
-    title: "Professor",
-    image: "/s/AmitabhaBagchi.jpg",
-  },
-  {
-    id: 4,
-    name: "Dr. Ashutosh Dutta",
-    affiliation: "Johns Hopkins University, USA",
-    title: "Professor",
-    image: "/s/ashutosh_dutta.webp",
-  },
-  {
-    id: 1,
-    name: "Dr. Suchismita Chinara",
-    affiliation: "NIT Rourkela",
-    title: "Associate Professor",
-    image: "/s/suchismita-chinara.jpeg",
-  },
-  {
-    id: 5,
-    name: "Dr. Prasant Mohapatra",
-    affiliation: "University of South Florida, USA",
-    title: "Professor",
-    image: "/s/PrasantMohapatra.jpg",
-  },
-  {
-    id: 3,
-    name: "Mr. Satyajit Nath",
-    affiliation: "Capgemini",
-    title: "Senior Director",
-    image: "/s/SatyajitNath.jfif",
-  },
-  {
-    id: 6,
-    name: "Dr. Ganapati Panda",
-    affiliation: "CV Raman Global University, Bhubaneswar",
-    title: "Professor",
-    image: "/s/GanapatiPanda.jfif",
-  },
+  // {
+  //   id: 2,
+  //   name: "Dr. Amitabha Bagchi",
+  //   affiliation: "IIT, Delhi",
+  //   title: "Professor",
+  //   image: "/s/AmitabhaBagchi.jpg",
+  // },
+  // {
+  //   id: 4,
+  //   name: "Dr. Ashutosh Dutta",
+  //   affiliation: "Johns Hopkins University, USA",
+  //   title: "Professor",
+  //   image: "/s/ashutosh_dutta.webp",
+  // },
+  // {
+  //   id: 1,
+  //   name: "Dr. Suchismita Chinara",
+  //   affiliation: "NIT Rourkela",
+  //   title: "Associate Professor",
+  //   image: "/s/suchismita-chinara.jpeg",
+  // },
+  // {
+  //   id: 5,
+  //   name: "Dr. Prasant Mohapatra",
+  //   affiliation: "University of South Florida, USA",
+  //   title: "Professor",
+  //   image: "/s/PrasantMohapatra.jpg",
+  // },
+  // {
+  //   id: 3,
+  //   name: "Mr. Satyajit Nath",
+  //   affiliation: "Capgemini",
+  //   title: "Senior Director",
+  //   image: "/s/SatyajitNath.jfif",
+  // },
+  // {
+  //   id: 6,
+  //   name: "Dr. Ganapati Panda",
+  //   affiliation: "CV Raman Global University, Bhubaneswar",
+  //   title: "Professor",
+  //   image: "/s/GanapatiPanda.jfif",
+  // },
 ];
 
 const SpeakerCard: React.FC<{ speaker: Speaker }> = ({ speaker }) => {
@@ -123,21 +123,27 @@ const SpeakersList: React.FC = () => {
             <div className="h-1 w-20 bg-blue-500" />{" "}
           </div>
 
-          <p className="text-xl text-gray-600 leading-relaxed text-left mt-4">
+          {/* <p className="text-xl text-gray-600 leading-relaxed text-left mt-4">
             Meet our distinguished lineup of industry leaders, researchers, and
             innovators who will be sharing their insights and expertise.
-          </p>
+          </p> */}
         </div>
 
         {/* Speakers Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-8">
+          {!speakersData.length && (
+              <div>
+                <p>Coming Soon</p>
+              </div>
+            )}
+          
           {speakersData.map((speaker) => (
             <SpeakerCard key={speaker.id} speaker={speaker} />
           ))}
         </div>
 
         {/* Call to Action */}
-        <div className="text-center mt-16">
+        {/* <div className="text-center mt-16">
           <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-8 max-w-2xl mx-auto">
             <h3 className="text-2xl font-semibold text-gray-900 mb-4">
               Don't Miss Out
@@ -153,7 +159,7 @@ const SpeakersList: React.FC = () => {
               Register Now
             </Link>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

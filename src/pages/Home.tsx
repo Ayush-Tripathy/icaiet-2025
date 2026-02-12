@@ -54,7 +54,7 @@ const Home = () => {
       </section> */}
 
       {/* Organized By */}
-      <section className="grid grid-cols-1 lg:grid-cols-3  py-10">
+      <section className="grid grid-cols-1 lg:grid-cols-2 sm:mx-20 lg:mx-44 py-10">
         <div className="flex flex-col gap-10 items-center">
           <h3 className="text-center text-2xl sm:text-2xl font-[SatoshiBold] uppercase">
             Organized By
@@ -111,14 +111,14 @@ const Home = () => {
             </div> */}
           </div>
         </div>
-        <div className="flex flex-col gap-10 items-center max-sm:mt-16">
+        {/* <div className="flex flex-col gap-10 items-center max-sm:mt-16">
           <h3 className="text-center text-2xl sm:text-2xl font-[SatoshiBold] uppercase">
             In partnership with IAJES
           </h3>
           <a href="https://www.iajes.org/">
             <img src="/iajes.png" alt="XIM University" className="w-44 h-44" />
           </a>
-        </div>
+        </div> */}
       </section>
 
       {/* Record number */}

@@ -284,10 +284,15 @@ export default function CommitteesPage() {
           <section className="space-y-4">
             <h2 className="text-2xl font-bold text-blue-400">Patron</h2>
             <div className="space-y-2">
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
+              {/* <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Fr. Antony R. Uvari, S.J., Vice Chancellor, XIM University,
                 India
-              </p>
+              </p> */}
+
+                <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
+                  Dr. Fr. K.S. Casimir, S.J., Vice Chancellor, XIM University,
+                  India
+                </p>
             </div>
           </section>
 
@@ -323,6 +328,9 @@ export default function CommitteesPage() {
                 Dr. Chitta Baral, Professor, Arizona State University, USA
               </p>
               <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
+                Dr. Amar KJR Nayak, XIM University
+              </p>
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Dr. Ashok Kumar Turuk, Professor, NIT Rourkela
               </p>
               <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
@@ -342,11 +350,14 @@ export default function CommitteesPage() {
                 Dr. Ganapati Panda, Professor and Advisor, CV Raman Global
                 University
               </p>
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
+              {/* <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Dr. Gopal Krishna Nayak, Professor, XIM University, India
-              </p>
+              </p> */}
               <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Dr. K.V.S. Hari, Professor, IISc., Bangalore
+              </p>
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
+                Dr. Monoranjan Mohanty, Director, ICAR
               </p>
               <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Dr. Prerna Gaur, Director, NSUT, West Campus, Delhi
@@ -401,13 +412,20 @@ export default function CommitteesPage() {
             </h2>
             <div className="space-y-2">
               <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
-                Dr. Bhawani Sankar Panda, IIT Delhi
+                Dr. Arif Ahmed Sekh, UiT Norway
               </p>
               <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
+                Dr. Bhawani Sankar Panda, IIT Delhi
+              </p>
+              {/* <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Dr. Pabitra Mohan Khilar, NIT Rourkela
               </p>
               <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Dr. Susanta Ray, Jadavpur University
+              </p> */}
+              
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
+                Dr. Partha Pratim Roy, IIT ISM
               </p>
               <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Dr. Ashish Kumar, XIM University
