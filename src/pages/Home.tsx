@@ -2,14 +2,19 @@ import TextSection from "@/lib/components/TextSection";
 import { ArrowRight } from "lucide-react";
 import ImportantDates from "@/lib/components/ImportantDates";
 import { Link } from "react-router-dom";
+import HeroCarousel from "@/lib/components/HeroCarousel";
+import IEEEProceedingsBlock from "@/lib/components/IEEEProceedingsBlock";
+
 
 const Home = () => {
   return (
     <div className="bg-[#f4f9f9] text-black">
-      <div className="relative">
-        {/* <div className="absolute inset-0 bg-[rgb(0,0,0/50)] h-screen"></div> */}
-        <div className="text-white bg-[url(/XIM-BG2.jpg)] relative bg-no-repeat bg-cover bg-fixed primary-padding py-32">
-          <div className="flex flex-col gap-5">
+
+      <div className="relative text-white">
+        <HeroCarousel />
+
+        <div className="absolute inset-0 primary-padding py-32 flex items-center">
+          <div className="flex flex-col gap-5 z-10">
             <div className="text-[2.5rem] sm:text-[3rem] lg:text-[3.5rem] xl:text-[4rem] sm:uppercase">
               <span className="hidden xl:inline-block font-[SatoshiBold] text-[1rem] sm:text-[1.5rem] lg:text-[2rem] xl:text-[2.5rem] uppercase leading-[0.9] text-outline-white">
                 International Conference on
@@ -40,6 +45,7 @@ const Home = () => {
                 Organized By School of Computer Science & Engineering, XIM
                 University, Bhubaneswar (New Campus), Harirajpur
               </p>
+
               <span className="font-[SatoshiRegular] uppercase text-lg bg-[#ffffff26] py-3 px-6 rounded-xl backdrop-blur-[13px]">
                 January 28<span className="font-serif"> - </span>30, 2027
               </span>
@@ -47,13 +53,9 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <IEEEProceedingsBlock />
 
-      {/* Countdown timer */}
-      {/* <section className="flex items-center justify-center py-10">
-        <CountdownTimer targetDate="2025-08-28T11:00:00" />
-      </section> */}
-
-      {/* Organized By */}
+      <section className="grid grid-cols-1 lg:grid-cols-2 sm:mx-20 lg:mx-44 py-10"></section>
       <section className="grid grid-cols-1 lg:grid-cols-2 sm:mx-20 lg:mx-44 py-10">
         <div className="flex flex-col gap-10 items-center">
           <h3 className="text-center text-2xl sm:text-2xl font-[SatoshiBold] uppercase">
@@ -79,57 +81,27 @@ const Home = () => {
               <a href="https://edu.ieee.org/in-ximub/">
                 <img src="/IEEE-xim.png" alt="IEEE XIM" className="w-40" />
               </a>
-
-              {/* <a href="https://ewh.ieee.org/r10/calcutta/">
-                <img
-                  src="/IEEE-kolkata.png"
-                  alt="IEEE Kolkata"
-                  className="w-40 h-full"
-                />
-              </a> */}
             </div>
+
             <div className="flex flex-row justify-center gap-5">
               <a href="https://site.ieee.org/bhubaneswar/">
                 <img
                   src="/ieee-bhubaneswar.png"
-                  alt="IEEE Kolkata Bhubaneswar Joint Chapter"
+                  alt="IEEE Bhubaneswar Joint Chapter"
                   className="w-40 h-full"
                 />
               </a>
-              {/* <a href="https://futurenetworks.ieee.org/">
-                <img
-                  src="/ieee-future-networks-logo.png"
-                  alt="IEEE Future Networks"
-                  className="w-40"
-                />
-              </a> */}
             </div>
-            {/* <div className="flex flex-row gap-5 justify-center">
-              <a href="https://edu.ieee.org/in-ximub/">
-                <img src="/IEEE-xim.png" alt="IEEE XIM" className="w-40" />
-              </a>
-            </div> */}
           </div>
         </div>
-        {/* <div className="flex flex-col gap-10 items-center max-sm:mt-16">
-          <h3 className="text-center text-2xl sm:text-2xl font-[SatoshiBold] uppercase">
-            In partnership with IAJES
-          </h3>
-          <a href="https://www.iajes.org/">
-            <img src="/iajes.png" alt="XIM University" className="w-44 h-44" />
-          </a>
-        </div> */}
       </section>
-
-      {/* Record number */}
-      <section className=" flex flex-col items-center gap-5 py-10 overflow-hidden">
+      
+      <section className="flex flex-col items-center gap-5 py-10 overflow-hidden">
         <span className="text-xl font-[SatoshiRegular]">
           Conference Record Number: 65052
         </span>
 
-        <p className="font-[SatoshiBold] animate-moveRightToLeft hover:animate-none  text-lg whitespace-nowrap">
-          {/* All accepted and presented papers will be submitted for inclusion in
-          IEEE Xplore® Indexed By Scopus®.  */}
+        <p className="font-[SatoshiBold] animate-moveRightToLeft hover:animate-none text-lg whitespace-nowrap">
           Accepted papers will be submitted for inclusion in IEEE Xplore,
           subject to meeting IEEE Xplore’s scope and quality requirements.
           Indexed by Scopus®.
@@ -198,12 +170,11 @@ const Home = () => {
           link="https://scse.xim.edu.in/"
         />
       </section>
-
       {/* About ICAIET */}
       <section className="primary-padding py-10 sm:py-16  border-t border-input  flex flex-col items-center gap-20">
         <TextSection
           titlel1="About"
-          titlel2="ICAIET 2025"
+          titlel2="ICAIET 2027"
           text="The world, including India, is set to adopt advanced technologies such as 5G, Artificial Intelligence (AI), blockchain, augmented reality and virtual reality (AR/VR), machine learning, neural networks and deep learning, data mining, computer vision, image processing, natural language processing (NLP), information retrieval, internet of things (IoT), cyber-physical systems (including robotics and drones), network security, cyber security and privacy, cloud computing, etc. AI and emerging technologies are at the forefront of a transformative wave that is reshaping various sectors, from healthcare and finance to education and entertainment. These technologies are not only revolutionizing the way we live and work but also pushing the boundaries of what is possible in science and industry. The rapid advancements and breakthroughs in AI, coupled with the integration of emerging technologies, present both unprecedented opportunities and complex challenges. It is essential for both academia and industry to remain at the cutting edge of these developments to harness their full potential. These technologies will be crucial for government and industry in strategic planning, decision-making, development acceleration, deployment analysis, problem-solving, product innovation, trend detection, and identifying connections and relationships.
           The INTERNATIONAL CONFERENCE ON ARTIFICIAL INTELLIGENCE AND EMERGING TECHNOLOGIES (ICAIET) - 2025 is dedicated to serving as a premier platform for this purpose. Designed to bring together a diverse group of leading industry experts, academicians, researchers, and practitioners from across the globe, ICAIET 2025 fosters an environment of knowledge exchange and collaboration. The conference aims to accelerate the growth and application of AI and emerging technologies in various domains, highlighting their critical role in driving sustainable development, enhancing efficiency, and improving the quality of life."
         />

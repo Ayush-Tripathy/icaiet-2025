@@ -85,7 +85,7 @@ const Footer = () => {
       </div>
 
       <p className="text-white text-center text-sm sm:text-base">
-        Copyright © 2025 XIM University, Bhubaneswar, ICAIET&nbsp;-&nbsp;2025,
+        Copyright © 2027 XIM University, Bhubaneswar, ICAIET&nbsp;-&nbsp;2027,
         All Rights Reserved
       </p>
       {/* <p
