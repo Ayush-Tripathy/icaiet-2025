@@ -12,7 +12,7 @@ const images: string[] = [
     "/img6.JPG",
     "/img7.JPG",
     "/img8.JPG",
-    "/img9.JPG"    
+    "/img9.JPG"
 ];
 
 const HeroCarousel: React.FC = () => {
@@ -53,7 +53,7 @@ const HeroCarousel: React.FC = () => {
             </AnimatePresence>
 
             {/* Dark Overlay */}
-            <div className="absolute inset-0 bg-black/50" />
+            <div className="absolute inset-0 bg-black/10" />
 
             {/* Previous Button */}
             <button

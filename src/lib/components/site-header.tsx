@@ -2,46 +2,20 @@
 
 import { useState, useEffect } from "react";
 import { CalendarDays, ChevronDown, Menu, ArrowUpRight } from "lucide-react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, } from "react-router-dom";
 
 export default function Navbar() {
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
-  const handleMouseEnter = (menuItem: string) => {
-    setActiveDropdown(menuItem);
-  };
-
-  const handleMouseLeave = () => {
-    setActiveDropdown(null);
-  };
-
-  const toggleMobileMenu = () => {
-    setIsMobileMenuOpen(!isMobileMenuOpen);
-  };
-
-  const [ignore, setIgnore] = useState(false);
-
-  const location = useLocation();
-
-  useEffect(() => {
-    if (location.pathname !== "/") {
-      setIgnore(true);
-    } else {
-      setIgnore(false);
-    }
-  }, [location]);
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > window.innerHeight);
+      setIsScrolled(window.scrollY > window.innerHeight * 0.6);
     };
-
     window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const menuItems = [
@@ -53,10 +27,7 @@ export default function Navbar() {
       items: [
         { name: "Important Dates", href: "/important-dates" },
         { name: "Submission Guidelines", href: "/submission-guidelines" },
-        {
-          name: "Camera-Ready Instructions",
-          href: "/camera-ready-instructions",
-        },
+        { name: "Camera-Ready Instructions", href: "/camera-ready-instructions" },
       ],
     },
     { name: "Registration", href: "/registration" },
@@ -67,192 +38,118 @@ export default function Navbar() {
       name: "Sponsors",
       href: "#",
       items: [
-        {
-          name: "Sponsors",
-          href: "/sponsors",
-        },
-        {
-          name: "Call for Sponsorship",
-          href: "/call-for-sponsorship",
-        },
+        { name: "Sponsors", href: "/sponsors" },
+        { name: "Call for Sponsorship", href: "/call-for-sponsorship" },
       ],
     },
     { name: "Contact", href: "/contact" },
     {
       name: "IEEE Proceedings 2025",
-      href: "#",
-      items: [
-        {
-          name: "IEEE Proceedings 2025",
-          href: "https://ieeexplore.ieee.org/xpl/conhome/11210849/proceeding",
-          external: true,
-        }
-      ]
+      href: "https://ieeexplore.ieee.org/xpl/conhome/11210849/proceeding",
+      external: true,
     },
   ];
 
   return (
     <header
-      className={`fixed px-3 sm:px-10 xl:px-20 top-0 z-50 w-full ${isScrolled
-        ? "border-input text-black"
-        : `${ignore ? "" : "border-[#2e2e2e] text-white"}`
-        } backdrop-blur border-b transition-colors duration-300`}
+      className={`fixed top-0 w-full z-50 backdrop-blur border-b transition-all duration-300 ${isScrolled ? "bg-white text-black border-gray-200" : "bg-transparent text-white border-white/20"
+        }`}
     >
-      <div className="w-full flex h-16 items-center justify-between">
-        <div className="flex items-center">
-          <div className="flex items-center">
-            <a href="https://xim.edu.in/">
-              <span>
-                <img
-                  src="/XIM.png"
-                  alt="XIM University"
-                  className="min-w-14 max-w-14 h-14"
-                />
-              </span>
-            </a>
+      <div className="w-full flex items-center justify-between h-16 px-4 xl:px-8">
 
-            {/* | Line */}
-            <div
-              className={`h-16 w-0 border-r mx-2 ${isScrolled
-                ? "border-input"
-                : `${ignore ? "" : "border-[#2e2e2e]"}`
-                }`}
-            ></div>
+        {/* LEFT SECTION */}
+        <div className="flex items-center gap-3 shrink-0 h-full">
+          <a href="https://xim.edu.in/">
+            <img
+              src="/XIM.png"
+              alt="XIM University"
+              className="w-10 h-10 object-contain"
+            />
 
-            <Link to="/">
-              <span>
-                <img
-                  src="/logo.png"
-                  alt="XIM University"
-                  className="mr-2 min-w-12 max-w-12 h-12 mix-blend-darken"
-                />
-              </span>
-            </Link>
+          </a>
 
-            <Link
-              to="/"
-              className="montserrat-regular text-lg 2xl:text-xl tracking-widest font-semibold whitespace-nowrap flex flex-row items-center"
-            >
-              ICAIET-2027
-            </Link>
-          </div>
+          <div className="h-8 border-r border-black/20 self-center" />
 
-          <div className="hidden lg:flex items-center">
-            {/* | Line */}
-            {/* <div
-              className={`h-16 w-0 border-r mx-2 ${
-                isScrolled
-                  ? "border-input"
-                  : `${ignore ? "" : "border-[#2e2e2e]"}`
-              }`}
-            ></div> */}
-            {/* | Line */}
-            <div
-              className={`h-16 w-0 border-r mx-2 ${isScrolled
-                ? "border-input"
-                : `${ignore ? "" : "border-[#2e2e2e]"}`
-                }`}
-            ></div>
-          </div>
-          <div className="hidden xl:flex items-center gap-2 text-sm">
+          <Link to="/">
+            <img
+              src="/logo.png"
+              alt="ICAIET Logo"
+              className="w-8 h-8 object-contain"
+            />
+
+          </Link>
+
+          <Link
+            to="/"
+            className="font-semibold text-base xl:text-lg tracking-wide whitespace-nowrap leading-none"
+
+          >
+            ICAIET-2027
+          </Link>
+
+          <div className="h-8 border-r border-black/20 self-center mx-4" />
+
+          <div className="hidden xl:flex items-center gap-1 text-sm self-center">
+
             <CalendarDays className="h-4 w-4" />
-            <span className="whitespace-nowrap text-sm 2xl:text-base">
-              28 - 30 JAN
-            </span>
-            <div
-              className={`h-16 border-r ${isScrolled
-                ? "border-input"
-                : `${ignore ? "" : "border-[#2e2e2e]"}`
-                } mx-2`}
-            ></div>
+            <span>28 - 30 JAN</span>
           </div>
         </div>
+        <div className="h-8 border-r border-black/20 self-center mx-4" />
 
-        <nav className="hidden lg:flex items-center relative ml-8">
-          <ul className="flex space-x-4">
+        <div className="hidden xl:flex items-center gap-1 text-sm self-center"></div>
+        {/* DESKTOP NAV */}
+        <nav className="hidden xl:flex items-center flex-1 justify-end">
+          <ul className="flex items-center gap-3">
             {menuItems.map((menu) => (
               <li
                 key={menu.name}
                 className="relative"
-                onMouseEnter={() => menu.items && handleMouseEnter(menu.name)}
-                onMouseLeave={() => menu.items && handleMouseLeave()}
+                onMouseEnter={() => menu.items && setActiveDropdown(menu.name)}
+                onMouseLeave={() => menu.items && setActiveDropdown(null)}
               >
-                {/* @ts-ignore */}
                 {menu.external ? (
                   <a
                     href={menu.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-sm 2xl:text-base whitespace-nowrap flex items-center px-1 py-2 hover:bg-white/10 rounded-md transition-colors duration-200"
+                    className="text-sm whitespace-nowrap flex items-center gap-1 px-2 py-1 rounded-md hover:bg-white/10 transition"
                   >
                     {menu.name}
-                    <ArrowUpRight className="ml-1 h-4 w-4" />
+                    <ArrowUpRight className="h-3.5 w-3.5" />
                   </a>
                 ) : (
                   <Link
                     to={menu.href}
-                    className="text-sm 2xl:text-base whitespace-nowrap flex items-center px-1 py-2 hover:bg-white/10 rounded-md transition-colors duration-200"
+                    className="text-sm whitespace-nowrap flex items-center gap-1 px-2 py-1 rounded-md hover:bg-white/10 transition"
                   >
                     {menu.name}
                     {menu.items && (
                       <ChevronDown
-                        className={`ml-1 h-4 w-4 transition-transform duration-200 ${activeDropdown === menu.name ? "rotate-180" : ""
+                        className={`h-3.5 w-3.5 transition-transform ${activeDropdown === menu.name ? "rotate-180" : ""
                           }`}
                       />
                     )}
                   </Link>
                 )}
+
+                {/* DROPDOWN */}
                 {menu.items && activeDropdown === menu.name && (
                   <div
-                    className={`absolute left-0 top-full mt-0 w-48 rounded-md shadow-lg border ${isScrolled
-                      ? "border-input bg-white"
-                      : `${ignore ? "" : "border-[#2e2e2e] bg-[#0a0b1a]/80"}`
-                      } backdrop-blur-sm ring-1 ring-black ring-opacity-5`}
+                    className={`absolute left-0 top-full mt-1 w-52 rounded-md shadow-lg border ${isScrolled
+                      ? "bg-white text-black border-gray-200"
+                      : "bg-[#0a0b1a]/90 text-white border-white/20"
+                      }`}
                   >
-                    <div
-                      className="py-1"
-                      role="menu"
-                      aria-orientation="vertical"
-                      aria-labelledby="options-menu"
-                    >
-                      {menu.items.map((item) => (
-                        // @ts-ignore
-                        item.external ? (
-                          <a
-                            key={item.name}
-                            href={item.href}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className={`block px-4 py-2 text-sm flex items-center justify-between ${isScrolled
-                                ? "border-input hover:bg-gray-200"
-                                : `${ignore
-                                  ? ""
-                                  : "border-[#2e2e2e] hover:bg-white/10"
-                                }`
-                              }`}
-                            role="menuitem"
-                          >
-                            {item.name}
-                            <ArrowUpRight className="h-3 w-3 ml-2" />
-                          </a>
-                        ) : (
-                          <Link
-                            key={item.name}
-                            to={item.href}
-                            className={`block px-4 py-2 text-sm  ${isScrolled
-                                ? "border-input hover:bg-gray-200"
-                                : `${ignore
-                                  ? ""
-                                  : "border-[#2e2e2e] hover:bg-white/10"
-                                }`
-                              }`}
-                            role="menuitem"
-                          >
-                            {item.name}
-                          </Link>
-                        )
-                      ))}
-                    </div>
+                    {menu.items.map((item) => (
+                      <Link
+                        key={item.name}
+                        to={item.href}
+                        className="block px-4 py-2 text-sm hover:bg-gray-100/20"
+                      >
+                        {item.name}
+                      </Link>
+                    ))}
                   </div>
                 )}
               </li>
@@ -260,98 +157,39 @@ export default function Navbar() {
           </ul>
         </nav>
 
+        {/* MOBILE BUTTON */}
         <button
-          onClick={toggleMobileMenu}
-          className="lg:hidden p-2 rounded-full bg-white/10 hover:bg-white/20 transition-colors duration-200 ml-auto"
-          aria-label="Toggle mobile menu"
+          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+          className="xl:hidden p-2 rounded-md hover:bg-white/10"
         >
-          <Menu className="h-6 w-6" />
+          <Menu className="h-5 w-5" />
         </button>
       </div>
 
+      {/* MOBILE MENU */}
       {isMobileMenuOpen && (
-        <div className="lg:hidden bg-transparent py-4">
-          <ul className="space-y-2 whitespace-nowrap">
+        <div className="xl:hidden px-4 pb-4 bg-white text-black shadow-lg">
+          <ul className="space-y-2">
             {menuItems.map((menu) => (
-              <li key={menu.name} className="px-4">
-                {menu.items ? (
-                  <>
-                    <button
-                      onClick={() =>
-                        setActiveDropdown(
-                          activeDropdown === menu.name ? null : menu.name
-                        )
-                      }
-                      className="flex items-center justify-between w-full py-2 text-left"
-                    >
-                      {menu.name}
-                      <ChevronDown
-                        className={`h-4 w-4 transition-transform duration-200 ${activeDropdown === menu.name ? "rotate-180" : ""
-                          }`}
-                      />
-                    </button>
-                    {activeDropdown === menu.name && (
-                      <ul className="mt-2 ml-4 space-y-2">
-                        {menu.items.map((item) => (
-                          <li key={item.name}>
-                            {/* @ts-ignore */}
-                            {item.external ? (
-                              <a
-                                href={item.href}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className={`block py-1 text-sm flex items-center gap-2 ${isScrolled
-                                    ? "text-black"
-                                    : `${ignore ? "" : "text-white"}`
-                                  }`}
-                                onClick={() => setIsMobileMenuOpen(false)}
-                              >
-                                {item.name}
-                                <ArrowUpRight className="h-3 w-3" />
-                              </a>
-                            ) : (
-                              <Link
-                                onClick={() => {
-                                  setIsMobileMenuOpen(() => false);
-                                }}
-                                to={item.href}
-                                className={`block py-1 text-sm ${isScrolled
-                                    ? "text-black"
-                                    : `${ignore ? "" : "text-white"}`
-                                  }`}
-                              >
-                                {item.name}
-                              </Link>
-                            )}
-                          </li>
-                        ))}
-                      </ul>
-                    )}
-                  </>
+              <li key={menu.name}>
+                {menu.external ? (
+                  <a
+                    href={menu.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block py-2 text-sm"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    {menu.name}
+                  </a>
                 ) : (
-                  // @ts-ignore
-                  menu.external ? (
-                    <a
-                      href={menu.href}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="block py-2 text-left flex items-center gap-2"
-                      onClick={() => setIsMobileMenuOpen(false)}
-                    >
-                      {menu.name}
-                      <ArrowUpRight className="h-4 w-4" />
-                    </a>
-                  ) : (
-                    <Link
-                      onClick={() => {
-                        setIsMobileMenuOpen(() => false);
-                      }}
-                      to={menu.href}
-                      className="block py-2 text-left"
-                    >
-                      {menu.name}
-                    </Link>
-                  )
+                  <Link
+                    to={menu.href}
+                    className="block py-2 text-sm"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    {menu.name}
+                  </Link>
                 )}
               </li>
             ))}
