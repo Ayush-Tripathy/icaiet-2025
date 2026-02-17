@@ -6,6 +6,13 @@ const images: string[] = [
     "/XIM-BG2.jpg",
     "/img1.JPG",
     "/img2.JPG",
+    "/img3.JPG",
+    "/img4.JPG",
+    "/img5.JPG",
+    "/img6.JPG",
+    "/img7.JPG",
+    "/img8.JPG",
+    "/img9.JPG"    
 ];
 
 const HeroCarousel: React.FC = () => {
@@ -25,7 +32,7 @@ const HeroCarousel: React.FC = () => {
     useEffect(() => {
         const interval: NodeJS.Timeout = setInterval(() => {
             nextSlide();
-        }, 5000);
+        }, 6000);
 
         return () => clearInterval(interval);
     }, []);

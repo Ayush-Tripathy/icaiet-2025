@@ -1,34 +1,64 @@
-import React from "react";
-import { ArrowUpRight } from "lucide-react";
+"use client";
+import React, { useState } from "react";
+import { ArrowUpRight, ChevronDown, ChevronUp } from "lucide-react";
 
 const IEEEProceedingsBlock: React.FC = () => {
-    return (
-        <section className="primary-padding py-16 bg-[#156D94] text-white relative overflow-hidden">
-            <div className="max-w-6xl mx-auto flex flex-col items-center text-center gap-6 animate-fadeUp">
-                <span className="uppercase tracking-widest text-sm bg-white/20 px-4 py-2 rounded-full backdrop-blur-md">
-                    IEEE Proceedings 2025
-                </span>
-                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-[SatoshiBold] leading-tight">
-                    ICAIET 2025 Published in IEEE Xplore
-                </h2>
-                <p className="max-w-3xl text-lg text-white/90">
-                    The accepted and presented papers of ICAIET 2024 have been
-                    successfully published in IEEE Xplore and indexed by Scopus,
-                    ensuring international academic visibility and citation impact.
-                </p>
-                <a
-                    href="https://ieeexplore.ieee.org/xpl/conhome/11210849/proceeding"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-3 px-8 py-4 bg-white text-[#156D94] font-semibold uppercase rounded-full transition-all duration-300 hover:gap-5 hover:scale-105"
-                >
-                    View Proceedings
-                    <ArrowUpRight size={20} />
-                </a>
-            </div>
+    const [isOpen, setIsOpen] = useState(false);
 
-            <div className="absolute w-[500px] h-[500px] bg-white/10 blur-[160px] rounded-full top-[-150px] right-[-150px] pointer-events-none" />
-        </section>
+    const proceedings = [
+        {
+            name: "IEEE Proceedings 2025",
+            href: "https://ieeexplore.ieee.org/xpl/conhome/11210849/proceeding"
+        }
+    ];
+
+    return (
+        <div className="flex flex-col items-center justify-center py-10 bg-[#f4f9f9]">
+            <div className="relative z-10">
+                <button
+                    onClick={() => setIsOpen(!isOpen)}
+                    className={`
+                        group relative overflow-hidden bg-[#156D94] text-white px-8 py-4 rounded-xl shadow-xl 
+                        hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 w-80 text-center
+                        flex items-center justify-center gap-3
+                        ${isOpen ? 'ring-4 ring-[#156D94]/20' : ''}
+                    `}
+                >
+                    <div className="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                    <span className="font-bold text-lg tracking-wide relative z-10">
+                        IEEE 2025 Proceedings
+                    </span>
+                    {isOpen ? (
+                        <ChevronUp className="w-5 h-5 relative z-10" />
+                    ) : (
+                        <ChevronDown className="w-5 h-5 relative z-10" />
+                    )}
+                </button>
+
+                {/* Dropdown Items */}
+                <div
+                    className={`
+                        absolute top-full left-0 right-0 mt-2 bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden transition-all duration-300 origin-top
+                        ${isOpen ? 'opacity-100 scale-100 translate-y-0' : 'opacity-0 scale-95 -translate-y-2 pointer-events-none'}
+                    `}
+                >
+                    <div className="flex flex-col p-1">
+                        {proceedings.map((item, index) => (
+                            <a
+                                key={index}
+                                href={item.href}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="flex items-center justify-between px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-[#156D94] rounded-lg transition-colors group/item"
+                            >
+                                <span className="font-medium text-sm">{item.name}</span>
+                                <ArrowUpRight className="w-4 h-4 opacity-50 group-hover/item:opacity-100 transition-opacity" />
+                            </a>
+                        ))}
+                    </div>
+                </div>
+            </div>
+        </div>
     );
 };
 

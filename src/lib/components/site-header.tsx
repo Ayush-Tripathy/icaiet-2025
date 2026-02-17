@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { CalendarDays, ChevronDown, Menu } from "lucide-react";
+import { CalendarDays, ChevronDown, Menu, ArrowUpRight } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 
 export default function Navbar() {
@@ -78,15 +78,25 @@ export default function Navbar() {
       ],
     },
     { name: "Contact", href: "/contact" },
+    {
+      name: "IEEE Proceedings 2025",
+      href: "#",
+      items: [
+        {
+          name: "IEEE Proceedings 2025",
+          href: "https://ieeexplore.ieee.org/xpl/conhome/11210849/proceeding",
+          external: true,
+        }
+      ]
+    },
   ];
 
   return (
     <header
-      className={`fixed px-3 sm:px-10 xl:px-20 top-0 z-50 w-full ${
-        isScrolled
-          ? "border-input text-black"
-          : `${ignore ? "" : "border-[#2e2e2e] text-white"}`
-      } backdrop-blur border-b transition-colors duration-300`}
+      className={`fixed px-3 sm:px-10 xl:px-20 top-0 z-50 w-full ${isScrolled
+        ? "border-input text-black"
+        : `${ignore ? "" : "border-[#2e2e2e] text-white"}`
+        } backdrop-blur border-b transition-colors duration-300`}
     >
       <div className="w-full flex h-16 items-center justify-between">
         <div className="flex items-center">
@@ -103,11 +113,10 @@ export default function Navbar() {
 
             {/* | Line */}
             <div
-              className={`h-16 w-0 border-r mx-2 ${
-                isScrolled
-                  ? "border-input"
-                  : `${ignore ? "" : "border-[#2e2e2e]"}`
-              }`}
+              className={`h-16 w-0 border-r mx-2 ${isScrolled
+                ? "border-input"
+                : `${ignore ? "" : "border-[#2e2e2e]"}`
+                }`}
             ></div>
 
             <Link to="/">
@@ -139,11 +148,10 @@ export default function Navbar() {
             ></div> */}
             {/* | Line */}
             <div
-              className={`h-16 w-0 border-r mx-2 ${
-                isScrolled
-                  ? "border-input"
-                  : `${ignore ? "" : "border-[#2e2e2e]"}`
-              }`}
+              className={`h-16 w-0 border-r mx-2 ${isScrolled
+                ? "border-input"
+                : `${ignore ? "" : "border-[#2e2e2e]"}`
+                }`}
             ></div>
           </div>
           <div className="hidden xl:flex items-center gap-2 text-sm">
@@ -152,11 +160,10 @@ export default function Navbar() {
               28 - 30 JAN
             </span>
             <div
-              className={`h-16 border-r ${
-                isScrolled
-                  ? "border-input"
-                  : `${ignore ? "" : "border-[#2e2e2e]"}`
-              } mx-2`}
+              className={`h-16 border-r ${isScrolled
+                ? "border-input"
+                : `${ignore ? "" : "border-[#2e2e2e]"}`
+                } mx-2`}
             ></div>
           </div>
         </div>
@@ -170,26 +177,37 @@ export default function Navbar() {
                 onMouseEnter={() => menu.items && handleMouseEnter(menu.name)}
                 onMouseLeave={() => menu.items && handleMouseLeave()}
               >
-                <Link
-                  to={menu.href}
-                  className="text-sm 2xl:text-base whitespace-nowrap flex items-center px-1 py-2 hover:bg-white/10 rounded-md transition-colors duration-200"
-                >
-                  {menu.name}
-                  {menu.items && (
-                    <ChevronDown
-                      className={`ml-1 h-4 w-4 transition-transform duration-200 ${
-                        activeDropdown === menu.name ? "rotate-180" : ""
-                      }`}
-                    />
-                  )}
-                </Link>
+                {/* @ts-ignore */}
+                {menu.external ? (
+                  <a
+                    href={menu.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm 2xl:text-base whitespace-nowrap flex items-center px-1 py-2 hover:bg-white/10 rounded-md transition-colors duration-200"
+                  >
+                    {menu.name}
+                    <ArrowUpRight className="ml-1 h-4 w-4" />
+                  </a>
+                ) : (
+                  <Link
+                    to={menu.href}
+                    className="text-sm 2xl:text-base whitespace-nowrap flex items-center px-1 py-2 hover:bg-white/10 rounded-md transition-colors duration-200"
+                  >
+                    {menu.name}
+                    {menu.items && (
+                      <ChevronDown
+                        className={`ml-1 h-4 w-4 transition-transform duration-200 ${activeDropdown === menu.name ? "rotate-180" : ""
+                          }`}
+                      />
+                    )}
+                  </Link>
+                )}
                 {menu.items && activeDropdown === menu.name && (
                   <div
-                    className={`absolute left-0 top-full mt-0 w-48 rounded-md shadow-lg border ${
-                      isScrolled
-                        ? "border-input bg-white"
-                        : `${ignore ? "" : "border-[#2e2e2e] bg-[#0a0b1a]/80"}`
-                    } backdrop-blur-sm ring-1 ring-black ring-opacity-5`}
+                    className={`absolute left-0 top-full mt-0 w-48 rounded-md shadow-lg border ${isScrolled
+                      ? "border-input bg-white"
+                      : `${ignore ? "" : "border-[#2e2e2e] bg-[#0a0b1a]/80"}`
+                      } backdrop-blur-sm ring-1 ring-black ring-opacity-5`}
                   >
                     <div
                       className="py-1"
@@ -198,22 +216,41 @@ export default function Navbar() {
                       aria-labelledby="options-menu"
                     >
                       {menu.items.map((item) => (
-                        <Link
-                          key={item.name}
-                          to={item.href}
-                          className={`block px-4 py-2 text-sm  ${
-                            isScrolled
-                              ? "border-input hover:bg-gray-200"
-                              : `${
-                                  ignore
-                                    ? ""
-                                    : "border-[#2e2e2e] hover:bg-white/10"
+                        // @ts-ignore
+                        item.external ? (
+                          <a
+                            key={item.name}
+                            href={item.href}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className={`block px-4 py-2 text-sm flex items-center justify-between ${isScrolled
+                                ? "border-input hover:bg-gray-200"
+                                : `${ignore
+                                  ? ""
+                                  : "border-[#2e2e2e] hover:bg-white/10"
                                 }`
-                          }`}
-                          role="menuitem"
-                        >
-                          {item.name}
-                        </Link>
+                              }`}
+                            role="menuitem"
+                          >
+                            {item.name}
+                            <ArrowUpRight className="h-3 w-3 ml-2" />
+                          </a>
+                        ) : (
+                          <Link
+                            key={item.name}
+                            to={item.href}
+                            className={`block px-4 py-2 text-sm  ${isScrolled
+                                ? "border-input hover:bg-gray-200"
+                                : `${ignore
+                                  ? ""
+                                  : "border-[#2e2e2e] hover:bg-white/10"
+                                }`
+                              }`}
+                            role="menuitem"
+                          >
+                            {item.name}
+                          </Link>
+                        )
                       ))}
                     </div>
                   </div>
@@ -249,43 +286,72 @@ export default function Navbar() {
                     >
                       {menu.name}
                       <ChevronDown
-                        className={`h-4 w-4 transition-transform duration-200 ${
-                          activeDropdown === menu.name ? "rotate-180" : ""
-                        }`}
+                        className={`h-4 w-4 transition-transform duration-200 ${activeDropdown === menu.name ? "rotate-180" : ""
+                          }`}
                       />
                     </button>
                     {activeDropdown === menu.name && (
                       <ul className="mt-2 ml-4 space-y-2">
                         {menu.items.map((item) => (
                           <li key={item.name}>
-                            <Link
-                              onClick={() => {
-                                setIsMobileMenuOpen(() => false);
-                              }}
-                              to={item.href}
-                              className={`block py-1 text-sm ${
-                                isScrolled
-                                  ? "text-black"
-                                  : `${ignore ? "" : "text-white"}`
-                              }`}
-                            >
-                              {item.name}
-                            </Link>
+                            {/* @ts-ignore */}
+                            {item.external ? (
+                              <a
+                                href={item.href}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className={`block py-1 text-sm flex items-center gap-2 ${isScrolled
+                                    ? "text-black"
+                                    : `${ignore ? "" : "text-white"}`
+                                  }`}
+                                onClick={() => setIsMobileMenuOpen(false)}
+                              >
+                                {item.name}
+                                <ArrowUpRight className="h-3 w-3" />
+                              </a>
+                            ) : (
+                              <Link
+                                onClick={() => {
+                                  setIsMobileMenuOpen(() => false);
+                                }}
+                                to={item.href}
+                                className={`block py-1 text-sm ${isScrolled
+                                    ? "text-black"
+                                    : `${ignore ? "" : "text-white"}`
+                                  }`}
+                              >
+                                {item.name}
+                              </Link>
+                            )}
                           </li>
                         ))}
                       </ul>
                     )}
                   </>
                 ) : (
-                  <Link
-                    onClick={() => {
-                      setIsMobileMenuOpen(() => false);
-                    }}
-                    to={menu.href}
-                    className="block py-2 text-left"
-                  >
-                    {menu.name}
-                  </Link>
+                  // @ts-ignore
+                  menu.external ? (
+                    <a
+                      href={menu.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="block py-2 text-left flex items-center gap-2"
+                      onClick={() => setIsMobileMenuOpen(false)}
+                    >
+                      {menu.name}
+                      <ArrowUpRight className="h-4 w-4" />
+                    </a>
+                  ) : (
+                    <Link
+                      onClick={() => {
+                        setIsMobileMenuOpen(() => false);
+                      }}
+                      to={menu.href}
+                      className="block py-2 text-left"
+                    >
+                      {menu.name}
+                    </Link>
+                  )
                 )}
               </li>
             ))}

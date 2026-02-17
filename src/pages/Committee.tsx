@@ -289,10 +289,10 @@ export default function CommitteesPage() {
                 India
               </p> */}
 
-                <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
-                  Dr. Fr. K.S. Casimir, S.J., Vice Chancellor, XIM University,
-                  India
-                </p>
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
+                Dr. Fr. K.S. Casimir, S.J., Vice Chancellor, XIM University,
+                India
+              </p>
             </div>
           </section>
 
@@ -333,9 +333,7 @@ export default function CommitteesPage() {
               <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Dr. Ashok Kumar Turuk, Professor, NIT Rourkela
               </p>
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
-                Dr. Banshidhar Majhi, Professor, VSSUT, VC
-              </p>
+              
               <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Dr. Bjoern Schuller, Professor, Imperial College, London
               </p>
@@ -412,6 +410,9 @@ export default function CommitteesPage() {
             </h2>
             <div className="space-y-2">
               <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
+                Dr. Anirudha Sahoo, National Institute of Standards and Technology, USA
+              </p>
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Dr. Arif Ahmed Sekh, UiT Norway
               </p>
               <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
@@ -423,16 +424,16 @@ export default function CommitteesPage() {
               <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Dr. Susanta Ray, Jadavpur University
               </p> */}
-              
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
-                Dr. Partha Pratim Roy, IIT ISM
-              </p>
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
-                Dr. Ashish Kumar, XIM University
-              </p>
               <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Dr. Devendra Kumar Yadav, XIM University
               </p>
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
+                Dr. Partha Pratim Roy, IIT ISM
+              </p>
+              {/* <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
+                Dr. Ashish Kumar, XIM University
+              </p> */}
+
               <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Dr. Sourav Mandal, XIM University
               </p>
@@ -669,8 +670,11 @@ export default function CommitteesPage() {
               {/* <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Dr. Arif Ahmed Sekh, UiT Norway
               </p> */}
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
+              {/* <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Dr. Sourav Mandal, XIM University
+              </p> */}
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
+                Dr. Sharmistha Nayak, XIM University
               </p>
               <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Dr. Swarup Chattopadhyay, XIM University
@@ -796,7 +800,7 @@ export default function CommitteesPage() {
               IEEE Student Branch Volunteers
             </h2>
             <div className="space-y-2">
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
+              {/*<p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Ms. Ipsita Prusty, IEEE Student Member, XIM University
               </p>
               <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
@@ -847,6 +851,89 @@ export default function CommitteesPage() {
               </p>
               <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Mr. Swayam Prakash, IEEE Student Member, XIM University
+              </p>
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
+                Mr. Ujjwal Prajapati, IEEE Student Member, XIM University
+              </p>*/}
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
+                Mr. Abhijeet Karua, IEEE Student Member, XIM University
+              </p>
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
+                Mr. Anjani Kumar, IEEE Student Member, XIM University
+              </p>
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
+                Mr. Ansumaan Patnaik, IEEE Student Member, XIM University
+              </p>
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
+                Ms. Anusha Rajendra Mutyalwar, IEEE Student Member, XIM
+                University
+              </p>
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
+                Mr. Bhabadeep Behera, IEEE Student Member, XIM University
+              </p>
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
+                Ms. Debolina Das, IEEE Student Member, XIM University
+              </p>
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
+                Ms. Deekhita Bohidar, IEEE Student Member, XIM University
+              </p>
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
+                Ms. Hemangini Behera, IEEE Student Member, XIM University
+              </p>
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
+                Ms. Hiya Taunk, IEEE Student Member, XIM University
+              </p>
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
+                Ms. Hrisita Mohapatra, IEEE Student Member, XIM University
+              </p>
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
+                Ms. Ishika Bandopadhyay, IEEE Student Member, XIM University
+              </p>
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
+                Ms. Koyena Sutradhar, IEEE Student Member, XIM University
+              </p>
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
+                Mr. Reepak Kumar Rout, IEEE Student Member, XIM University
+              </p>
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
+                Ms. Rhea Bachetti, IEEE Student Member, XIM University
+              </p>
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
+                Mr. Roni Thomas, IEEE Student Member, XIM University
+              </p>
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
+                Mr. Roshan Biswal, IEEE Student Member, XIM University
+              </p>
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
+                Ms. Sandra D' Mello, IEEE Student Member, XIM University
+              </p>
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
+                Mr. Satwik Roy, IEEE Student Member, XIM University
+              </p>
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
+                Ms. Shreeyasha Panda, IEEE Student Member, XIM University
+              </p>
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
+                Ms. Shreshta Dash, IEEE Student Member, XIM University
+              </p>
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
+                Ms. Simran Osta, IEEE Student Member, XIM University
+              </p>
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
+                Ms. Sneha Grace Kujur, IEEE Student Member, XIM University
+              </p>
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
+                Ms. Somya Priyadarsini Sahoo, IEEE Student Member, XIM
+                University
+              </p>
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
+                Ms. Sonali Nayak, IEEE Student Member, XIM University
+              </p>
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
+                Ms. Swayamjyoti Sahu, IEEE Student Member, XIM University
+              </p>
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
+                Mr. Swayam Mishra, IEEE Student Member, XIM University
               </p>
               <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Mr. Ujjwal Prajapati, IEEE Student Member, XIM University
