@@ -95,11 +95,11 @@ const Home = () => {
           </div>
         </div>
       </section>
-      
+
       <section className="flex flex-col items-center gap-5 py-10 overflow-hidden">
-        <span className="text-xl font-[SatoshiRegular]">
+        {/*<span className="text-xl font-[SatoshiRegular]">
           Conference Record Number: 65052
-        </span>
+        </span>*/}
 
         <p className="font-[SatoshiBold] animate-moveRightToLeft hover:animate-none text-lg whitespace-nowrap">
           Accepted papers will be submitted for inclusion in IEEE Xplore,
@@ -181,20 +181,26 @@ const Home = () => {
 
         <div className="flex flex-col md:flex-row gap-3 md:gap-7">
           <a
-            href="https://cmt3.research.microsoft.com/ICAIET2025"
-            className="w-full whitespace-nowrap flex flex-row items-center gap-3 px-16 py-4 bg-[#ccf2f4] border-[#a4ebf3] transition-all duration-300 hover:backdrop-blur-0 hover:gap-5 backdrop-blur-[1.25rem] text-lg uppercase rounded-full border"
+            // href="https://cmt3.research.microsoft.com/ICAIET2025"
+            href="#"
+            onClick={(e) => e.preventDefault()}
+            className="w-full whitespace-nowrap flex flex-row items-center gap-3 px-16 py-4 bg-[#ccf2f4] border-[#a4ebf3] transition-all duration-300 hover:backdrop-blur-0 hover:gap-5 backdrop-blur-[1.25rem] text-lg uppercase rounded-full border cursor-default"
           >
             Submit Paper <ArrowRight size={24} />
           </a>
           <a
-            href="https://forms.gle/P7TStcoWdnRMoQtd7"
-            className="w-full whitespace-nowrap flex flex-row items-center gap-3 px-16 py-4 bg-[#ccf2f4] border-[#a4ebf3] transition-all duration-300 hover:backdrop-blur-0 hover:gap-5 backdrop-blur-[1.25rem] text-lg uppercase rounded-full border"
+            // href="https://forms.gle/P7TStcoWdnRMoQtd7"
+            href="#"
+            onClick={(e) => e.preventDefault()}
+            className="w-full whitespace-nowrap flex flex-row items-center gap-3 px-16 py-4 bg-[#ccf2f4] border-[#a4ebf3] transition-all duration-300 hover:backdrop-blur-0 hover:gap-5 backdrop-blur-[1.25rem] text-lg uppercase rounded-full border cursor-default"
           >
             Submit Poster <ArrowRight size={24} />
           </a>
           <Link
-            to="/registration"
-            className="w-full whitespace-nowrap flex flex-row items-center gap-3 px-16 py-4 bg-[#ccf2f4] border-[#a4ebf3] transition-all duration-300 hover:backdrop-blur-0 hover:gap-5 backdrop-blur-[1.25rem] text-lg uppercase rounded-full border"
+            // to="/registration"
+            to="#"
+            onClick={(e) => e.preventDefault()}
+            className="w-full whitespace-nowrap flex flex-row items-center gap-3 px-16 py-4 bg-[#ccf2f4] border-[#a4ebf3] transition-all duration-300 hover:backdrop-blur-0 hover:gap-5 backdrop-blur-[1.25rem] text-lg uppercase rounded-full border cursor-default"
           >
             Register Now <ArrowRight size={24} />
           </Link>

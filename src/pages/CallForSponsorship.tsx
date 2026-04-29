@@ -86,7 +86,7 @@ const CallForSponsorship = () => {
       </div>
 
       <h2 className="text-xl text-left">
-        Industrial and Institutional Sponsors are welcome to support ICAIET-2025
+        Industrial and Institutional Sponsors are welcome to support ICAIET-2027
         conference under the following categories:
       </h2>
 
@@ -101,7 +101,7 @@ const CallForSponsorship = () => {
           All interested sponsors, mail us
           at&nbsp;
           <a href="mailto: icaiet-2025@xim.edu.in">
-            icaiet-2025@xim.edu.in
+            icaiet-2027@xim.edu.in
           </a>
         </h2>
       </div>

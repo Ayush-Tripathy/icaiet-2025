@@ -2,13 +2,16 @@
 
 import { useState, useEffect } from "react";
 import { CalendarDays, ChevronDown, Menu, ArrowUpRight } from "lucide-react";
-import { Link, } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 export default function Navbar() {
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const location = useLocation();
 
+  const isHomePage = location.pathname === "/";
+  const useTransparentStyle = isHomePage && !isScrolled;
 
   useEffect(() => {
     const handleScroll = () => {
@@ -52,7 +55,7 @@ export default function Navbar() {
 
   return (
     <header
-      className={`fixed top-0 w-full z-50 backdrop-blur border-b transition-all duration-300 ${isScrolled ? "bg-white text-black border-gray-200" : "bg-transparent text-white border-white/20"
+      className={`fixed top-0 w-full z-50 backdrop-blur border-b transition-all duration-300 ${!useTransparentStyle ? "bg-white text-black border-gray-200" : "bg-transparent text-white border-white/20"
         }`}
     >
       <div className="w-full flex items-center justify-between h-16 px-4 xl:px-8">
@@ -136,7 +139,7 @@ export default function Navbar() {
                 {/* DROPDOWN */}
                 {menu.items && activeDropdown === menu.name && (
                   <div
-                    className={`absolute left-0 top-full mt-1 w-52 rounded-md shadow-lg border ${isScrolled
+                    className={`absolute left-0 top-full mt-1 w-52 rounded-md shadow-lg border ${!useTransparentStyle
                       ? "bg-white text-black border-gray-200"
                       : "bg-[#0a0b1a]/90 text-white border-white/20"
                       }`}

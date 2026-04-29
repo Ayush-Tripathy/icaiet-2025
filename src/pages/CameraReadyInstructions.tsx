@@ -1,10 +1,10 @@
-import { ClipboardCheck, Copy } from "lucide-react";
-import { useState } from "react";
-import { Link } from "react-router-dom";
+// import { ClipboardCheck, Copy } from "lucide-react";
+// import { useState } from "react";
+// import { Link } from "react-router-dom";
 
 export default function CameraReadyInstructions() {
-  const [isCopied, setIsCopied] = useState<boolean>(false);
-  const [copiedKey, setCopiedKey] = useState<string>("");
+  // const [isCopied, setIsCopied] = useState<boolean>(false);
+  // const [copiedKey, setCopiedKey] = useState<string>("");
 
   return (
     <div className="min-h-screen py-8 pt-32 primary-padding font-[SatoshiRegular]">
@@ -14,7 +14,11 @@ export default function CameraReadyInstructions() {
           <div className="h-1 w-20 bg-blue-500 mt-2"></div>
         </div>
 
-        <div className="space-y-6">
+        <div className="text-center py-20">
+          <h2 className="text-3xl font-semibold text-gray-700 italic">To Be Announced Soon</h2>
+        </div>
+
+        {/* <div className="space-y-6">
           <p className="font-bold">
             Please note that the last date for uploading the final camera-ready
             manuscript is April 20, 2025, 23:59 IST.
@@ -91,37 +95,21 @@ export default function CameraReadyInstructions() {
                 <p>
                   For papers where all authors are employed by the U.S. government: <strong> U.S. Government work not protected by U.S. copyright</strong>
 
-                  {/* For papers in which all authors are employed by the US
-                  government, the copyright notice is:{" "}
-                  <strong>
-                    U.S. Government work not protected by U.S. copyright.
-                  </strong> */}
                 </p>
                 <br />
                 <p>
                   For papers where all authors are employed by a Crown government (UK, Canada, Australia):
 <strong> 979-8-3315-1375-7/25/$31.00 ©2025 Crown</strong>
-                  {/* For papers in which all authors are employed by a Crown
-                  government (UK, Canada, and Australia), the copyright notice
-                  is: <strong>979-8-3315-2261-2/24/$31.00 ©2025 Crown</strong> */}
                 </p>
                 <br />
                 <p>
                   For papers where all authors are employed by the European Union:
 <strong> 979-8-3315-1375-7/25/$31.00 ©2025 European Union</strong>
-                  {/* For papers in which all authors are employed by the European
-                  Union, the copyright notice is:{" "}
-                  <strong>
-                    979-8-3315-2261-2/24/$31.00 ©2025 European Union
-                  </strong> */}
                 </p>
                 <br />
                 <p>
-                  For all other papers:
+                  For papers where all authors are employed by the IEEE:
 <strong> 979-8-3315-1375-7/25/$31.00 ©2025 IEEE</strong>
-
-                  {/* For all other papers the copyright notice is:{" "}
-                  <strong>979-8-3315-2261-2/24/$31.00 ©2025 IEEE</strong> */}
                 </p>
                 <br />
                 <p>
@@ -163,7 +151,7 @@ export default function CameraReadyInstructions() {
                       </button>
                     </div>
                     <pre className="!mb-5 bg-[#f8f9fa] text-[#37474f] py-px px-1 rounded-lg border border-input">
-                      \IEEEoverridecommandlockouts
+                      \\IEEEoverridecommandlockouts
                     </pre>
 
                     <div className="flex items-end justify-end">
@@ -189,7 +177,7 @@ export default function CameraReadyInstructions() {
                       </button>
                     </div>
                     <pre className="overflow-x-auto scrollbar-thin bg-[#f8f9fa] text-[#37474f] py-px px-1 rounded-lg border border-input">
-                      \IEEEpubid{"{"}\\makebox[\\columnwidth]{"{"}
+                      \\IEEEpubid{"{"}\\makebox[\\columnwidth]{"{"}
                       979-8-3315-1375-7/25/$31.00~\\copyright{}2025 IEEE \\hfill
                       {"}"}\\hspace{"{"}\\columnsep{"}"}
                       \\makebox[\\columnwidth]{"{ }"}
@@ -408,7 +396,7 @@ export default function CameraReadyInstructions() {
             need to repeat these steps for each accepted paper.
           </p>
 
-          {/* <p className="mt-6">
+          <p className="mt-6">
             Any difficulty with final camera-ready paper submission, please
             contact
             <a
@@ -432,7 +420,7 @@ export default function CameraReadyInstructions() {
               deanxcse_office@xim.edu.in
             </a>
             .
-          </p> */}
+          </p>
 
           <p className="mt-6">
             <strong>Note: </strong> Ensure that the similarity level in your
@@ -442,7 +430,7 @@ export default function CameraReadyInstructions() {
             that you have adhered to the similarity upper bound before final
             acceptance.
           </p>
-        </div>
+        </div> */}
       </div>
     </div>
   );

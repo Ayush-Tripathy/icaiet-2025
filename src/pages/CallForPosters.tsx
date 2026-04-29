@@ -12,7 +12,7 @@ const CallForPosters = () => {
           <div className="h-1 w-20 bg-blue-600" />
         </div>
         <p className="text-lg text-gray-600">
-          ICAIET-2025 invites poster submissions on original and ongoing research in AI, Machine Learning, Data Science, IoT, Blockchain, Network Security, and Cloud Computing. The poster session offers a platform for interactive
+          ICAIET-2027 invites poster submissions on original and ongoing research in AI, Machine Learning, Data Science, IoT, Blockchain, Network Security, and Cloud Computing. The poster session offers a platform for interactive
           discussion and networking with peers and experts.
         </p>
       </div>
@@ -58,10 +58,10 @@ const CallForPosters = () => {
                 <div className="w-2 h-2 bg-blue-600 rounded-full mt-2 flex-shrink-0"></div>
                 <span>At least one author must register and present the poster at the conference</span>
               </li>
-              <li className="flex items-start gap-2">
+              {/*<li className="flex items-start gap-2">
                 <div className="w-2 h-2 bg-blue-600 rounded-full mt-2 flex-shrink-0"></div>
                 <span>Poster presentations will be held on 29-30 August 2025</span>
-              </li>
+              </li>*/}
               <li className="flex items-start gap-2">
                 <div className="w-2 h-2 bg-blue-600 rounded-full mt-2 flex-shrink-0"></div>
                 <span>
@@ -75,7 +75,7 @@ const CallForPosters = () => {
             </ul>
           </div>
 
-          <div className="flex flex-row items-center gap-5">
+          <div className="flex flex-col sm:flex-row items-start sm:items-center gap-5">
             {/* Download Flyer Button */}
             <a
               href="/CallForPosterFlyer_ICAIET-2025.pdf"
@@ -84,14 +84,22 @@ const CallForPosters = () => {
               Download Flyer <ArrowRight size={20} />
             </a>
 
-            {/* Submission Link */}
-            <a
+            {/* <a
               href="https://forms.gle/P7TStcoWdnRMoQtd7"
               target="_blank"
               className="w-fit flex flex-row items-center gap-3 px-8 py-3 bg-[#ccf2f4] hover:bg-[#b8eef1] text-gray-800 transition-all duration-300 hover:gap-5 text-lg font-medium rounded-full shadow-sm hover:shadow-md border border-[#a4ebf3]"
             >
               Poster Submission Link <ArrowRight size={20} />
-            </a>
+            </a> */}
+
+            <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
+              <div className="w-fit flex flex-row items-center gap-3 px-8 py-3 bg-[#ccf2f4] border-[#a4ebf3] transition-all duration-300 hover:gap-5 text-lg font-medium rounded-full border cursor-default">
+                Poster Submission Link <ArrowRight size={20} />
+              </div>
+              <span className="text-xl text-gray-800 italic font-medium">
+                To be announced soon
+              </span>
+            </div>
           </div>
         </div>
 
@@ -105,7 +113,12 @@ const CallForPosters = () => {
               </h3>
             </div>
             <div className="p-4">
-              <div className="space-y-3">
+              <div className="text-center py-4">
+                <span className="text-gray-600 italic font-medium">
+                  To be announced soon
+                </span>
+              </div>
+              {/* <div className="space-y-3">
                 {[
                   { label: "Submission", date: "20 Jul 2025", highlight: true },
                   { label: "Acceptance", date: "22 Jul 2025" },
@@ -123,7 +136,7 @@ const CallForPosters = () => {
                     </div>
                   </div>
                 ))}
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

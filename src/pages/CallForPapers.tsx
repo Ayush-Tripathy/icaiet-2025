@@ -18,7 +18,7 @@ const CallForPapers = () => {
       </a>
 
       <p className="text-opacity-[0.6] text-lg">
-        The International Conference on Artificial Intelligence and Emerging Technologies (ICAIET-2025) is dedicated to advanced research in Artificial Intelligence, Machine Learning, Data Science, IoT, Blockchain, Network Security, Cloud Computing, and related emerging technologies. The conference aims at bringing together the researchers,
+        The International Conference on Artificial Intelligence and Emerging Technologies (ICAIET-2027) is dedicated to advanced research in Artificial Intelligence, Machine Learning, Data Science, IoT, Blockchain, Network Security, Cloud Computing, and related emerging technologies. The conference aims at bringing together the researchers,
         scientists, engineers and research scholars from all areas of
         engineering and technology, to provide an international forum to
         exchange their ideas, foster collaboration, practical developments
@@ -28,19 +28,28 @@ const CallForPapers = () => {
         papers will be submitted for inclusion into IEEE Xplore subject to
         meeting IEEE Xplore's scope and quality requirements. Prospective
         authors are encouraged to submit their original research contributions
-        in IEEE format. Papers submitted to ICAIET 2025 should contain original
+        in IEEE format. Papers submitted to ICAIET 2027 should contain original
         research/study and should not have been published or submitted for
         publication elsewhere. The IEEE anti-plagiarism policy is applicable to
         all submissions. At least one author of each accepted paper must
         register for the conference and present his/her paper.
       </p>
 
-      <a
+      {/* <a
         href="https://cmt3.research.microsoft.com/ICAIET2025"
         className="w-fit flex flex-row items-center gap-3 px-4 sm:px-8 md:px-10 py-1 sm:py-2 md:py-3 bg-[#ccf2f4] border-[#a4ebf3] transition-all duration-300 hover:backdrop-blur-0 hover:gap-5 backdrop-blur-[1.25rem] text-sm sm:text-base md:text-lg uppercase rounded-full border "
       >
         Paper Submission Link <ArrowRight size={24} />
-      </a>
+      </a> */}
+
+      <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
+        <div className="w-fit flex flex-row items-center gap-3 px-4 sm:px-8 md:px-10 py-1 sm:py-2 md:py-3 bg-[#ccf2f4] border-[#a4ebf3] transition-all duration-300 hover:backdrop-blur-0 hover:gap-5 backdrop-blur-[1.25rem] text-sm sm:text-base md:text-lg uppercase rounded-full border cursor-default">
+          Paper Submission Link <ArrowRight size={24} />
+        </div>
+        <span className="text-xl text-gray-800 italic font-medium">
+          To be announced soon
+        </span>
+      </div>
 
       <div className="space-y-2">
         <h1 className="text-4xl font-bold tracking-tight">Conference Tracks</h1>

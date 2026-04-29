@@ -164,25 +164,29 @@ const Registration = () => {
         </span>
       </div> */}
 
-      <div className="space-y-2">
+      <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 mb-6">
         <span className="text-xl text-gray-800 inline-flex items-center justify-center gap-1">
           Click{" "}
           <a
             target="_blank"
             href="https://forms.gle/gxZKDTB2LZhoyb8N9"
-            className="relative inline-flex items-center font-semibold text-blue-600 group"
+            onClick={(e) => e.preventDefault()}
+            className="relative inline-flex items-center font-semibold text-blue-600 group cursor-default"
           >
             <span className="underline group-hover:text-blue-800 transition-colors duration-200">
               here to register
             </span>
-            <span className="ml-2 bg-yellow-200 text-yellow-800 text-xs font-bold px-2 py-0.5 rounded-full animate-pulse">
+            {/* <span className="ml-2 bg-yellow-200 text-yellow-800 text-xs font-bold px-2 py-0.5 rounded-full animate-pulse">
               Open Now
             </span>
-            {/* <span
+            <span
               className="absolute -right-4 w-2.5 h-2.5 bg-red-500 rounded-full animate-ping"
               aria-hidden="true"
             ></span> */}
           </a>
+        </span>
+        <span className="text-xl text-gray-800 italic font-medium">
+          To be announced soon
         </span>
       </div>
 
@@ -190,8 +194,13 @@ const Registration = () => {
         <h1 className="text-4xl font-bold tracking-tight">Payment Details</h1>
         <div className="h-1 w-20 bg-blue-500" />
       </div>
+      <div className="space-y-2">
+        <span className="text-xl text-gray-800 italic font-medium">
+          To be announced soon
+        </span>
+      </div>
 
-      <div className="space-y-3">
+      {/* <div className="space-y-3">
         <div className="font-[SatoshiRegular]">
           <h3 className="text-lg font-bold">For Domestic participants:</h3>
           <span className="text-sm">
@@ -209,7 +218,6 @@ const Registration = () => {
             Click here to pay online
           </a>
 
-          {/* Blinking text for (indian participants) */}
           <span className="text-green-500 text-lg font-semibold animate-pulse">
             (Indian Participants)
           </span>
@@ -279,7 +287,7 @@ const Registration = () => {
             </TableBody>
           </Table>
         </div>
-      </div>
+      </div> */}
 
       {/* <div className="space-y-2">
         <h1 className="text-4xl font-bold tracking-tight">
