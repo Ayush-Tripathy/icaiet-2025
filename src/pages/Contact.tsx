@@ -9,7 +9,7 @@ const Contact = () => {
       <div className="flex flex-col gap-3">
         <p className="font-[SatoshiBold] text-2xl">ICAIET - 2027</p>
         <div className="flex flex-col gap-3">
-          <span>Email: icaiet-2027@xim.edu.in</span>
+          <span>Email: icaiet-2025@xim.edu.in</span>
         </div>
       </div>
       <div className="flex flex-row gap-x-20 gap-y-10 flex-wrap">
