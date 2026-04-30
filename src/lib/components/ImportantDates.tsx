@@ -28,7 +28,7 @@ const ImportantDates = ({ withHeader = true }: { withHeader?: boolean }) => {
             </TableCell>
             <TableCell className="text-right whitespace-nowrap">
               <span className="">
-                30 April 2026
+                01 June 2026
               </span>
               {/* <br /> */}
               {/* <span className="">Extended till 01 April 2025</span> */}
@@ -47,7 +47,7 @@ const ImportantDates = ({ withHeader = true }: { withHeader?: boolean }) => {
                 14 May 2025 (2<sup>nd</sup> phase acceptance)
               </span> */}
               <span>
-                1 June 2026
+                01 July 2026
               </span>
             </TableCell>
           </TableRow>
@@ -56,7 +56,7 @@ const ImportantDates = ({ withHeader = true }: { withHeader?: boolean }) => {
               Camera ready Version submission
             </TableCell>
             <TableCell className="text-right whitespace-nowrap">
-              30 June 2026
+              20 July 2026
             </TableCell>
           </TableRow>
           <TableRow className="hover:bg-inherit border-input">
@@ -64,7 +64,7 @@ const ImportantDates = ({ withHeader = true }: { withHeader?: boolean }) => {
               Early-Bird Registration
             </TableCell>
             <TableCell className="text-right whitespace-nowrap">
-              30 June 2026
+              24 July 2026
             </TableCell>
           </TableRow>
           {/* <TableRow className="hover:bg-inherit border-input">
