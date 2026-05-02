@@ -435,7 +435,7 @@ export default function CommitteesPage() {
               </p> */}
 
               <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
-                Dr. Sourav Mandal, XIM University
+                Dr. Pradip Kundu, XIM University
               </p>
             </div>
           </section>
