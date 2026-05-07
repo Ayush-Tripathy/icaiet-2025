@@ -416,6 +416,9 @@ export default function CommitteesPage() {
                 Dr. Arif Ahmed Sekh, UiT Norway
               </p>
               <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
+                Dr. Bibhudatta Sahoo, NIT Rourkela
+              </p>
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Dr. Bhawani Sankar Panda, IIT Delhi
               </p>
               {/* <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
@@ -692,6 +695,9 @@ export default function CommitteesPage() {
                 Dr. Alok Ranjan, Bosch
               </p>
               <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
+                Dr. Arpita Jena, XIM University
+              </p>
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Mr. Satyajit Nath, Senior Director, Capgemini
               </p>
             </div>
@@ -726,6 +732,9 @@ export default function CommitteesPage() {
             <div className="space-y-2">
               <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Dr. Arif Ahmed Sekh, UiT Norway
+              </p>
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
+                Dr. Arpita Jena, XIM University
               </p>
               <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Dr. Deepak Ranjan Nayak, MNIT Jaipur
@@ -775,6 +784,9 @@ export default function CommitteesPage() {
               </p>
               <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Dr. Pradip Kundu, XIM University
+              </p>
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
+                Dr. Sharmistha Nayak, XIM University
               </p>
               <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Dr. Sourav Mandal, XIM University
