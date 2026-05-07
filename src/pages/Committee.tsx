@@ -290,7 +290,7 @@ export default function CommitteesPage() {
               </p> */}
 
               <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
-                Dr. Fr. K.S. Casimir, S.J., Vice Chancellor, XIM University,
+                Dr Fr K.S. Casimir sj, Vice Chancellor, XIM University,
                 India
               </p>
             </div>
