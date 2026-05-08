@@ -148,15 +148,7 @@ export default function SubmissionGuidelines() {
           <h2 className="text-2xl font-bold mt-8 mb-4">
             Manuscript Submission Information:
           </h2>
-          <h3>
-            CMT ACKNOWLEDGMENT:
-          </h3>
-          <p className="mt-10 pt-10 border-t border-gray-200">
-            The Microsoft CMT service was used for managing the peer-reviewing
-            process for this conference. This service was provided for free by
-            Microsoft and they bore all expenses, including costs for Azure
-            cloud services as well as for software development and support.
-          </p>
+          
           <p>
             A manuscript for reviewing purposes needs to be submitted as a
             single PDF or Word file using the following link:

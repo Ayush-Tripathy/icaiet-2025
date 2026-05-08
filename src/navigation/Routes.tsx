@@ -11,6 +11,7 @@ import SubmissionGuidelines from "@/pages/Submission";
 import CameraReadyInstructions from "@/pages/CameraReadyInstructions";
 import CallForSponsorship from "@/pages/CallForSponsorship";
 import Sponsors from "@/pages/Sponsors";
+import Acknowledgement from "@/pages/Acknowledgement";
 import { useEffect } from "react";
 import CallForPosters from "@/pages/CallForPosters";
 // import RegistrationForm from "@/pages/RegistrationForm";
@@ -40,6 +41,7 @@ export const AppRoutes = () => {
       <Route path="/call-for-sponsorship" element={<CallForSponsorship />} />
       <Route path="/sponsors" element={<Sponsors />} />
       <Route path="/call-for-posters" element={<CallForPosters />} />
+      <Route path="/acknowledgement" element={<Acknowledgement />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
   );

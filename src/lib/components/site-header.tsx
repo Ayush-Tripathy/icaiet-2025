@@ -27,11 +27,12 @@ export default function Navbar() {
     {
       name: "For Authors",
       href: "#",
-      items: [
-        { name: "Important Dates", href: "/important-dates" },
-        { name: "Submission Guidelines", href: "/submission-guidelines" },
-        { name: "Camera-Ready Instructions", href: "/camera-ready-instructions" },
-      ],
+        items: [
+          { name: "Important Dates", href: "/important-dates" },
+          { name: "Submission Guidelines", href: "/submission-guidelines" },
+          { name: "Camera-Ready Instructions", href: "/camera-ready-instructions" },
+          { name: "Acknowledgement", href: "/acknowledgement" },
+        ],
     },
     { name: "Registration", href: "/registration" },
     { name: "Call for Papers", href: "/call-for-papers" },
