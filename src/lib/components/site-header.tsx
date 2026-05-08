@@ -31,7 +31,7 @@ export default function Navbar() {
           { name: "Important Dates", href: "/important-dates" },
           { name: "Submission Guidelines", href: "/submission-guidelines" },
           { name: "Camera-Ready Instructions", href: "/camera-ready-instructions" },
-          { name: "Acknowledgement", href: "/acknowledgement" },
+          { name: "CMT Acknowledgement", href: "/acknowledgement" },
         ],
     },
     { name: "Registration", href: "/registration" },
