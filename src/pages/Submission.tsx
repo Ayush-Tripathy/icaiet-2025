@@ -148,7 +148,6 @@ export default function SubmissionGuidelines() {
           <h2 className="text-2xl font-bold mt-8 mb-4">
             Manuscript Submission Information:
           </h2>
-          
           <p>
             A manuscript for reviewing purposes needs to be submitted as a
             single PDF or Word file using the following link:
@@ -160,13 +159,18 @@ export default function SubmissionGuidelines() {
           >
             Click here to submit
           </a>*/}
-          <button
+          <a
+            href="https://cmt3.research.microsoft.com/ICAIET2027"
+            className="w-fit flex flex-row items-center gap-3 px-4 sm:px-8 md:px-8 py-1 sm:py-2 md:py-4 bg-[#ccf2f4] border-[#a4ebf3] transition-all duration-300 hover:backdrop-blur-0 hover:gap-5 backdrop-blur-[1.25rem] text-sm sm:text-base uppercase rounded-full border "
+          >
+            Click here to submit
+          </a>
+          {/*<button
             className="w-fit flex flex-row items-center gap-3 px-4 sm:px-8 md:px-8 py-1 sm:py-2 md:py-4 bg-[#ccf2f4] border-[#a4ebf3] transition-all duration-300 hover:backdrop-blur-0 hover:gap-5 backdrop-blur-[1.25rem] text-sm sm:text-base uppercase rounded-full border cursor-pointer"
           >
             Click here to submit
-          </button>
+          </button>*/}
 
-          
         </div>
       </div>
     </div>
