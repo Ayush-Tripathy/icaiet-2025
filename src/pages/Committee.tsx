@@ -282,7 +282,7 @@ export default function CommitteesPage() {
         <div className="space-y-12 mt-10">
           {/* Chief Patron Section */}
           <section className="space-y-4">
-            <h2 className="text-2xl font-bold text-blue-400">Patron</h2>
+            <h2 className="text-2xl font-bold text-blue-400">Chief Patron</h2>
             <div className="space-y-2">
               {/* <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Fr. Antony R. Uvari, S.J., Vice Chancellor, XIM University,
@@ -292,6 +292,21 @@ export default function CommitteesPage() {
               <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Dr Fr K.S. Casimir sj, Vice Chancellor, XIM University,
                 India
+              </p>
+            </div>
+          </section>
+          <section className="space-y-4">
+            <h2 className="text-2xl font-bold text-blue-400">Patron</h2>
+            <div className="space-y-2">
+              {/* <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
+                Fr. Antony R. Uvari, S.J., Vice Chancellor, XIM University,
+                India
+              </p> */}
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
+                Prof. Subhajyoti Ray, Pro-Vice Chancellor, XIM University
+              </p>
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
+                Fr. S. Antony Raj, S.J., Registrar, XIM University
               </p>
             </div>
           </section>
@@ -317,9 +332,7 @@ export default function CommitteesPage() {
               Advisory Committee
             </h2>
             <div className="space-y-2">
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
-                Fr. S. Antony Raj, S.J., Registrar, XIM University
-              </p>
+              
               <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Fr. V. Arokiyadass, S.J., Chief Finance Officer, XIM University,
                 India
