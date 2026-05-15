@@ -47,7 +47,7 @@ const Home = () => {
               </p>
 
               <span className="font-[SatoshiRegular] uppercase text-lg bg-[#ffffff26] py-3 px-6 rounded-xl backdrop-blur-[13px]">
-                January 28<span className="font-serif"> - </span>30, 2027
+                January 13<span className="font-serif"> - </span>15, 2027
               </span>
             </div>
           </div>

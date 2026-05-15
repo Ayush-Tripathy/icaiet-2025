@@ -80,7 +80,7 @@ const ImportantDates = ({ withHeader = true }: { withHeader?: boolean }) => {
               Dates of Conference
             </TableCell>
             <TableCell className="text-right whitespace-nowrap">
-              28 – 30 January 2027
+              13 – 15 January 2027
             </TableCell>
           </TableRow>
         </TableBody>

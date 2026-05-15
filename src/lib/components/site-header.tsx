@@ -96,7 +96,7 @@ export default function Navbar() {
           <div className="hidden xl:flex items-center gap-1 text-sm self-center">
 
             <CalendarDays className="h-4 w-4" />
-            <span>28 - 30 JAN</span>
+            <span>13 - 15 JAN</span>
           </div>
         </div>
         <div className="h-8 border-r border-black/20 self-center mx-4" />
