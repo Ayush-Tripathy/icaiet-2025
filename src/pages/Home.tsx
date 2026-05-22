@@ -1,7 +1,7 @@
 import TextSection from "@/lib/components/TextSection";
 import { ArrowRight } from "lucide-react";
 import ImportantDates from "@/lib/components/ImportantDates";
-import { Link } from "react-router-dom";
+//import { Link } from "react-router-dom";
 import HeroCarousel from "@/lib/components/HeroCarousel";
 import IEEEProceedingsBlock from "@/lib/components/IEEEProceedingsBlock";
 
@@ -188,6 +188,7 @@ const Home = () => {
           >
             Submit Paper <ArrowRight size={24} />
           </a>
+          {/*
           <a
             // href="https://forms.gle/P7TStcoWdnRMoQtd7"
             href="#"
@@ -204,6 +205,7 @@ const Home = () => {
           >
             Register Now <ArrowRight size={24} />
           </Link>
+          */}
         </div>
       </section>
     </div>
