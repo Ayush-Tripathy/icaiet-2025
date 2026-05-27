@@ -462,6 +462,9 @@ export default function CommitteesPage() {
               Organizing Chair
             </h2>
             <div className="space-y-2">
+                <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
+                Dr. Arpita Jena, XIM University
+              </p>
               <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Dr. Ashish Kumar, XIM University
               </p>
