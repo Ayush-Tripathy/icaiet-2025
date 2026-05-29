@@ -72,7 +72,7 @@ const Footer = () => {
           </p>
           <p>
             <strong>Email:&nbsp;</strong>
-            <a href="mailto:icaiet-2025@xim.edu.in">icaiet-2025@xim.edu.in</a>
+            <a href="mailto:icaiet-2025@xim.edu.in">icaiet-2027@xim.edu.in</a>
           </p>
           <p>
             <strong>Phone:&nbsp;</strong>

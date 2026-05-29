@@ -100,8 +100,8 @@ const CallForSponsorship = () => {
         <h2 className="text-xl text-blue-500 font-bold text-left">
           All interested sponsors, mail us
           at&nbsp;
-          <a href="mailto: icaiet-2025@xim.edu.in">
-            icaiet-2025@xim.edu.in
+          <a href="mailto: icaiet-2027@xim.edu.in">
+            icaiet-2027@xim.edu.in
           </a>
         </h2>
       </div>
