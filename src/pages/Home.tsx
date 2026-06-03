@@ -94,7 +94,7 @@ const Home = () => {
             </div>
             <div className="flex flex-row justify-center gap-5">
               <a>
-                <img src="/ieee cs.png" alt="IEEE CS XIM" className="w-40" />
+                <img src="/ieee cs1.png" alt="IEEE CS XIM" className="w-40" />
               </a>
             </div>
           </div>
@@ -111,7 +111,7 @@ const Home = () => {
                 <img
                   src="/iajes.png"
                   alt="IAJES"
-                  className="w-60 h-full"
+                  className="w-40 h-full"
                 />
               </a>
             </div>
