@@ -55,8 +55,7 @@ const Home = () => {
       </div>
       <IEEEProceedingsBlock />
 
-      <section className="grid grid-cols-1 lg:grid-cols-2 sm:mx-20 lg:mx-44 py-10"></section>
-      <section className="grid grid-cols-1 lg:grid-cols-2 sm:mx-20 lg:mx-44 py-10">
+      <section className="grid grid-cols-1 lg:grid-cols-3 sm:mx-20 lg:mx-44 py-10">
         <div className="flex flex-col gap-10 items-center">
           <h3 className="text-center text-2xl sm:text-2xl font-[SatoshiBold] uppercase">
             Organized By
@@ -77,18 +76,42 @@ const Home = () => {
               <a href="https://www.ieee.org/">
                 <img src="/IEEE-official.png" alt="IEEE" className="w-40" />
               </a>
-
+              <a href="https://site.ieee.org/bhubaneswar/">
+                <img
+                  src="/ieee-bhubaneswar1.png"
+                  alt="IEEE Bhubaneswar Joint Chapter"
+                  className="w-40 h-full"
+                />
+              </a>
+            </div>
+            <div className="flex flex-row gap-5">
               <a href="https://edu.ieee.org/in-ximub/">
                 <img src="/IEEE-xim.png" alt="IEEE XIM" className="w-40" />
               </a>
+              <a>
+                <img src="/wie ieee.png" alt="IEEE WIE XIM" className="w-40" />
+              </a>
             </div>
+            <div className="flex flex-row justify-center gap-5">
+              <a>
+                <img src="/ieee cs.png" alt="IEEE CS XIM" className="w-40" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div className="flex flex-col gap-10 items-center max-sm:mt-16">
+          <h3 className="text-center text-2xl sm:text-2xl font-[SatoshiBold] uppercase">
+            Partner <span className="whitespace-nowrap">With</span>
+          </h3>
+
+          <div className="flex flex-col gap-5">
 
             <div className="flex flex-row justify-center gap-5">
-              <a href="https://site.ieee.org/bhubaneswar/">
+              <a href="https://www.iajes.org/home/">
                 <img
-                  src="/ieee-bhubaneswar.png"
-                  alt="IEEE Bhubaneswar Joint Chapter"
-                  className="w-40 h-full"
+                  src="/iajes.png"
+                  alt="IAJES"
+                  className="w-60 h-full"
                 />
               </a>
             </div>
@@ -97,9 +120,9 @@ const Home = () => {
       </section>
 
       <section className="flex flex-col items-center gap-5 py-10 overflow-hidden">
-        {/*<span className="text-xl font-[SatoshiRegular]">
-          Conference Record Number: 65052
-        </span>*/}
+        <span className="text-xl font-[SatoshiRegular]">
+          Conference Record Number: 72621
+        </span>
 
         <p className="font-[SatoshiBold] animate-moveRightToLeft hover:animate-none text-lg whitespace-nowrap">
           Accepted papers will be submitted for inclusion in IEEE Xplore,
