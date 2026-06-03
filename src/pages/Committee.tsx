@@ -659,7 +659,7 @@ export default function CommitteesPage() {
             <h2 className="text-2xl font-bold text-blue-400">Finance Chair</h2>
             <div className="space-y-2">
               <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
-                Dr. Pradip Kundu, XIM University
+                Dr. Sourav Mandal, XIM University
               </p>
               {/* <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Dr. Chandan Misra, XIM University
@@ -689,12 +689,12 @@ export default function CommitteesPage() {
               {/* <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Dr. Arif Ahmed Sekh, UiT Norway
               </p> */}
-              {/* <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
-                Dr. Sourav Mandal, XIM University
-              </p> */}
               <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
-                Dr. Sharmistha Nayak, XIM University
+                Dr. Chandan Mishra, XIM University
               </p>
+              {/* <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
+                Dr. Sharmistha Nayak, XIM University
+              </p> */}
               <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Dr. Swarup Chattopadhyay, XIM University
               </p>
@@ -800,9 +800,6 @@ export default function CommitteesPage() {
               </p>
               <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Dr. Pradip Kundu, XIM University
-              </p>
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
-                Dr. Sharmistha Nayak, XIM University
               </p>
               <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Dr. Sourav Mandal, XIM University
