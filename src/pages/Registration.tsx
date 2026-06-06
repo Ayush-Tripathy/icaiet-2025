@@ -100,10 +100,19 @@ const Registration = () => {
               <TableRow className="hover:bg-inherit border-input">
                 <TableCell className="whitespace-nowrap">1</TableCell>
                 <TableCell className="">
-                  Research Scholars/Academicians
+                  Academicians
                 </TableCell>
                 <TableCell className="whitespace-nowrap">300$</TableCell>
                 <TableCell className="">350$</TableCell>
+              </TableRow>
+              
+              <TableRow className="hover:bg-inherit border-input">
+                <TableCell className="whitespace-nowrap">2</TableCell>
+                <TableCell className="">
+                  Research Scholars
+                </TableCell>
+                <TableCell className="whitespace-nowrap">250$</TableCell>
+                <TableCell className="">300$</TableCell>
               </TableRow>
 
               <TableRow className="hover:bg-inherit border-input">

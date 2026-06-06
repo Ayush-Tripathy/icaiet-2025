@@ -28,7 +28,7 @@ const ImportantDates = ({ withHeader = true }: { withHeader?: boolean }) => {
             </TableCell>
             <TableCell className="text-right whitespace-nowrap">
               <span className="">
-                25 July 2026
+                31 July 2026
               </span>
               {/* <br /> */}
               {/* <span className="">Extended till 01 April 2025</span> */}

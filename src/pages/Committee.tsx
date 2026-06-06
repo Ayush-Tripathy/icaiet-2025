@@ -306,7 +306,7 @@ export default function CommitteesPage() {
                 Prof. Subhajyoti Ray, Pro-Vice Chancellor, XIM University
               </p>
               <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
-                Fr. S. Antony Raj, S.J., Registrar, XIM University
+                Fr S. Antony Raj sj, Registrar, XIM University
               </p>
             </div>
           </section>
@@ -452,6 +452,9 @@ export default function CommitteesPage() {
 
               <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Dr. Pradip Kundu, XIM University
+              </p>
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
+                Dr. Swarup Chattopadhyay, XIM University
               </p>
             </div>
           </section>
@@ -710,9 +713,9 @@ export default function CommitteesPage() {
               <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Dr. Alok Ranjan, Bosch
               </p>
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
+              {/*<p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Dr. Arpita Jena, XIM University
-              </p>
+              </p>*/}
               <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Mr. Satyajit Nath, Senior Director, Capgemini
               </p>
@@ -749,9 +752,9 @@ export default function CommitteesPage() {
               <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Dr. Arif Ahmed Sekh, UiT Norway
               </p>
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
+              {/*<p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Dr. Arpita Jena, XIM University
-              </p>
+              </p>*/}
               <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Dr. Deepak Ranjan Nayak, MNIT Jaipur
               </p>

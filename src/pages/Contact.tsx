@@ -13,13 +13,7 @@ const Contact = () => {
         </div>
       </div>
       <div className="flex flex-row gap-x-20 gap-y-10 flex-wrap">
-        <div className="flex flex-col gap-3">
-          <p className="font-[SatoshiBold] text-2xl">Dr. Fr. Joshy K X, S.J.</p>
-          <div className="flex flex-col gap-3">
-            {/* <span>Email: joshy@xim.edu.in</span> */}
-            <span>Phone: +918280006677</span>
-          </div>
-        </div>
+        
 
         <div className="flex flex-col gap-3">
           <p className="font-[SatoshiBold] text-2xl">
@@ -36,6 +30,14 @@ const Contact = () => {
           <div className="flex flex-col gap-3">
             {/* <span>Email: ashish@xim.edu.in</span> */}
             <span>Phone: +916205015853</span>
+          </div>
+        </div>
+
+        <div className="flex flex-col gap-3">
+          <p className="font-[SatoshiBold] text-2xl">Dr. Fr. Joshy K X, S.J.</p>
+          <div className="flex flex-col gap-3">
+            {/* <span>Email: joshy@xim.edu.in</span> */}
+            <span>Phone: +918280006677</span>
           </div>
         </div>
 
