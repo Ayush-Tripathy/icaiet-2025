@@ -783,6 +783,12 @@ export default function CommitteesPage() {
               <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Mr. Bodhisattwa Sanghapriya, Co-Founder & CEO of IG Drones
               </p>
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
+                Dr. Debabrata Nayak, Director Cyber Security, PwC
+              </p>
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
+                Dr. Santosh Kumar Nanda, Senior Solution Director, HCLTech
+              </p>
             </div>
           </section>
 
