@@ -4,6 +4,7 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const images: string[] = [
     "/XIM-BG2.jpg",
+    "/XIM-BG3.jpeg",
     "/img1.JPG",
     "/img2.JPG",
     "/img3.JPG",
