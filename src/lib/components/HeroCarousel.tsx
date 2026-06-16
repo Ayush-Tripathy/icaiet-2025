@@ -3,7 +3,6 @@ import { motion, AnimatePresence } from "framer-motion";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const images: string[] = [
-    "/XIM-BG2.jpg",
     "/XIM-BG3.jpeg",
     "/img1.JPG",
     "/img2.JPG",
@@ -28,28 +27,29 @@ const HeroCarousel: React.FC = () => {
             prev === 0 ? images.length - 1 : prev - 1
         );
     };
-
-    // Auto slide every 5 seconds
+    // Auto slide every 5 seconds (allows 4 seconds of full display plus 1 second transition)
     useEffect(() => {
-        const interval: NodeJS.Timeout = setInterval(() => {
+        const interval = setInterval(() => {
             nextSlide();
-        }, 6000);
+        }, 5000);
 
         return () => clearInterval(interval);
     }, []);
 
     return (
-        <div className="relative w-full h-[80vh] overflow-hidden">
-            <AnimatePresence mode="wait">
+        <div className="relative w-full h-[80vh] overflow-hidden bg-black">
+            <AnimatePresence>
                 <motion.img
                     key={index}
                     src={images[index]}
                     alt="Conference Banner"
-                    initial={{ opacity: 0, scale: 1.05 }}
-                    animate={{ opacity: 1, scale: 1 }}
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
-                    transition={{ duration: 0.6 }}
-                    className="absolute w-full h-full object-cover"
+                    transition={{ duration: 1, ease: "easeInOut" }}
+                    className={`absolute w-full h-full ${
+                        images[index] === "/XIM-BG3.jpeg" ? "object-fill" : "object-cover"
+                    }`}
                 />
             </AnimatePresence>
 

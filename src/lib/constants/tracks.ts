@@ -17,12 +17,12 @@ export const TRACKS = [
         affiliation: "SRM University, AP",
       },
       {
-        name: "Dr. Ram Chandra Barik",
-        affiliation: "CV Raman Global University",
+        name: "Dr. Sambit Satpathy",
+        affiliation: "Galgotias College of Engineering and Technology",
       },
       {
-        name: "Dr. Ram Prasad Padhy",
-        affiliation: "IIT Bhubaneswar",
+        name: "Dr. Dhirendra Kumar Shukla",
+        affiliation: "Galgotias University, Greater Noida",
       },
     ],
   },
@@ -60,10 +60,6 @@ export const TRACKS = [
       "Integrating computer vision with IoT and robotics.",
     ],
     chairs: [
-      {
-        name: "Dr. Arif Ahmed Sekh",
-        affiliation: "UiT, Norway",
-      },
       {
         name: "Dr. Shibaprasad Sen",
         affiliation: "MCKVIE, Howrah",
@@ -183,7 +179,12 @@ export const SPECIALTRACKS = [
       "Use of data analytics to predict and improve learning outcomes.",
       "Development of inclusive and accessible educational technologies.",
     ],
-    chairs: [],
+    chairs: [
+      {
+        name: "Dr. Ram Chandra Barik",
+        affiliation: "CV Raman Global University",
+      },
+    ],
   },
   {
     title: "AI in Finance and Business Analytics",
@@ -217,6 +218,10 @@ export const SPECIALTRACKS = [
       {
         name: "Dr. Sricheta Parul",
         affiliation: "KIIT University",
+      },
+      {
+        name: "Dr. Satyendra Nath Mishra",
+        affiliation: "XIM University",
       },
     ],
   },
