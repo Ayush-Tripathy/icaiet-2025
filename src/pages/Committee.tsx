@@ -377,6 +377,10 @@ export default function CommitteesPage() {
                 Dr. Rajeev Srivastava, Professor, Director IIIT Ranchi
               </p>
               <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
+                Dr. Rajkumar Buyya, Professor, The University of Melbourne,
+                Australia
+              </p>
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Dr. Singam Jayanthu, NIT Rourkela
               </p>
               <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
