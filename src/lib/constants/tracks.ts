@@ -13,16 +13,8 @@ export const TRACKS = [
     ],
     chairs: [
       {
-        name: "Dr. Abinash Pujahari",
-        affiliation: "SRM University, AP",
-      },
-      {
-        name: "Dr. Sambit Satpathy",
-        affiliation: "Galgotias College of Engineering and Technology",
-      },
-      {
-        name: "Dr. Dhirendra Kumar Shukla",
-        affiliation: "Galgotias University, Greater Noida",
+        name: "Dr. Subhashree Choudhury",
+        affiliation: "Siksha O Anusandhan University",
       },
     ],
   },
@@ -38,6 +30,10 @@ export const TRACKS = [
       "Real-world case studies of ML deployment.",
     ],
     chairs: [
+      {
+        name: "Dr. Abinash Pujahari",
+        affiliation: "SRM University, AP",
+      },
       {
         name: "Dr. Rabi Shaw",
         affiliation: "NIT Jalandhar",

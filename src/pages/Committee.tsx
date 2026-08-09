@@ -641,6 +641,9 @@ export default function CommitteesPage() {
                 Dr. Sriparna Saha, IIT Patna
               </p>
               <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
+                Dr. Subhashree Choudhury, Siksha O Anusandhan University
+              </p>
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Dr. Subhashree Darshana, KIIT University
               </p>
               <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
@@ -753,9 +756,9 @@ export default function CommitteesPage() {
               Publicity Chair
             </h2>
             <div className="space-y-2">
-              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
+              {/* <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Dr. Arif Ahmed Sekh, UiT Norway
-              </p>
+              </p>*/}
               {/*<p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Dr. Arpita Jena, XIM University
               </p>*/}
@@ -771,6 +774,9 @@ export default function CommitteesPage() {
               <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
                 Dr. Rojalina Priyadarshini, CV Raman Global University,
                 Bhubaneswar
+              </p>
+              <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
+                Dr. Subhashree Choudhury, Siksha O Anusandhan University
               </p>
             </div>
           </section>
