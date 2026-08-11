@@ -116,7 +116,7 @@ const Registration = () => {
               </TableRow>
 
               <TableRow className="hover:bg-inherit border-input">
-                <TableCell className="whitespace-nowrap">2</TableCell>
+                <TableCell className="whitespace-nowrap">3</TableCell>
                 <TableCell className="">
                   Listener (Non-Author/Attendee/Non-Presenter/Companion
                   Participant)
