@@ -105,7 +105,7 @@ const Registration = () => {
                 <TableCell className="whitespace-nowrap">300$</TableCell>
                 <TableCell className="">350$</TableCell>
               </TableRow>
-              
+
               <TableRow className="hover:bg-inherit border-input">
                 <TableCell className="whitespace-nowrap">2</TableCell>
                 <TableCell className="">
@@ -203,26 +203,26 @@ const Registration = () => {
         <h1 className="text-4xl font-bold tracking-tight">Payment Details</h1>
         <div className="h-1 w-20 bg-blue-500" />
       </div>
-      <div className="space-y-2">
+      {/* <div className="space-y-2">
         <span className="text-xl text-gray-800 italic font-medium">
           To be announced soon
         </span>
-      </div>
+      </div> */}
 
-      {/* <div className="space-y-3">
+      <div className="space-y-3">
         <div className="font-[SatoshiRegular]">
           <h3 className="text-lg font-bold">For Domestic participants:</h3>
           <span className="text-sm">
-            An online payment link, This accepts payments VIA Net
-            banking/UPI/Debit & Credit Card.
+            An online payment link. Payment options: UPI/Credit card/Debit card/Wallet/Net banking/QR.
           </span>
         </div>
 
         <div className="flex flex-row gap-2">
           <a
             className="text-blue-500 text-xl font-semibold underline"
-            href="https://rzp.io/rzp/JDHgTzj7"
+            href="https://rzp.io/rzp/rEfKAucJ"
             target="_blank"
+            rel="noreferrer"
           >
             Click here to pay online
           </a>
@@ -241,6 +241,37 @@ const Registration = () => {
       </div>
 
       <div className="space-y-3">
+        <div className="font-[SatoshiRegular]">
+          <h3 className="text-lg font-bold">For International participants:</h3>
+          <span className="text-sm">
+            An online payment link. Payment options: only card (Amex/Maestro/Diners club/American express/others).
+          </span>
+        </div>
+
+        <div className="flex flex-row gap-2">
+          <a
+            className="text-blue-500 text-xl font-semibold underline"
+            href="https://rzp.io/rzp/YaflyEP"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Click here to pay online
+          </a>
+
+          <span className="text-green-500 text-lg font-semibold animate-pulse">
+            (International Participants)
+          </span>
+        </div>
+
+        <div className="text-sm text-muted-foreground">
+          <span className="font-bold">Note:</span> Please take a screenshot of
+          the payment success page for future reference. This is important as
+          you will be required to upload this screenshot in the registration
+          form.
+        </div>
+      </div>
+
+      {/* <div className="space-y-3">
         <div className="font-[SatoshiRegular]">
           <h3 className="text-lg font-bold">For NON-Domestic participants:</h3>
           <span className="text-sm">
