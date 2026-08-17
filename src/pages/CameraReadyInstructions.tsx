@@ -21,7 +21,7 @@ export default function CameraReadyInstructions() {
         <div className="space-y-6">
           <p className="font-bold">
             Please note that the last date for uploading the final camera-ready
-            manuscript is April 20, 2025, 23:59 IST.
+            manuscript is September 15, 2026, 23:59 IST.
           </p>
           <p className="font-bold">
             At least one author must complete the registration before deadline.
@@ -92,6 +92,7 @@ export default function CameraReadyInstructions() {
                 transfer process:
                 <br />
                 <br />
+                {/*
                 <p>
                   For papers where all authors are employed by the U.S. government: <strong> U.S. Government work not protected by U.S. copyright</strong>
 
@@ -110,6 +111,23 @@ export default function CameraReadyInstructions() {
                 <p>
                   For papers where all authors are employed by the IEEE:
 <strong> 979-8-3315-1375-7/25/$31.00 ©2025 IEEE</strong>
+                </p>
+                */}
+
+                <p>
+                  For papers in which all authors are employed by the US government, the copyright notice is: <strong>U.S. Government work not protected by U.S. copyright</strong>
+                </p>
+                <br />
+                <p>
+                  For papers in which all authors are employed by a Crown government (UK, Canada, and Australia), the copyright notice is: <strong>979-8-3195-2476-8/27/$31.00 ©2027 Crown</strong>
+                </p>
+                <br />
+                <p>
+                  For papers in which all authors are employed by the European Union, the copyright notice is: <strong>979-8-3195-2476-8/27/$31.00 ©2027 European Union</strong>
+                </p>
+                <br />
+                <p>
+                  For all other papers the copyright notice is: <strong>979-8-3195-2476-8/27/$31.00 ©2027 IEEE</strong>
                 </p>
                 <br />
                 <p>
@@ -165,7 +183,7 @@ export default function CameraReadyInstructions() {
                             setCopiedKey("");
                           }, 3000);
                           navigator.clipboard.writeText(
-                            "\\IEEEpubid{\\makebox[\\columnwidth]{979-8-3315-1375-7/25/$31.00~\\copyright2025 IEEE \\hfill}\\hspace{\\columnsep}\\makebox[\\columnwidth]{ }}"
+                            "\\IEEEpubid{\\makebox[\\columnwidth]{979-8-3195-2476-8/27/$31.00~\\copyright2027 IEEE \\hfill}\\hspace{\\columnsep}\\makebox[\\columnwidth]{ }}"
                           );
                         }}
                       >
@@ -178,7 +196,7 @@ export default function CameraReadyInstructions() {
                     </div>
                     <pre className="overflow-x-auto scrollbar-thin bg-[#f8f9fa] text-[#37474f] py-px px-1 rounded-lg border border-input">
                       \\IEEEpubid{"{"}\\makebox[\\columnwidth]{"{"}
-                      979-8-3315-1375-7/25/$31.00~\\copyright{}2025 IEEE \\hfill
+                      979-8-3195-2476-8/27/$31.00~\\copyright{}2027 IEEE \\hfill
                       {"}"}\\hspace{"{"}\\columnsep{"}"}
                       \\makebox[\\columnwidth]{"{ }"}
                       {"}"}
@@ -209,7 +227,7 @@ export default function CameraReadyInstructions() {
           <p>
             After carefully checking if your manuscript conforms to IEEE Xplore
             guidelines, you need to get it approved by IEEE PDF eXpress. To this
-            purpose, you can login (Enter Conference ID <strong>65052X</strong>)
+            purpose, you can login (Enter Conference ID <strong>72621X</strong>)
             to the{" "}
             <a
               href="https://ieee-pdf-express.org/account/login?ReturnUrl=%2F"
@@ -233,7 +251,7 @@ export default function CameraReadyInstructions() {
                   <li className="flex items-start">
                     <span className="text-blue-400 mr-2">○</span>
                     <span>
-                      <strong>65052X</strong> for the Conference ID.
+                      <strong>72621X</strong> for the Conference ID.
                     </span>
                   </li>
                   <li className="flex items-start">
@@ -424,7 +442,7 @@ export default function CameraReadyInstructions() {
 
           <p className="mt-6">
             <strong>Note: </strong> Ensure that the similarity level in your
-            final camera-ready paper <strong>does not exceed 20%.</strong> This
+            final camera-ready paper <strong>does not exceed 15%.</strong> This
             limit applies to the entire paper, without exceptions for any
             individual components. The conference and the IEEE will also check
             that you have adhered to the similarity upper bound before final
