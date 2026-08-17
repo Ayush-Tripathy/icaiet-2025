@@ -1,10 +1,10 @@
-// import { ClipboardCheck, Copy } from "lucide-react";
-// import { useState } from "react";
-// import { Link } from "react-router-dom";
+import { ClipboardCheck, Copy } from "lucide-react";
+import { useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function CameraReadyInstructions() {
-  // const [isCopied, setIsCopied] = useState<boolean>(false);
-  // const [copiedKey, setCopiedKey] = useState<string>("");
+  const [isCopied, setIsCopied] = useState<boolean>(false);
+  const [copiedKey, setCopiedKey] = useState<string>("");
 
   return (
     <div className="min-h-screen py-8 pt-32 primary-padding font-[SatoshiRegular]">
@@ -14,11 +14,11 @@ export default function CameraReadyInstructions() {
           <div className="h-1 w-20 bg-blue-500 mt-2"></div>
         </div>
 
-        <div className="text-center py-20">
+        {/* <div className="text-center py-20">
           <h2 className="text-3xl font-semibold text-gray-700 italic">To Be Announced Soon</h2>
-        </div>
+        </div> */}
 
-        {/* <div className="space-y-6">
+        <div className="space-y-6">
           <p className="font-bold">
             Please note that the last date for uploading the final camera-ready
             manuscript is April 20, 2025, 23:59 IST.
@@ -291,10 +291,10 @@ export default function CameraReadyInstructions() {
 
           <p>
             <a
-              href="https://cmt3.research.microsoft.com/ICAIET2025"
+              href="https://cmt3.research.microsoft.com/ICAIET2027"
               className="text-blue-400 hover:underline max-sm:break-words"
             >
-              https://cmt3.research.microsoft.com/ICAIET2025
+              https://cmt3.research.microsoft.com/ICAIET2027
             </a>
           </p>
 
@@ -304,7 +304,7 @@ export default function CameraReadyInstructions() {
               <span>
                 Login to{" "}
                 <a
-                  href="https://cmt3.research.microsoft.com/User/Login?ReturnUrl=%2FICAIET2025"
+                  href="https://cmt3.research.microsoft.com/User/Login?ReturnUrl=%2FICAIET2027"
                   className="text-blue-400 hover:underline"
                 >
                   CMT
@@ -352,7 +352,7 @@ export default function CameraReadyInstructions() {
               <span>
                 Login to{" "}
                 <a
-                  href="https://cmt3.research.microsoft.com/User/Login?ReturnUrl=%2FICAIET2025"
+                  href="https://cmt3.research.microsoft.com/User/Login?ReturnUrl=%2FICAIET2027"
                   className="text-blue-400 hover:underline"
                 >
                   CMT
@@ -430,7 +430,7 @@ export default function CameraReadyInstructions() {
             that you have adhered to the similarity upper bound before final
             acceptance.
           </p>
-        </div> */}
+        </div>
       </div>
     </div>
   );

@@ -178,9 +178,9 @@ const Registration = () => {
           Click{" "}
           <a
             target="_blank"
-            href="https://forms.gle/gxZKDTB2LZhoyb8N9"
-            onClick={(e) => e.preventDefault()}
-            className="relative inline-flex items-center font-semibold text-blue-600 group cursor-default"
+            rel="noreferrer"
+            href="https://forms.gle/8iRE6zuCH5AiDC7A6"
+            className="relative inline-flex items-center font-semibold text-blue-600 group"
           >
             <span className="underline group-hover:text-blue-800 transition-colors duration-200">
               here to register
@@ -194,9 +194,9 @@ const Registration = () => {
             ></span> */}
           </a>
         </span>
-        <span className="text-xl text-gray-800 italic font-medium">
+        {/* <span className="text-xl text-gray-800 italic font-medium">
           To be announced soon
-        </span>
+        </span> */}
       </div>
 
       <div className="space-y-2">

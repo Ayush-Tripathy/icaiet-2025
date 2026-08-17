@@ -122,38 +122,57 @@ export default function Navbar() {
                     {menu.name}
                     <ArrowUpRight className="h-3.5 w-3.5" />
                   </a>
+                ) : menu.items ? (
+                  <button
+                    type="button"
+                    onClick={() =>
+                      setActiveDropdown(
+                        activeDropdown === menu.name ? null : menu.name
+                      )
+                    }
+                    className="text-sm whitespace-nowrap flex items-center gap-1 px-2 py-1 rounded-md hover:bg-white/10 transition cursor-pointer"
+                  >
+                    {menu.name}
+                    <ChevronDown
+                      className={`h-3.5 w-3.5 transition-transform ${
+                        activeDropdown === menu.name ? "rotate-180" : ""
+                      }`}
+                    />
+                  </button>
                 ) : (
                   <Link
                     to={menu.href}
                     className="text-sm whitespace-nowrap flex items-center gap-1 px-2 py-1 rounded-md hover:bg-white/10 transition"
                   >
                     {menu.name}
-                    {menu.items && (
-                      <ChevronDown
-                        className={`h-3.5 w-3.5 transition-transform ${activeDropdown === menu.name ? "rotate-180" : ""
-                          }`}
-                      />
-                    )}
                   </Link>
                 )}
 
                 {/* DROPDOWN */}
                 {menu.items && activeDropdown === menu.name && (
-                  <div
-                    className={`absolute left-0 top-full mt-1 w-52 rounded-md shadow-lg border ${!useTransparentStyle
-                      ? "bg-white text-black border-gray-200"
-                      : "bg-[#0a0b1a]/90 text-white border-white/20"
+                  <div className="absolute left-0 top-full pt-1 w-56">
+                    <div
+                      className={`rounded-md shadow-lg border py-1 ${
+                        !useTransparentStyle
+                          ? "bg-white text-black border-gray-200"
+                          : "bg-[#0a0b1a]/95 text-white border-white/20"
                       }`}
-                  >
-                    {menu.items.map((item) => (
-                      <Link
-                        key={item.name}
-                        to={item.href}
-                        className="block px-4 py-2 text-sm hover:bg-gray-100/20"
-                      >
-                        {item.name}
-                      </Link>
-                    ))}
+                    >
+                      {menu.items.map((item) => (
+                        <Link
+                          key={item.name}
+                          to={item.href}
+                          onClick={() => setActiveDropdown(null)}
+                          className={`block px-4 py-2 text-sm transition-colors ${
+                            !useTransparentStyle
+                              ? "hover:bg-gray-100 text-gray-800"
+                              : "hover:bg-white/10 text-white"
+                          }`}
+                        >
+                          {item.name}
+                        </Link>
+                      ))}
+                    </div>
                   </div>
                 )}
               </li>
@@ -173,15 +192,34 @@ export default function Navbar() {
       {/* MOBILE MENU */}
       {isMobileMenuOpen && (
         <div className="xl:hidden px-4 pb-4 bg-white text-black shadow-lg">
-          <ul className="space-y-2">
+          <ul className="space-y-2 pt-2">
             {menuItems.map((menu) => (
               <li key={menu.name}>
-                {menu.external ? (
+                {menu.items ? (
+                  <div className="space-y-1">
+                    <span className="block py-1.5 text-sm font-bold text-gray-700">
+                      {menu.name}
+                    </span>
+                    <ul className="pl-3 space-y-1 border-l-2 border-blue-500">
+                      {menu.items.map((subItem) => (
+                        <li key={subItem.name}>
+                          <Link
+                            to={subItem.href}
+                            className="block py-1 text-sm text-gray-600 hover:text-blue-600"
+                            onClick={() => setIsMobileMenuOpen(false)}
+                          >
+                            {subItem.name}
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                ) : menu.external ? (
                   <a
                     href={menu.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="block py-2 text-sm"
+                    className="block py-2 text-sm font-medium"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
                     {menu.name}
@@ -189,7 +227,7 @@ export default function Navbar() {
                 ) : (
                   <Link
                     to={menu.href}
-                    className="block py-2 text-sm"
+                    className="block py-2 text-sm font-medium"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
                     {menu.name}
