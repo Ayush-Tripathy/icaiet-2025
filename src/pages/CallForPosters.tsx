@@ -78,7 +78,7 @@ const CallForPosters = () => {
           <div className="flex flex-col sm:flex-row items-start sm:items-center gap-5">
             {/* Download Flyer Button */}
             <a
-              href="/CallForPosterFlyer_ICAIET-2025.pdf"
+              href="/CallForPosterFlyer_ICAIET-2027.pdf"
               className="w-fit flex flex-row items-center gap-3 px-8 py-3 bg-[#ccf2f4] hover:bg-[#b8eef1] text-gray-800 transition-all duration-300 hover:gap-5 text-lg font-medium rounded-full shadow-sm hover:shadow-md border border-[#a4ebf3]"
             >
               Download Flyer <ArrowRight size={20} />
@@ -113,11 +113,11 @@ const CallForPosters = () => {
               </h3>
             </div>
             <div className="p-4">
-              <div className="text-center py-4">
+              {/* <div className="text-center py-4">
                 <span className="text-gray-600 italic font-medium">
                   To be announced soon
                 </span>
-              </div>
+              </div> */}
               {/* <div className="space-y-3">
                 {[
                   { label: "Submission", date: "20 Jul 2025", highlight: true },
@@ -137,6 +137,25 @@ const CallForPosters = () => {
                   </div>
                 ))}
               </div> */}
+              <div className="space-y-3">
+                {[
+                  { label: "Poster Submission Deadline", date: "10 Oct 2026", highlight: true },
+                  { label: "Poster Acceptance Notification", date: "20 Oct 2026" },
+                  { label: "Registration", date: "24 Oct 2026" },
+                  { label: "Conference Dates", date: "13 - 15 Jan 2027" },
+                  { label: "Presentation Dates", date: "13 - 15 Jan 2027", highlight: true },
+                ].map((item, index) => (
+                  <div
+                    key={index}
+                    className={`p-3 rounded-lg text-center ${item.highlight ? "bg-blue-50 border border-blue-200" : "bg-gray-50"}`}
+                  >
+                    <div className="text-xs font-medium text-gray-600 mb-1">{item.label}</div>
+                    <div className={`text-sm font-bold ${item.highlight ? "text-blue-600" : "text-gray-900"}`}>
+                      {item.date}
+                    </div>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>

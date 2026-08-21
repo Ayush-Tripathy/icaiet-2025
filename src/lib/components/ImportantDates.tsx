@@ -31,7 +31,7 @@ const ImportantDates = ({ withHeader = true }: { withHeader?: boolean }) => {
                 31 July 2026
               </span>
               <br />
-              <span className="">
+              <span>
                 20 September 2026 (Phase 2)
               </span>
             </TableCell>
@@ -48,12 +48,12 @@ const ImportantDates = ({ withHeader = true }: { withHeader?: boolean }) => {
               <span>
                 14 May 2025 (2<sup>nd</sup> phase acceptance)
               </span> */}
-              <span className="">
+              <span>
                 30 August 2026 (Phase 1)
               </span>
               <br />
-              <span className="">
-                5 October 2026 (Phase 2)
+              <span>
+                30 September 2026 (Phase 2)
               </span>
             </TableCell>
           </TableRow>
@@ -62,7 +62,13 @@ const ImportantDates = ({ withHeader = true }: { withHeader?: boolean }) => {
               Camera ready Version submission
             </TableCell>
             <TableCell className="text-right whitespace-nowrap">
-              15 September 2026
+              <span>
+                15 September 2026 (Phase 1)
+              </span>
+              <br />
+              <span>
+                10 October 2026 (Phase 2)
+              </span>
             </TableCell>
           </TableRow>
           <TableRow className="hover:bg-inherit border-input">
@@ -70,7 +76,13 @@ const ImportantDates = ({ withHeader = true }: { withHeader?: boolean }) => {
               Early-Bird Registration
             </TableCell>
             <TableCell className="text-right whitespace-nowrap">
-              25 September 2026
+              <span>
+                25 September 2026 (Phase 1)
+              </span>
+              <br />
+              <span>
+                13 October 2026 (Phase 2)
+              </span>
             </TableCell>
           </TableRow>
           {/* <TableRow className="hover:bg-inherit border-input">
