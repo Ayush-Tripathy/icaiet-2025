@@ -797,7 +797,7 @@ export default function CommitteesPage() {
                 Dr. Debabrata Nayak, Director Cyber Security, PwC
               </p>
               <p className="relative pl-5 before:content-['•'] before:absolute before:left-0">
-                Dr. Santosh Kumar Nanda, Senior Solution Director, HCLTech
+                Dr. Santosh Kumar Nanda, CEO/CTO, Emesys Software Solutions Pvt Ltd
               </p>
             </div>
           </section>
