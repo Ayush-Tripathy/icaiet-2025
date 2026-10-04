@@ -52,12 +52,10 @@ const ImportantDates = ({ withHeader = true }: { withHeader?: boolean }) => {
                 30 August 2026 (Phase 1)
               </span>
               <br />
-              <span>
-                30 September 2026 (Phase 2)
-              </span>
+              
               <br />
               <span>
-                08 October 2026 (Phase 3)
+                08 October 2026 (Phase 2)
               </span>
             </TableCell>
           </TableRow>
@@ -71,12 +69,9 @@ const ImportantDates = ({ withHeader = true }: { withHeader?: boolean }) => {
               </span>
               <br />
               <span>
-                10 October 2026 (Phase 2)
+                15 October 2026 (Phase 2)
               </span>
-              <br />
-              <span>
-                15 October 2026 (Phase 3)
-              </span>
+              
             </TableCell>
           </TableRow>
           <TableRow className="hover:bg-inherit border-input">

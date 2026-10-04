@@ -21,7 +21,7 @@ export default function CameraReadyInstructions() {
         <div className="space-y-6">
           <p className="font-bold">
             Please note that the last date for uploading the final camera-ready
-            manuscript is September 15, 2026, 23:59 IST.
+            manuscript is October 15, 2026, 23:59 IST.
           </p>
           <p className="font-bold">
             At least one author must complete the registration before deadline.
