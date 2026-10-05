@@ -55,7 +55,7 @@ const ImportantDates = ({ withHeader = true }: { withHeader?: boolean }) => {
               
               <br />
               <span>
-                08 October 2026 (Phase 2)
+                10 October 2026 (Phase 2)
               </span>
             </TableCell>
           </TableRow>
@@ -84,7 +84,7 @@ const ImportantDates = ({ withHeader = true }: { withHeader?: boolean }) => {
               </span>
               <br />
               <span>
-                13 October 2026 (Phase 2)
+                15 October 2026 (Phase 2)
               </span>
             </TableCell>
           </TableRow>
